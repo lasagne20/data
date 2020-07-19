@@ -1,6 +1,10 @@
 // Ici on a la config du raspberry
 // avec tous les backend
 
+//adresse de la st_nucleo
+stnucleo : 
+addresse = /dev/ttyACM0 
+
 interrupt :
 // port | type 	   | arguments
    12	| extender | 0x20,1
