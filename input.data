@@ -1,18 +1,16 @@
 // creer les interruptions et on les lie aux interupteur, radar..
-//| nom_inter|   pin     
-  | inter_1  |    1     
-  | inter_2  |    2    
-  | inter_3  |    3    
-  | inter_4  |    4    
-  | inter_5  |    5    
-  | inter_6  |    6    
-  | inter_7  |    7    
-  | inter_8  |    8    
-  | inter_9  |    9    
-  | inter_10 |    10    
-  | inter_11 |    11    
-  | inter_12 |    12    
-  | inter_13 |    13    
-  | inter_14 |    14    
-  | arduino  |    15
-  // on a arduino_radar_on / arduino_radar_off / inter_etage_monte ... (cf Arduino.py)
+//| nom_inter|  type	|  pin     
+  | inter_1  | extender |   1     
+  | inter_2  | extender |   2    
+  | inter_3  | extender |   3    
+  | inter_4  | extender |   4    
+  | inter_5  | extender |   5    
+  | inter_6  | extender |   6    
+  | inter_7  | extender |   7    
+  | inter_8  | extender |   8    
+  | inter_9  | extender |   9    
+  | inter_10 | extender |   10    
+  | inter_11 | extender |   11    
+  | inter_12 | extender |   12    
+  | inter_13 | extender |   13    
+  | inter_14 | extender |   14    
