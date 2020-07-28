@@ -1,6 +1,8 @@
 // Ici on a la config du raspberry
 // avec tous les backend
 
+//adresse de la st_nucleo
+
 interrupt :
 // port | type 	   | arguments
 
