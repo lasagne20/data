@@ -2,3 +2,4 @@
 //4(1) = port 4 de la carte numéro 1
 //Nom_projecteur  |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
 //                |                   |              |                       |                   
+    secu_trappe   |	lampe         |	    4(gpio)  |			     |

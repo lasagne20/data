@@ -1,10 +1,12 @@
 //Contient toutes les informations relatives a l'environnement
 //qui vont etre donne a la page web et a la console
 
-eteindre:off
+verouiller:off
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
+    |	secu_trappe	    |	   0 	   |	  0	   |	   0	    | 	   
 
-allumer
+deverouiller
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
+    |	secu_trappe	    |	   100 	   |	  0	   |	   0	    | 	   
