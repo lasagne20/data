@@ -16,4 +16,4 @@
   led_mur_droite  |   led_ble         |     5(1)     |                       |  ff:ff:ab:01:d9:9d
   led_mur_centre  |   led_lednet      |     5(1)     |                       |  10.0.0.52
   led_mur_gauche  |   led_lednet      |     5(1)     |                       |  10.0.0.51
-  led_sous_table  |   led_triones     |     5(1)     |                       |  ff:ff:30:00:9b:63
+  led_sous_table  |   led_lednet      |     5(1)     |                       |  10.0.0.58

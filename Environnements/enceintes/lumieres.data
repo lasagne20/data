@@ -1,0 +1,8 @@
+//Contient la carte de montage de toutes les lumieres de l'environnement "Bar"
+//4(1) = port 4 de la carte numéro 1
+//Nom_projecteur  |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
+//                |                   |              |                       |                   
+enceinte_billard  | enceinte          |              |                       |      1(dax66) |  
+enceinte_exterieur| enceinte          |              |                       |      2(dax66) |  
+enceinte_cuisine  | enceinte          |              |                       |      3(dax66) |  
+enceinte_salon    | enceinte          |              |                       |      4(dax66) |  

@@ -2,15 +2,16 @@
 // avec tous les backend
 
 //adresse de la st_nucleo
-stnucleo : 
+
+---   stnucleo   ---
 addresse = /dev/ttyACM0 
 
-interrupt :
+--- interrupt ---
 // port | type 	   | arguments
    12	| extender | 0x20,1
    6	| extender | 0x20,0
 
-cartes :
+--- cartes ---  
 // numero | carte |   type   | nb_ports | arguments
 // relais
       1	  | relais| extender |    16    | 0x21
@@ -21,4 +22,6 @@ cartes :
       3	  | triac | st_nucleo|    8     |
       4	  | triac | st_nucleo|    8     |
 
+--- ampli ---
 
+dax66 = /dev/ttyUSB0, 9(1)
