@@ -1,0 +1,8 @@
+//Contient la carte de montage de toutes les lumieres de l'environnement "Salon"
+//4(1) = port 4 de la carte numéro 1
+//Nom_projecteur  |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
+//                |                   |              |                       |                   
+    lyre_1        |     lyre          |              |                       |      1
+    lyre_2        |     lyre          |              |                       |      11
+    lyre_3        |     lyre          |              |                       |      21
+    lyre_4        |     lyre          |              |                       |      31

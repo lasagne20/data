@@ -1,0 +1,41 @@
+//Contient toutes les informations relatives a l'environnement
+//qui vont etre donne a la page web et a la console
+
+eteindre:off
+  //|   Lumiere             |    type_inst |   Duree(s)    |   Temps init(s)|      arguments    |synchro_precedent
+  //|                       |              |               |                |                   |
+    |   lyre_1              |   position   |    1          |       0        |       (0,0)       |
+    |   lyre_1              |   dimmeur    |    1          |       0        |       0           |
+    |   lyre_2              |   position   |    1          |       0        |       (0,0)       |
+    |   lyre_2              |   dimmeur    |    1          |       0        |       0           |
+    |   lyre_3              |   position   |    1          |       0        |       (0,0)       |
+    |   lyre_3              |   dimmeur    |    1          |       0        |       0           |
+    |   lyre_4              |   position   |    1          |       0        |       (0,0)       |
+    |   lyre_4              |   dimmeur    |    1          |       0        |       0           |
+
+allumer*
+  //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
+  //|                       |              |               |                |                   |
+    |   lyre_1              |   position   |    5          |       0        |       (255,255)   |
+    |   lyre_1              |   dimmeur    |    1          |       0        |       100         |
+    |   lyre_1              |   position   |    5          |       5        |       (0 ,0)     |
+    |   lyre_1              |   dimmeur    |    5          |       5        |       0           |
+    |   lyre_2              |   position   |    5          |       0        |       (255,255)   |
+    |   lyre_2              |   dimmeur    |    1          |       0        |       100         |
+    |   lyre_2              |   position   |    5          |       5        |       (0 ,0)     |
+    |   lyre_2              |   dimmeur    |    5          |       5        |       0           |
+    |   lyre_3              |   position   |    5          |       0        |       (255,255)   |
+    |   lyre_3              |   dimmeur    |    1          |       0        |       100         |
+    |   lyre_3              |   position   |    5          |       5        |       (0 ,0)     |
+    |   lyre_3              |   dimmeur    |    5          |       5        |       0           |
+    |   lyre_4              |   position   |    5          |       0        |       (255,255)   |
+    |   lyre_4              |   dimmeur    |    1          |       0        |       100         |
+    |   lyre_4              |   position   |    5          |       5        |       (0 ,0)     |
+    |   lyre_4              |   dimmeur    |    5          |       5        |       0           |
+
+bpm*
+  //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
+  //|                       |              |               |                |                   |
+    |   lyre_1              |   dimmeur    |    0          |       bpm_1    |       100         |
+    |   lyre_1              |   dimmeur    |    0          |       bpm_2    |       0           |
+

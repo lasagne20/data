@@ -2,5 +2,6 @@
 //ce peut être des inputs comme des boutons html
 //  |    nom        |   type    |   scénario(s)     | mode
     |  off          | html      | eteindre          | simple 
+    |  bpm          | html      | bpm               | simple 
     |  on           | html      | allumer           | simple 
     

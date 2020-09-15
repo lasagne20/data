@@ -3,10 +3,12 @@
 
 //adresse de la st_nucleo
 
-interrupt :
+--- interrupt ---
 // port | type 	   | arguments
 
-cartes :
+--- cartes ---
 // numero | carte |   type   | nb_ports | arguments
 
+--- dmx ---
+adresse = /dev/ttyUSB0
 
