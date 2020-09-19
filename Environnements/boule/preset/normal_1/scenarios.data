@@ -1,0 +1,15 @@
+//Contient toutes les informations relatives a l'environnement
+//qui vont etre donne a la page web et a la console
+
+eteindre:off
+  //|   Lumiere             |    type_inst |   Duree(s)    |   Temps init(s)|      arguments    |synchro_precedent
+  //|                       |              |               |                |                   |
+    |   boule               |   program    |        0       |       0       |       0           |
+
+allumer*
+  //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
+  //|                       |              |               |                |                   |
+    |   var2                |   random     |        0       |       0       |   (0,255)         |
+    |   boule               |   program    |        0       |       0       |       var2           |
+    |   boule               |   vitesse    |        0       |       30      |       200           |
+
