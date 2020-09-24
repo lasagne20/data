@@ -7,13 +7,21 @@ eteindre:off
   |  poutre_table |     0         |     10        |         0       | 
   |  projo_14     |     0         |     5         |         0       |                   
   |  projo_15     |     0         |     5         |         0       |                   
+    |bar.soirée_1.déco_depuis_salon   |   0   |   déco    |       0
+    |portes.soirée_1.juste_barre   |   0   |   déco    |       0
+    |billard.soirée_1.deco_salon   |   0   |   déco    |       0
+  |salon.soir_1.deco_pour_table   |   0   |   déco    |       0
 
 allumer
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
   |  poutre_table |     100       |     10        |         0       | 
-  |  projo_14     |     10        |     5         |         0       |                   
-  |  projo_15     |     10        |     5         |         5       |                   
+  |  projo_14     |     0        |     5         |         0       |                   
+  |  projo_15     |     0        |     5         |         5       |                   
+  |bar.soirée_1.déco_depuis_salon   |   1   |   déco    |       0
+  |portes.soirée_1.juste_barre   |   1   |   déco    |       0
+  |billard.soirée_1.deco_salon   |   1   |   déco    |       0
+  |salon.soir_1.deco_pour_table   |   1   |   déco    |       0
 
 billard:deco
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro

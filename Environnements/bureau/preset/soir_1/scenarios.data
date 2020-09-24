@@ -4,11 +4,18 @@
 eteindre:off
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
+  | projo_39      |     0         |     3         |         0       |                  
+  | projo_40      |     0         |     3         |         0       |                  
 
-allumer
+
+allumer_bar_fort
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
+  | projo_39      |     100       |     3         |         0       |                  
+  | projo_40      |     100       |     3         |         0       |                  
 
-déco 1
-//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
+allumer_bar_moyen
+//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
+  | projo_39      |     50       |     3         |         0       |                  
+  | projo_40      |     50       |     3         |         0       |                  

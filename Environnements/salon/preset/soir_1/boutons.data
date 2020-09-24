@@ -2,7 +2,7 @@
 //ce peut être des inputs comme des boutons html
 //  |    nom        |   type    |   scénario(s)     | mode
     |   0%          |   html    |   eteindre        | simple
-    |   50%         |   html    |   allumer_juste_poutre  | simple
+    |   50%         |   html    |   deco_pour_table  | simple
     |   100%        |   html    |   allumer         | simple
     |   inter_3     | inter     | allumer, eteindre | principal
     |   inter_9     | inter     | allumer, eteindre | principal

@@ -7,16 +7,67 @@ eteindre:off
   |  poutre_table |     0         |     3         |         0       | 
   |  projo_14     |     0         |     3         |         0       |                   
   |  projo_15     |     0         |     3         |         0       |                   
+  |  projo_16     |     0         |     3         |         0       |                   
+  |  projo_17     |     0         |     3         |         0       |                   
 
 manger
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
   |  poutre_table |     100       |     3         |         0       | 
-  |  projo_14     |     50        |     3         |         1       |                   
-  |  projo_15     |     50        |     3         |         2       |                   
+  |  projo_14     |     0         |     3         |         0       |                   
+  |  projo_15     |     0         |     3         |         0       |                   
+  |  projo_16     |     0         |     3         |         0       |                   
+  |  projo_17     |     0         |     3         |         0       |                   
 
-
-
-déco 1
-//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
+deco_billard:deco
+//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
+  |  poutre_table |     30        |     3         |         0       | 
+  |  projo_14     |     0         |     3         |         0       |                   
+  |  projo_15     |     0         |     3         |         0       |                   
+  |  projo_16     |     0         |     3         |         0       |                   
+  |  projo_17     |     100       |     3         |         0       |                   
+
+allumer_vers_cuisine:deco
+//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|               |               |               |                 |                   |
+  |  poutre_table |     0         |     3         |         0       | 
+  |  projo_14     |     100       |     2         |         2       |                   
+  |  projo_15     |     100       |     2         |         1       |                   
+  |  projo_16     |     100       |     2         |         0       |                   
+  |  projo_17     |     0         |     3         |         0       |                   
+
+allumer_vers_escalier:deco
+//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|               |               |               |                 |                   |
+  |  poutre_table |     0         |     3         |         0       | 
+  |  projo_14     |     100       |     2         |         0       |                   
+  |  projo_15     |     100       |     2         |         1       |                   
+  |  projo_16     |     100       |     2         |         2       |                   
+  |  projo_17     |     0         |     3         |         0       |                   
+
+eteindre_vers_cuisine:deco
+//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|               |               |               |                 |                   |
+  |  poutre_table |     0         |     3         |         0       | 
+  |  projo_14     |     0         |     2         |         2       |                   
+  |  projo_15     |     0         |     2         |         1       |                   
+  |  projo_16     |     0         |     2         |         0       |                   
+  |  projo_17     |     0         |     3         |         0       |                   
+
+eteindre_vers_escalier:deco
+//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|               |               |               |                 |                   |
+  |  poutre_table |     0         |     3         |         0       | 
+  |  projo_14     |     0         |     2         |         0       |                   
+  |  projo_15     |     0         |     2         |         1       |                   
+  |  projo_16     |     0         |     2         |         2       |                   
+  |  projo_17     |     0         |     3         |         0       |                   
+
+
+
+
+
+
+
+

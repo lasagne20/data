@@ -3,5 +3,6 @@
 //  |    nom        |   type    |   scénario(s)                 | mode
     | salon         |  html     | allumer_salon, eteindre_salon |unique
     | cuisine       |  html     | allumer_cuisine, eteindre_cuisine |unique
-    | billard       |  html     | allumer_cuisine, eteindre_cuisine |unique
+    | billard       |  html     | allumer_billard, eteindre_billard |unique
     | exterieur     |  html     | allumer_exterieur, eteindre_exterieur |unique
+    | inter_7       | inter     | tout_eteindre          |poussoir

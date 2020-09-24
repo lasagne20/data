@@ -1,8 +1,11 @@
 // ceci est la liste de tous les boutons et de ce qu'ils font pour ce scénario, 
 //ce peut être des inputs comme des boutons html
 //  |    nom        |   type    |   scénario(s)     | mode
-    |   inter_6     |   inter   |allumer, eteindre  | principal
-    |   inter_11    |   inter   |allumer, eteindre  | principal
+    |   inter_6     |   inter   |allumer_vers_cuisine, eteindre_vers_escalier | principal
+    |   inter_8     |   inter   |allumer_vers_escalier, eteindre_vers_cuisine | principal
+    |   inter_11    |   inter   |allumer_billard, eteindre  | principal
     | inter_7       | inter     | eteindre          | poussoir
     | off           |  html     | eteindre          | simple 
-    | on            |  html     | allumer           | simple 
+    | faible        |  html     | allumer_billard_faible   | simple 
+    | moyen         |  html     | allumer_billard_moyen     | simple 
+    | fort          |  html     | allumer_billard           | simple 

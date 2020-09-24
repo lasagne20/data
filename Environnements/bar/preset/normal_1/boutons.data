@@ -2,6 +2,8 @@
 //ce peut être des inputs comme des boutons html
 //  |    nom        |   type    |   scénario(s)     | mode
     |  off          | html      | eteindre          | simple 
-    |  on           | html      | allumer           | simple 
+    |  faible       | html      | allumer_faible    | simple 
+    |  moyen        | html      | allumer_moyen     | simple 
+    |  fort         | html      | allumer           | simple 
     | inter_10      | inter     | allumer, eteindre |principal
     | inter_7       | inter     | eteindre          |poussoir

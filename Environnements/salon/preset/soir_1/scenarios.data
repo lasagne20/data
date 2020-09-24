@@ -4,7 +4,7 @@
 eteindre:off
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
-    |       poutre          |       0      |        20     |        0       |                   |  
+    |       poutre          |       0      |        10     |        0       |                   |  
     |      projo_26         |       0      |        3      |        0       |                   |
     |      projo_27         |       0      |        3      |        1       |                   |
     |      projo_28         |       0      |        3      |        2       |                   |
@@ -18,34 +18,42 @@ eteindre:off
     |     led_mur_droite    |       0      |        9      |        0       |   0x000000        |
     |     led_mur_gauche    |       0      |        9      |        0       |   0x000000        |   
     |     led_mur_centre    |       0      |        9      |        0       |   0x000000        |   
-    |     led_sous_table    |       0      |        20     |        0       |   0x000000 
+    |     led_sous_table    |       0      |        10     |        0       |   0x000000 
+    |bar.soirée_1.déco_depuis_salon   |   0   |   déco    |       0
+    |portes.soirée_1.juste_barre   |   0   |   déco    |       0
+    |billard.soirée_1.deco_salon   |   0   |   déco    |       0
+    |cuisine.soir_1.deco_pour_salon |   0   |   déco    |       0
 
 
 
 allumer:on
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
-    |       poutre          |       50    |        50     |        0       |                   |  
-    |      projo_26         |       20     |        5      |        5       |                   |
-    |      projo_27         |       10     |        5      |        10      |                   |
-    |      projo_28         |       10     |        5      |        15      |                   |
-    |      projo_30         |       10     |        5      |        20      |                   |
-    |      projo_31         |       20     |        5      |        25      |                   |
-    |      projo_32         |       20     |        5      |        30      |                   |
-    |      projo_33         |       10     |        5      |        35      |                   |
-    |      projo_34         |       10     |        5      |        40      |                   |
-    |      projo_35         |       10     |        5      |        45      |                   |
-    |      projo_36         |       20     |        5      |        50      |                   |
+    |       poutre          |       50    |        20     |        0       |                   |  
+    |      projo_26         |       20     |        5      |        2       |                   |
+    |      projo_27         |       10     |        5      |        4      |                   |
+    |      projo_28         |       10     |        5      |        6      |                   |
+    |      projo_30         |       10     |        5      |        8      |                   |
+    |      projo_31         |       20     |        5      |        10      |                   |
+    |      projo_32         |       20     |        5      |        12      |                   |
+    |      projo_33         |       10     |        5      |        14      |                   |
+    |      projo_34         |       10     |        5      |        16      |                   |
+    |      projo_35         |       10     |        5      |        18      |                   |
+    |      projo_36         |       20     |        5      |        20      |                   |
     |     led_mur_droite    |       50     |        10     |        0       |   0xa000a0        |
     |     led_mur_gauche    |       50     |        10     |        0       |   0xa000a0        |   
     |     led_mur_centre    |       60     |        10     |        3       |   0xc000c0        |   
     |     led_sous_table    |       70     |        50     |        0       |   0xa000a0 
+    |bar.soirée_1.déco_depuis_salon   |   1   |   déco    |       0
+    |portes.soirée_1.juste_barre   |   1   |   déco    |       0
+    |billard.soirée_1.deco_salon   |   1   |   déco    |       0
+    |cuisine.soir_1.deco_pour_salon |   1   |   déco    |       0
 
 
-allumer_juste_poutre
+deco_pour_table
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
-    |       poutre          |       50    |        15     |        0       |                   |  
+    |       poutre          |       15    |        10     |        0       |                   |  
     |      projo_26         |       0      |        6      |        0       |                   |
     |      projo_27         |       0      |        1      |        0       |                   |
     |      projo_28         |       0      |        1      |        0       |                   |

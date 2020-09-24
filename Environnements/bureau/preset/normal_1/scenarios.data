@@ -4,21 +4,18 @@
 eteindre:off
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
+  | projo_39      |     0         |     3         |         0       |                  
+  | projo_40      |     0         |     3         |         0       |                  
 
-allumer_cuisine
+
+allumer_bar_fort
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
+  | projo_39      |     100       |     3         |         0       |                  
+  | projo_40      |     100       |     3         |         0       |                  
 
-mettre_table
+allumer_bar_moyen
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
-
-manger
-//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
-//|               |               |               |                 |                   |
-
-
-
-déco 1
-//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
-//|               |               |               |                 |                   |
+  | projo_39      |     50       |     3         |         0       |                  
+  | projo_40      |     50       |     3         |         0       |                  

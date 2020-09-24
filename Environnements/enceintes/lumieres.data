@@ -2,7 +2,11 @@
 //4(1) = port 4 de la carte numéro 1
 //Nom_projecteur  |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
 //                |                   |              |                       |                   
-enceinte_billard  | enceinte          |              |                       |      1(dax66) |  
-enceinte_exterieur| enceinte          |              |                       |      2(dax66) |  
-enceinte_cuisine  | enceinte          |              |                       |      3(dax66) |  
-enceinte_salon    | enceinte          |              |                       |      4(dax66) |  
+enceinte_cuisine  | enceinte          |              |                       |      1(dax66) |  
+enceinte_salon    | enceinte          |              |                       |      2(dax66) |  
+enceinte_exterieur| enceinte          |              |                       |      3(dax66) |  
+enceinte_billard  | enceinte          |              |                       |      4(dax66) |  
+volume_cuisine    | variable          |              |                       |      0
+volume_salon      | variable          |              |                       |      0
+volume_exterieur  | variable          |              |                       |      0
+volume_billard    | variable          |              |                       |      0

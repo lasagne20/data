@@ -6,6 +6,12 @@
 ---   stnucleo   ---
 addresse = /dev/ttyACM0 
 
+--- spotify ---
+pi_id = a21317bcaedc7bea85e391db0af14d059b476c9e
+start = enceintes.normal_1.start_spotify
+stop = enceintes.normal_1.stop_spotify
+reload = enceintes.normal_1.reload_all
+
 --- interrupt ---
 // port | type 	   | arguments
    12	| extender | 0x20,1
@@ -23,5 +29,4 @@ addresse = /dev/ttyACM0
       4	  | triac | st_nucleo|    8     |
 
 --- ampli ---
-
 dax66 = /dev/ttyUSB0, 9(1)

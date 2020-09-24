@@ -25,10 +25,21 @@ billard
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
   |led_porte_billard    |   100         |       3       |       0         |     0xff00ff       
-  |led_porte_escalier   |   0         |       3       |       0         |     0x000000       
-  |led_haut_bureau      |   0         |       3       |       0         |     0x000000       
-  |led_haut_billard     |   0         |       3       |       0         |     0x000000       
+  |led_porte_escalier   |   0         |       3       |       0         |     0xff00ff       
+  |led_haut_bureau      |   0         |       3       |       0         |     0x200020       
+  |led_haut_billard     |   0         |       3       |       0         |     0x200020       
   |led_fond_armoire     |   0         |       3       |       0         |     0x000000       
   |led_fond_rpi         |   0         |       3       |       0         |     0x000000       
+
+juste_barre
+//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|               |               |               |                 |                   |
+  |led_porte_billard    |   0         |       3       |       0         |     0x000000       
+  |led_porte_escalier   |   0         |       3       |       0         |     0x000000       
+  |led_haut_bureau      |   0         |       3       |       0         |     0x200020       
+  |led_haut_billard     |   0         |       3       |       0         |     0x200020       
+  |led_fond_armoire     |   0         |       3       |       0         |     0x000000       
+  |led_fond_rpi         |   0         |       3       |       0         |     0x000000       
+
 
 
