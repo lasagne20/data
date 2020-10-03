@@ -5,13 +5,15 @@ eteindre:off
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
   |  poutre_sur_table |     0         |     1         |         0       | 
-  | enceintes.normal_1.allumer_exterieur, eteindre_exterieur    |   0       |   unique  |   0   |
+
+reload_son
+   //   scenars                                             |   type_bt |   temps_init
+  | enceintes.normal_1.allumer_exterieur, eteindre_exterieur    |  scenar  |   0   |   (exterieur_etat) and (etat_spotify)
 
 allumer:on
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
   |  poutre_sur_table |     100       |     1         |         0       | 
-  | enceintes.normal_1.allumer_exterieur, eteindre_exterieur    |   etat_spotify       |   unique  |   0   |
 
 déco 1
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |

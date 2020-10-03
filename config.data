@@ -10,7 +10,7 @@ addresse = /dev/ttyACM0
 pi_id = a21317bcaedc7bea85e391db0af14d059b476c9e
 start = enceintes.normal_1.start_spotify
 stop = enceintes.normal_1.stop_spotify
-reload = enceintes.normal_1.reload_all
+reload = enceintes.normal_1.change_volume
 
 --- interrupt ---
 // port | type 	   | arguments

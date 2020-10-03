@@ -12,7 +12,6 @@ eteindre
   |     projo_22       |    0          |    2          |        0        |   
   |     projo_19       |    0          |    2          |        2        |   
   |     poutre         |    0          |    2          |        0        |   
-    |portes.soirée_1.billard   |   0   |   déco    |       0
 
 allumer
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -25,9 +24,26 @@ allumer
   |     projo_22       |    0         |    2          |        2        |   
   |     projo_19       |    0         |    2          |        2        |   
   |     poutre         |    80         |    2          |        0        |   
-    |portes.soirée_1.billard   |   1   |   déco    |       0
+// scenarios                    |   type    |   temps_init
+|bar.soiree_1.deco_billard      |   déco    |       0
+|salon.soiree_1.deco_billard    |   déco    |       0
+|portes.soiree_1.deco_billard   |   déco    |       0
+|cuisine.soiree_1.deco_billard  |   déco    |       0
+|escalier.soiree_1.deco_billard |   déco    |       0
 
-deco_salon
+deco_salon:déco
+//|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|                    |               |               |                 |                   |
+  |     projo_1        |    0         |    2          |        10       |   
+  |     projo_2        |    0         |    2          |        8        |   
+  |     projo_3        |    0         |    2          |        6        |   
+  |     projo_4        |    0         |    2          |        4        |   
+  |     projo_21       |    0         |    2          |        2        |   
+  |     projo_22       |    0         |    2          |        2        |   
+  |     projo_19       |    0         |    2          |        2        |   
+  |     poutre         |    15         |    3          |        0        |   
+
+deco_table:déco
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                    |               |               |                 |                   |
   |     projo_1        |    0         |    2          |        10       |   

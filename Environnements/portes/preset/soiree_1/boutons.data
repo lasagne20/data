@@ -2,5 +2,6 @@
 //ce peut être des inputs comme des boutons html
 //  |    nom        |   type    |   scénario(s)     | mode
     |   off         |   html    |   eteindre        | simple
-    |   billard     |   html    |   billard         | simple
+    |   billard     |   html    |   deco_billard    | simple
+    |   salon       |   html    |   juste_barre     | simple
     |   on          |   html    |   allumer         | simple

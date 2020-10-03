@@ -1,8 +1,9 @@
 //Ici on a toutes les options de l'environnement
 
 couleurs = 0x00a114,0x5df522
+reload = reload_son
 
 Presets :
 //modes = Presets :
 normal = normal_1
-soirée = soir_1
+soirée = soiree_1

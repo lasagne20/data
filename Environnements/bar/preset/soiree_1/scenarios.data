@@ -10,8 +10,6 @@ eteindre:off
   |led_sol          |     0         |     5         |         0       |     0x000000        
   | decoupe_bois    |     0         |     1         |         0       |
   | led_caisson_bois|     0         |     1         |         0       |     0x000000
-  | led_sous_bar    |     0         |     1         |         0       |     0x000000
-    |bureau.soir_1.allumer_bar_moyen   |   0   |   déco    |       0
 
 allumer:on
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -21,21 +19,34 @@ allumer:on
   | projo_37        |     0         |     5         |         0       |                  
   |led_sol          |     100       |     10        |         0       |     0xff0000        
   | decoupe_bois    |     0         |     1         |         0       |
-  | led_caisson_bois|     0         |     1         |         0       |     0x000000
-  | led_sous_bar    |     30        |     1         |         0       |     0x5f5f5f
-    |bureau.soir_1.allumer_bar_moyen   |   1   |   déco    |       0
+  | led_caisson_bois|     0         |     5         |         0       |     0x000000
+// scenarios                       |   type    |   temps_init
+|bureau.soiree_1.allumer_bar_moyen |   déco    |       4
+|portes.soiree_1.juste_barre       |   déco    |       0
+|escalier.soiree_1.deco_bar        |   déco    |       0
 
-déco_depuis_salon:déco
+
+deco_salon:déco
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
 //|                 |               |               |                 |                   |
   | poutre          |     20        |     5         |         0       |                 
   | projo_24        |     0         |     5         |         0       |                  
   | projo_37        |     0         |     5         |         0       |                  
   |led_sol          |     100       |     10        |         0       |     0x003000        
-  | decoupe_bois    |     50         |     1         |         0       |
+  | decoupe_bois    |     50        |     1         |         0       |
   | led_caisson_bois|     50        |     1         |         0       |     0x0f0f0f
 
-déco_depuis_table:déco
+deco_billard:déco
+//|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
+//|                 |               |               |                 |                   |
+  | poutre          |     20        |     5         |         0       |                 
+  | projo_24        |     0         |     5         |         0       |                  
+  | projo_37        |     0         |     5         |         0       |                  
+  |led_sol          |     100       |     10        |         0       |     0x003000        
+  | decoupe_bois    |     50        |     1         |         0       |
+  | led_caisson_bois|     50        |     1         |         0       |     0x0f0f0f
+
+deco_table:déco
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
 //|                 |               |               |                 |                   |
   | poutre          |     20        |     5         |         0       |                 

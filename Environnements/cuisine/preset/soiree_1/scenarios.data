@@ -19,7 +19,7 @@ allumer:on
   | led_interieur |     50        |     3         |         0       |       0x0000ff    
   | led_banque    |     70        |     3         |         0       |       0x0000ff    
 
-deco_pour_table:déco
+deco_table:déco
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
   |  poutre_evier |     0         |     3         |         0       | 
@@ -28,16 +28,16 @@ deco_pour_table:déco
   | led_interieur |     20        |     3         |         0       |       0xaf00af
   | led_banque    |     0         |     3         |         0       |       0x000000    
 
-deco_pour_billard:déco
+deco_billard:déco
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
   |  poutre_evier |     0         |     3         |         0       | 
-  | poutre_banque |     0         |     3         |         0       | 
+  | poutre_banque |     20         |     3         |         0       | 
   | led_exterieur |     50        |     3         |         0       |       0x0f000f    
-  | led_interieur |     20        |     3         |         0       |       0xaf00af
+  | led_interieur |     0         |     3         |         0       |       0x0000af
   | led_banque    |     0         |     3         |         0       |       0x000000    
 
-deco_pour_salon:déco
+deco_salon:déco
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
   |  poutre_evier |     0         |     3         |         0       | 
@@ -45,9 +45,3 @@ deco_pour_salon:déco
   | led_exterieur |     50        |     3         |         0       |       0x0f000f    
   | led_interieur |     0         |     3         |         0       |       0x000000
   | led_banque    |     0         |     3         |         0       |       0x000000    
-
-
-
-déco 1
-//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
-//|               |               |               |                 |                   |

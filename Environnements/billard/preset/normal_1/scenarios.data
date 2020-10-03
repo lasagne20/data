@@ -12,9 +12,10 @@ eteindre
   |     projo_21       |    0          |    5          |        0        |   
   |     projo_22       |    0          |    5          |        0        |   
   |     poutre         |    0          |    5          |        3        |   
-//  |scenarios                     |  etat |   type    |   temps_init
-    |table.normal_1.deco_billard   |   0   |   déco    |       0
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |   0       |   unique  |   0   |
+
+reload_son
+   //   scenars                                             |   type_bt |   temps_init
+  | enceintes.normal_1.allumer_billard, eteindre_billard    |  scenar  |   0   |  (etat_spotify) and ((billard_etat) or (table_etat))
 
 allumer_billard
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -27,9 +28,8 @@ allumer_billard
   |     projo_21       |    50         |    5          |        0        |   
   |     projo_22       |    0          |    5          |        0        |   
   |     poutre         |    100        |    8          |        0        |   
-//  |scenarios                     |  etat |   type    |   temps_init
-    |table.normal_1.deco_billard   |   1   |   déco    |       5
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |   etat_spotify       |   unique  |   0   |
+//  |scenarios                     |   type    |   temps_init
+    |table.normal_1.deco_billard   |   déco    |       5
 
 allumer_billard_moyen
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -42,7 +42,6 @@ allumer_billard_moyen
   |     projo_21       |    0          |    5          |        0        |   
   |     projo_22       |    0          |    5          |        0        |   
   |     poutre         |    100        |    8          |        0        |   
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |   etat_spotify       |   unique  |   0   |
 
 allumer_billard_faible
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -55,7 +54,6 @@ allumer_billard_faible
   |     projo_21       |    0          |    5          |        0        |   
   |     projo_22       |    0          |    5          |        0        |   
   |     poutre         |    70         |    8          |        0        |   
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |   etat_spotify       |   unique  |   0   |
 
 allumer_vers_cuisine:deco
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -68,25 +66,18 @@ allumer_vers_cuisine:deco
   |     projo_21       |    100        |    2          |        0        |   
   |     projo_22       |    100        |    2          |        1        |   
   |     poutre         |    0          |    3          |        0        |   
-//  |scenarios                             |  etat |   type    |   temps_init
-    |table.normal_1.allumer_vers_cuisine   |   1   |   déco  |       3
-    |cuisine.normal_1.allumer_cuisine      |   1   |   déco  |       6
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |   etat_spotify       |   unique  |   0   |
 
 allumer_vers_escalier:deco
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                    |               |               |                 |                   |
-  |     projo_1        |    0          |    3          |        5        |   
-  |     projo_2        |    100        |    3          |        4        |   
+  |     projo_1        |    0          |    3          |        2        |   
+  |     projo_2        |    100        |    3          |        1        |   
   |     projo_3        |    0          |    3          |        0        |   
   |     projo_4        |    0          |    3          |        0        |   
-  |     projo_19       |    100        |    3          |        3        |   
-  |     projo_21       |    100        |    2          |        5        |   
-  |     projo_22       |    100        |    2          |        4        |   
+  |     projo_19       |    100        |    3          |        0        |   
+  |     projo_21       |    100        |    2          |        2        |   
+  |     projo_22       |    100        |    2          |        1        |   
   |     poutre         |    0          |    3          |        0        |   
-//  |scenarios                             |  etat |   type    |   temps_init
-    |table.normal_1.allumer_vers_escalier  |   1   |   déco    |       0
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |   etat_spotify       |   unique  |   0   |
 
 eteindre_vers_cuisine:off
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -99,28 +90,18 @@ eteindre_vers_cuisine:off
   |     projo_21       |    0          |    2          |        0        |   
   |     projo_22       |    0          |    2          |        1        |   
   |     poutre         |    0          |    3          |        0        |   
-//  |scenarios                             |  etat |   type    |   temps_init
-    |table.normal_1.eteindre_vers_cuisine  |   1   |   déco    |       3
-    |table.normal_1.allumer_vers_escalier  |   0   |   déco    |       5
-    |table.normal_1.allumer_vers_cuisine   |   0   |   déco    |       5
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |   0       |   unique  |   0   |
 
-eteindre_vers_escalier
+eteindre_vers_escalier:off
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                    |               |               |                 |                   |
-  |     projo_1        |    0          |    3          |        5        |   
-  |     projo_2        |    0          |    3          |        4        |   
+  |     projo_1        |    0          |    3          |        2        |   
+  |     projo_2        |    0          |    3          |        1        |   
   |     projo_3        |    0          |    3          |        0        |   
   |     projo_4        |    0          |    3          |        0        |   
-  |     projo_19       |    0          |    3          |        3        |   
-  |     projo_21       |    0          |    2          |        5        |   
-  |     projo_22       |    0          |    2          |        4        |   
+  |     projo_19       |    0          |    3          |        0        |   
+  |     projo_21       |    0          |    2          |        2        |   
+  |     projo_22       |    0          |    2          |        1        |   
   |     poutre         |    0          |    3          |        0        |   
-//  |scenarios                             |  etat |   type    |   temps_init
-    |table.normal_1.eteindre_vers_escalier |   1   |   déco    |       0
-    |table.normal_1.allumer_vers_escalier  |   0   |   déco    |       5
-    |table.normal_1.allumer_vers_cuisine   |   0   |   déco    |       5
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |   0       |   unique  |   0   |
 
 
 

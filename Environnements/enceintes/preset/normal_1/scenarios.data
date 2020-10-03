@@ -5,13 +5,13 @@ eteindre_salon
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                 |               |               |                 |                   |
   |  volume_salon   |       init    |       0       |       0         |         0
-  | enceintes.normal_1.reload_salon|   0       |   simple  |   0   |   
+  | enceintes.normal_1.reload_salon|   scenar  |   0   |   
 
 allumer_salon
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                 |               |               |                 |                   |
   |  volume_salon   |       init    |       0       |       0         |   int(10+volume_spotify*2.0/10)
-  | enceintes.normal_1.reload_salon|   0       |   simple  |   0   |   
+  | enceintes.normal_1.reload_salon|   scenar  |   0   |   
 
 reload_salon
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -22,13 +22,13 @@ eteindre_billard
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                 |               |               |                 |                   |
   |  volume_billard   |       init    |       0       |       0         |         0
-  | enceintes.normal_1.reload_billard|   0       |   simple  |   0   |   
+  | enceintes.normal_1.reload_billard|scenar  |   0   |   
 
 allumer_billard
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                 |               |               |                 |                   |
   |  volume_billard   |       init    |       0       |       0         |  int(10+volume_spotify*2.0/10)
-  | enceintes.normal_1.reload_billard|   0       |   simple  |   0   |   
+  | enceintes.normal_1.reload_billard|  scenar  |   0   |   
 
 reload_billard
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -39,13 +39,13 @@ eteindre_exterieur
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                 |               |               |                 |                   |
   |  volume_exterieur   |       init    |       0       |       0         |  0
-  | enceintes.normal_1.reload_exterieur|   0       |   simple  |   0   |   
+  | enceintes.normal_1.reload_exterieur|  scenar  |   0   |   
 
 allumer_exterieur
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                 |               |               |                 |                   |
   |  volume_exterieur   |       init    |       0       |       0         |  int(10+volume_spotify*2.0/10)
-  | enceintes.normal_1.reload_exterieur|   0       |   simple  |   0   |   
+  | enceintes.normal_1.reload_exterieur|  scenar  |   0   |   
 
 reload_exterieur
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -58,13 +58,13 @@ eteindre_cuisine
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                 |               |               |                 |                   |
   |  volume_cuisine   |       init    |       0       |       0         |  0
-  | enceintes.normal_1.reload_cuisine|   0       |   simple  |   0   |   
+  | enceintes.normal_1.reload_cuisine|  scenar  |   0   |   
 
 allumer_cuisine
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                 |               |               |                 |                   |
   |  volume_cuisine   |       init   |       0       |       0         |  int(10+volume_spotify*2.0/10)
-  | enceintes.normal_1.reload_cuisine|   0       |   simple  |   0   |   
+  | enceintes.normal_1.reload_cuisine|   scenar  |   0   |   
 
 reload_cuisine
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -74,36 +74,32 @@ reload_cuisine
 start_spotify
 //|   Lumiere                                           |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                                                     |               |               |                 |                   |
-   //   scenars                                         |   etat    |   type_bt |   temps_init
-  | enceintes.normal_1.allumer_billard, eteindre_billard|   1       |   unique  |   0   |   
+   //   scenars                                         |type_bt |   temps_init
+  | enceintes.normal_1.allumer_billard, eteindre_billard| scenar  |   0   |   not(salon_etat) and (not(cuisine_etat))
+  | enceintes.normal_1.allumer_salon, eteindre_salon| scenar  |   0   |  salon_etat
+  | enceintes.normal_1.allumer_exterieur, eteindre_exterieur| scenar  |   0   |  exterieur_etat
+  | enceintes.normal_1.allumer_cuisine, eteindre_cuisine| scenar  |   0   |  (cuisine_etat) or (table_etat)
 
 tout_eteindre
-//|   Lumiere       |    dimmeur(%) |   Duree(s)            |   Temps init(s) |   Couleur(hex)    |   synchro
-//|                 |               |                       |                 |                   |
-   //   scenars                                             |   etat    |   type_bt |   temps_init
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |   0       |   unique  |   0   |
-  | enceintes.normal_1.allumer_salon, eteindre_salon        |   0       |   unique  |   0   |
-  | enceintes.normal_1.allumer_cuisine, eteindre_cuisine    |   0       |   unique  |   0   |
-  | enceintes.normal_1.allumer_exterieur, eteindre_exterieur|   0       |   unique  |   0   |
+   //   scenars                                             |  type_bt |   temps_init
+  | enceintes.normal_1.allumer_billard, eteindre_billard    |  scenar  |   0   |
+  | enceintes.normal_1.allumer_salon, eteindre_salon        |  scenar  |   0   |
+  | enceintes.normal_1.allumer_cuisine, eteindre_cuisine    |  scenar  |   0   |
+  | enceintes.normal_1.allumer_exterieur, eteindre_exterieur|  scenar  |   0   |
 
 stop_spotify
-//|   Lumiere       |    dimmeur(%) |   Duree(s)            |   Temps init(s) |   Couleur(hex)    |   synchro
-//|                 |               |                       |                 |                   |
-   //   scenars                                             |   etat    |   type_bt |   temps_init
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |   0       |   unique  |   120   |
-  | enceintes.normal_1.allumer_salon, eteindre_salon        |   0       |   unique  |   120   |
-  | enceintes.normal_1.allumer_cuisine, eteindre_cuisine    |   0       |   unique  |   120   |
-  | enceintes.normal_1.allumer_exterieur, eteindre_exterieur|   0       |   unique  |   120   |
+   //   scenars                                             | type_bt |   temps_init
+  | enceintes.normal_1.allumer_billard, eteindre_billard    |  scenar  |   120   |
+  | enceintes.normal_1.allumer_salon, eteindre_salon        |  scenar  |   120   |
+  | enceintes.normal_1.allumer_cuisine, eteindre_cuisine    |  scenar  |   120   |
+  | enceintes.normal_1.allumer_exterieur, eteindre_exterieur|  scenar  |   120   |
 
-reload_all
-//|   Lumiere       |    dimmeur(%) |   Duree(s)            |   Temps init(s) |   Couleur(hex)    |   synchro
-//|                 |               |                       |                 |                   |
+change_volume
   |  volume_cuisine |       init   |       0       |       0         |  (volume_cuisine != 0)*int(10+volume_spotify*2.0/10)
   |  volume_billard |       init   |       0       |       0         |  (volume_billard != 0)*int(10+volume_spotify*2.0/10)
   |  volume_salon   |       init   |       0       |       0         |  (volume_salon != 0)*int(10+volume_spotify*2.0/10)
   |  volume_exterieur |       init   |       0       |       0       |  (volume_exterieur != 0)*int(10+volume_spotify*2.0/10)
-  | enceintes.normal_1.reload_cuisine|   0       |   simple  |   0   |   
-  | enceintes.normal_1.reload_billard|   0       |   simple  |   0   |   
-  | enceintes.normal_1.reload_salon|   0       |   simple  |   0   |   
-  | enceintes.normal_1.reload_exterieur|   0       |   simple  |   0   |   
-
+  | enceintes.normal_1.reload_cuisine|  scenar  |   0   |   
+  | enceintes.normal_1.reload_billard|  scenar  |   0   |   
+  | enceintes.normal_1.reload_salon|    scenar  |   0   |   
+  | enceintes.normal_1.reload_exterieur| scenar  |   0   |   

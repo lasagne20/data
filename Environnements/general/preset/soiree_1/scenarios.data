@@ -1,0 +1,20 @@
+//Contient toutes les informations relatives a l'environnement
+//qui vont etre donne a la page web et a la console
+
+eteindre_tout:off
+//  |scenarios                             |   type    |   temps_init
+    |enceintes.normal_1.tout_eteindre      |   scénar  |       0
+    |   bar.soiree_1.eteindre         |  poussoir |       3
+    |bureau.soiree_1.eteindre         |  poussoir |       3
+    |   cuisine.soiree_1.eteindre     |  poussoir |       0
+    |   exterieur.soiree_1.eteindre   |  poussoir |       0
+    |   billard.soiree_1.eteindre     |  poussoir |       6
+    |   portes.soiree_1.eteindre      |  poussoir |       8
+    |   salon.soiree_1.eteindre       |  poussoir |       0
+    |   table.soiree_1.eteindre       |  poussoir |       3
+
+
+
+allumer:on
+//|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|                 |               |               |                 |                   |

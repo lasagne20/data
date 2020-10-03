@@ -11,7 +11,9 @@ eteindre:off
   | led_banque    |     0         |     3         |         0       |       0x000000    
   | hotte	  |	0	  |	3	  |	    0	    |	    
 
-  | enceintes.normal_1.allumer_cuisine, eteindre_cuisine    |   0       |   unique  |   0   |
+reload_son
+   //   scenars                                             |   type_bt |   temps_init
+  | enceintes.normal_1.allumer_cuisine , eteindre_cuisine   |  scenar  |   0   |  (etat_spotify) and ((cuisine_etat) or (table_etat))
 
 
 allumer_cuisine
@@ -23,7 +25,6 @@ allumer_cuisine
   | led_interieur |     100       |     3         |         0       |       0xffffff   
   | led_banque    |     30        |     3         |         0       |       0x0000ff    
   | hotte	  |	0	  |	3	  |	    0	    |	    
-  | enceintes.normal_1.allumer_cuisine, eteindre_cuisine    |   etat_spotify       |   unique  |   0   |
 
 mettre_table
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -34,7 +35,6 @@ mettre_table
   | led_interieur |     100       |     3         |         0       |       0x00ffff   
   | led_banque    |     30        |     3         |         0       |       0x00ffff    
   | hotte	  |	100	  |	3	  |	    0	    |	    
-  | enceintes.normal_1.allumer_cuisine, eteindre_cuisine    |   etat_spotify       |   unique  |   0   |
 
 allumer_cuisine_faible
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -45,6 +45,5 @@ allumer_cuisine_faible
   | led_interieur |     100       |     3         |         0       |       0xffffff   
   | led_banque    |     30        |     3         |         0       |       0x0000ff    
   | hotte	  |	0	  |	3	  |	    0	    |	    
-  | enceintes.normal_1.allumer_cuisine, eteindre_cuisine    |   etat_spotify       |   unique  |   0   |
 
 

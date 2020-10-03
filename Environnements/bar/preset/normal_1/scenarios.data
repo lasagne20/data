@@ -10,9 +10,6 @@ eteindre
   | led_sol         |     0         |     1         |         0       |     0x000000        
   | decoupe_bois    |     0         |     1         |         0       |
   | led_caisson_bois|     0         |     1         |         0       |     0x000000
-//  |scenarios                     |  etat |   type    |   temps_init
-    |bureau.normal_1.allumer_bar_fort |   0   |   déco    |       0
-  | enceintes.normal_1.allumer_salon, eteindre_salon    |   0       |   unique  |   0   |
 
 allumer
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -23,9 +20,8 @@ allumer
   |led_sol          |     0         |     0         |         0       |     0x000000        
   | decoupe_bois    |     0         |     0         |         0       |
   | led_caisson_bois|     0         |     0         |         0       |     0x000000
-// scenarios                     |  etat |   type    |   temps_init
-|bureau.normal_1.allumer_bar_fort |   1   |   déco    |       4
-  | enceintes.normal_1.allumer_salon, eteindre_salon    |   etat_spotify       |   unique  |   0   |
+// scenarios                      |   type    |   temps_init
+|bureau.normal_1.allumer_bar_fort |   déco    |       4
 
 allumer_moyen
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -36,9 +32,8 @@ allumer_moyen
   |led_sol          |     0         |     0         |         0       |     0x000000        
   | decoupe_bois    |     0         |     0         |         0       |
   | led_caisson_bois|     0         |     0         |         0       |     0x000000
-// scenarios                      |  etat |   type    |   temps_init
-|bureau.normal_1.allumer_bar_moyen |   1   |   déco    |       4
-  | enceintes.normal_1.allumer_salon, eteindre_salon    |   etat_spotify       |   unique  |   0   |
+// scenarios                       |   type    |   temps_init
+|bureau.normal_1.allumer_bar_moyen |   déco    |       4
 
 allumer_faible
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -49,7 +44,4 @@ allumer_faible
   |led_sol          |     0         |     0         |         0       |     0x000000        
   | decoupe_bois    |     0         |     0         |         0       |
   | led_caisson_bois|     0         |     0         |         0       |     0x000000
-// scenarios                      |  etat |   type    |   temps_init
-|bureau.normal_1.allumer_bar_fort |   0   |   déco    |       4
-  | enceintes.normal_1.allumer_salon, eteindre_salon    |   etat_spotify       |   unique  |   0   |
 

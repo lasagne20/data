@@ -19,7 +19,10 @@ eteindre:off
     |     led_mur_gauche    |       0      |        6      |        0       |   0x000000 
     |     led_mur_centre    |       0      |        6      |        0       |   0x000000 
     |     led_sous_table    |       0      |        6      |        0       |   0x000000 
-  | enceintes.normal_1.allumer_salon, eteindre_salon    |   0       |   unique  |   0   |
+
+reload_son
+   //   scenars                                             |   type_bt |   temps_init
+  | enceintes.normal_1.allumer_salon, eteindre_salon    |  scenar  |   0   |   (salon_etat) and (etat_spotify)
 
 allumer_faible
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
@@ -35,7 +38,6 @@ allumer_faible
     |      projo_34         |       0      |        1      |        0       |                   |
     |      projo_35         |       0      |        1      |        0       |                   |
     |      projo_36         |       0      |        6      |        0       |                   |
-  | enceintes.normal_1.allumer_salon, eteindre_salon    |   etat_spotify       |   unique  |   0   |
 
 
 allumer_moyen:on
@@ -52,7 +54,6 @@ allumer_moyen:on
     |      projo_34         |       0      |        1      |        0       |                   |
     |      projo_35         |       0      |        1      |        0       |                   |
     |      projo_36         |       20     |        3      |        0       |                   |
-  | enceintes.normal_1.allumer_salon, eteindre_salon    |   etat_spotify       |   unique  |   0   |
 
 
 
@@ -71,7 +72,6 @@ allumer:on
     |      projo_34         |       0      |        1      |        0       |                   |
     |      projo_35         |       0      |        1      |        0       |                   |
     |      projo_36         |       40     |        3      |        12      |                   |
-  | enceintes.normal_1.allumer_salon, eteindre_salon    |   etat_spotify       |   unique  |   0   |
 
 
 allumer_en_2_temps
@@ -93,7 +93,6 @@ allumer_en_2_temps
     |      projo_31         |       50     |        5      |        5       |                   |
     |      projo_32         |       50     |        5      |        7       |                   |
     |      projo_36         |       50     |        5      |        9       |                   |
-  | enceintes.normal_1.allumer_salon, eteindre_salon    |   etat_spotify       |   unique  |   0   |
 
 
 

@@ -1,0 +1,6 @@
+// ceci est la liste de tous les boutons et de ce qu'ils font pour ce scénario, 
+//ce peut être des inputs comme des boutons html
+//  |    nom        |   type    |   scénario(s)     | mode
+    |   inter_6     |   inter   |allumer_vers_cuisine, eteindre_vers_escalier | principal
+    |   inter_7     | inter     | eteindre_tout      |poussoir
+    |   inter_8     |   inter   |allumer_vers_escalier, eteindre_vers_cuisine | principal
