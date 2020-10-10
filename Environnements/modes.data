@@ -1,4 +1,4 @@
 //               LISTES DES DIFFÉRENTS MODES 
 
-normal : normal_style.css : black
-soirée : soiree_style.css : white
+normal : normal_style.css : black 
+soirée : soiree_style.css : white : general.soiree_1.init

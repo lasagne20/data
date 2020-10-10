@@ -82,17 +82,14 @@ start_spotify
 
 tout_eteindre
    //   scenars                                             |  type_bt |   temps_init
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |  scenar  |   0   |
-  | enceintes.normal_1.allumer_salon, eteindre_salon        |  scenar  |   0   |
-  | enceintes.normal_1.allumer_cuisine, eteindre_cuisine    |  scenar  |   0   |
-  | enceintes.normal_1.allumer_exterieur, eteindre_exterieur|  scenar  |   0   |
+  | enceintes.normal_1.eteindre_billard, allumer_billard    |  scenar  |   0   |
+  | enceintes.normal_1.eteindre_salon, allumer_salon       |  scenar  |   0   |
+  | enceintes.normal_1.eteindre_cuisine, allumer_cuisine    |  scenar  |   0   |
+  | enceintes.normal_1.eteindre_exterieur, allumer_exterieur|  scenar  |   0   |
 
 stop_spotify
    //   scenars                                             | type_bt |   temps_init
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |  scenar  |   120   |
-  | enceintes.normal_1.allumer_salon, eteindre_salon        |  scenar  |   120   |
-  | enceintes.normal_1.allumer_cuisine, eteindre_cuisine    |  scenar  |   120   |
-  | enceintes.normal_1.allumer_exterieur, eteindre_exterieur|  scenar  |   120   |
+  | enceintes.normal_1.tout_eteindre                        |  scenar  |   60   |
 
 change_volume
   |  volume_cuisine |       init   |       0       |       0         |  (volume_cuisine != 0)*int(10+volume_spotify*2.0/10)

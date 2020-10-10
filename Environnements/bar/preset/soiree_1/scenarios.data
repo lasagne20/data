@@ -11,13 +11,17 @@ eteindre:off
   | decoupe_bois    |     0         |     1         |         0       |
   | led_caisson_bois|     0         |     1         |         0       |     0x000000
 
+reload_son
+   //   scenars                                             |   type_bt |   temps_init
+  | enceintes.normal_1.allumer_salon, eteindre_salon    |  scenar  |   0   |  (etat_spotify) and ((bar_etat) or (salon_etat))
+
 allumer:on
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                 |               |               |                 |                   |
   | poutre          |     100       |     10        |         0       |                 
   | projo_24        |     0         |     5         |         0       |                  
   | projo_37        |     0         |     5         |         0       |                  
-  |led_sol          |     100       |     10        |         0       |     0xff0000        
+  |led_sol          |     100       |     10        |         0       |     general_couleur1        
   | decoupe_bois    |     0         |     1         |         0       |
   | led_caisson_bois|     0         |     5         |         0       |     0x000000
 // scenarios                       |   type    |   temps_init
@@ -32,7 +36,7 @@ deco_salon:déco
   | poutre          |     20        |     5         |         0       |                 
   | projo_24        |     0         |     5         |         0       |                  
   | projo_37        |     0         |     5         |         0       |                  
-  |led_sol          |     100       |     10        |         0       |     0x003000        
+  |led_sol          |     100       |     10        |         0       |     general_couleur2        
   | decoupe_bois    |     50        |     1         |         0       |
   | led_caisson_bois|     50        |     1         |         0       |     0x0f0f0f
 
@@ -42,7 +46,7 @@ deco_billard:déco
   | poutre          |     20        |     5         |         0       |                 
   | projo_24        |     0         |     5         |         0       |                  
   | projo_37        |     0         |     5         |         0       |                  
-  |led_sol          |     100       |     10        |         0       |     0x003000        
+  |led_sol          |     100       |     10        |         0       |     0x000000
   | decoupe_bois    |     50        |     1         |         0       |
   | led_caisson_bois|     50        |     1         |         0       |     0x0f0f0f
 

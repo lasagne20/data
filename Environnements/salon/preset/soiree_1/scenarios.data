@@ -20,6 +20,10 @@ eteindre:off
     |     led_mur_centre    |       0      |        9      |        0       |   0x000000        |   
     |     led_sous_table    |       0      |        10     |        0       |   0x000000 
 
+reload_son
+   //   scenars                                             |   type_bt |   temps_init
+  | enceintes.normal_1.allumer_salon, eteindre_salon    |  scenar  |   0   |  (etat_spotify) and ((bar_etat) or (salon_etat))
+
 allumer:on
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
@@ -34,10 +38,10 @@ allumer:on
     |      projo_34         |       10     |        5      |        16      |                   |
     |      projo_35         |       10     |        5      |        18      |                   |
     |      projo_36         |       20     |        5      |        20      |                   |
-    |     led_mur_droite    |       50     |        10     |        0       |   0xa000a0        |
-    |     led_mur_gauche    |       50     |        10     |        0       |   0xa000a0        |   
-    |     led_mur_centre    |       60     |        10     |        3       |   0xc000c0        |   
-    |     led_sous_table    |       70     |        50     |        0       |   0xa000a0 
+    |     led_mur_droite    |       50     |        10     |        0       |   general_couleur1   |
+    |     led_mur_gauche    |       50     |        10     |        0       |   general_couleur1        |   
+    |     led_mur_centre    |       60     |        10     |        3       |   general_couleur1        |   
+    |     led_sous_table    |       70     |        10     |        0       |   general_couleur2 
 // scenarios                    |   type    |   temps_init
 |bar.soiree_1.deco_salon        |   déco    |       0
 |escalier.soiree_1.deco_salon        |   déco    |       0
@@ -61,10 +65,10 @@ deco_billard:déco
     |      projo_34         |       0      |        1      |        0       |                   |
     |      projo_35         |       0      |        1      |        0       |                   |
     |      projo_36         |       0      |        6      |        0       |                   |
-    |     led_mur_droite    |       50     |        10     |        0       |   0x600060        |
-    |     led_mur_gauche    |       50     |        10     |        0       |   0x600060        |   
-    |     led_mur_centre    |       60     |        10     |        3       |   0x600060        |   
-    |     led_sous_table    |       70     |        50     |        0       |   0x400040 
+    |     led_mur_droite    |       50     |        10     |        0       |   general_couleur2        |
+    |     led_mur_gauche    |       50     |        10     |        0       |   general_couleur2        |   
+    |     led_mur_centre    |       60     |        10     |        3       |   general_couleur2        |   
+    |     led_sous_table    |       70     |        10     |        0       |   general_couleur1 
 
 
 
@@ -82,13 +86,8 @@ deco_table:déco
     |      projo_34         |       0      |        1      |        0       |                   |
     |      projo_35         |       0      |        1      |        0       |                   |
     |      projo_36         |       0      |        6      |        0       |                   |
-    |     led_mur_droite    |       50     |        10     |        0       |   0x600060        |
-    |     led_mur_gauche    |       50     |        10     |        0       |   0x600060        |   
-    |     led_mur_centre    |       60     |        10     |        3       |   0x600060        |   
-    |     led_sous_table    |       70     |        50     |        0       |   0x400040 
+    |     led_mur_droite    |       50     |        10     |        0       |   general_couleur2        |
+    |     led_mur_gauche    |       50     |        10     |        0       |   general_couleur2        |   
+    |     led_mur_centre    |       60     |        10     |        3       |   general_couleur2        |   
+    |     led_sous_table    |       70     |        10     |        0       |   general_couleur1 
 
-
-
-déco 1
-//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
-//|               |               |               |                 |                   |

@@ -13,6 +13,10 @@ eteindre
   |     projo_19       |    0          |    2          |        2        |   
   |     poutre         |    0          |    2          |        0        |   
 
+reload_son
+   //   scenars                                             |   type_bt |   temps_init
+  | enceintes.normal_1.allumer_billard, eteindre_billard    |  scenar  |   0   |  (etat_spotify) and ((billard_etat) or (table_etat))
+
 allumer
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                    |               |               |                 |                   |

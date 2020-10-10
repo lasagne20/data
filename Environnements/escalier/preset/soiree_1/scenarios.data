@@ -16,36 +16,36 @@ eteindre_vers_le_haut:off
 allumer_vers_le_bas:on
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                    |               |               |                 |                   |
-  |     led_bas       |     50         |     3         |         0       |   0x0a005f        |
-  |     led_haut      |     50         |     3         |         3       |   0x0f005f        |
+  |     led_bas       |     50         |     3         |         0       |   general_couleur1        |
+  |     led_haut      |     50         |     3         |         3       |   general_couleur1        |
 
 
 allumer_vers_le_haut:on
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                    |               |               |                 |                   |
-  |     led_bas       |     50         |     3         |         0       |   0x0a005f        |
-  |     led_haut      |     50         |     3         |         3       |   0x0f005f        |
+  |     led_bas       |     50         |     3         |         0       |   general_couleur1        |
+  |     led_haut      |     50         |     3         |         3       |   general_couleur1        |
 
 deco_salon:deco
 //|   Lumiere         |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
 //|                   |               |               |                 |                   |
-  |     led_bas       |     20         |     3         |         0       |   0x0a001f        |
-  |     led_haut      |     20         |     3         |         3       |   0x0f001f        |
+  |     led_bas       |     20         |     3         |         0       |   general_couleur1        |
+  |     led_haut      |     20         |     3         |         3       |   general_couleur1        |
 
 deco_table:deco
 //|   Lumiere         |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
 //|                   |               |               |                 |                   |
-  |     led_bas       |     20         |     3         |         0       |   0x000005        |
-  |     led_haut      |     20         |     3         |         3       |   0x000005        |
+  |     led_bas       |     20         |     3         |         0       |   general_couleur1        |
+  |     led_haut      |     20         |     3         |         3       |   general_couleur1        |
 
 deco_bar:deco
 //|   Lumiere         |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
 //|                   |               |               |                 |                   |
-  |     led_bas       |     20         |     3         |         0       |   0x050005        |
-  |     led_haut      |     20         |     3         |         3       |   0x050005        |
+  |     led_bas       |     20         |     3         |         0       |   general_couleur1        |
+  |     led_haut      |     20         |     3         |         3       |   general_couleur1        |
 
 deco_billard:deco
 //|   Lumiere         |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |
 //|                   |               |               |                 |                   |
-  |     led_bas       |     30         |     3         |         0       |   0x350035        |
-  |     led_haut      |     30         |     3         |         3       |   0x350035        |
+  |     led_bas       |     30         |     3         |         0       |   general_couleur2        |
+  |     led_haut      |     30         |     3         |         3       |   general_couleur2        |

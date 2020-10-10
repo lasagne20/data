@@ -2,3 +2,6 @@
 //4(1) = port 4 de la carte numéro 1
 //Nom_projecteur  |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
 //                |                   |              |                       |                   
+    couleur1      |     variable      |              |                       |     0
+    couleur2      |     variable      |              |                       |     0  
+    tps1          |     variable      |              |                       |     0  

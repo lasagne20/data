@@ -13,8 +13,11 @@ eteindre_tout:off
     |   salon.soiree_1.eteindre       |  poussoir |       0
     |   table.soiree_1.eteindre       |  poussoir |       3
 
-
-
-allumer:on
+init
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                 |               |               |                 |                   |
+    |   tps1        |   random     |        0      |         0       |    (0,2)
+    |   couleur1    |   init      |        0      |         0       |    (255<<((2-tps1)*8)) + randint(0,255)<<((1-tps1)*8) + randint(0,255)<<(tps1*8) 
+    |   couleur2    |   init      |        0      |         0       |    (255<<((2-tps1)*8)) + randint(0,255)<<((1-tps1)*8) + randint(0,255)<<(tps1*8) 
+
+

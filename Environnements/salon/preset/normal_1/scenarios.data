@@ -22,7 +22,7 @@ eteindre:off
 
 reload_son
    //   scenars                                             |   type_bt |   temps_init
-  | enceintes.normal_1.allumer_salon, eteindre_salon    |  scenar  |   0   |   (salon_etat) and (etat_spotify)
+  | enceintes.normal_1.allumer_salon, eteindre_salon    |  scenar  |   0   |  (etat_spotify) and ((bar_etat) or (salon_etat))
 
 allumer_faible
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
