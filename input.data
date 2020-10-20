@@ -1,8 +1,8 @@
 // creer les interruptions et on les lie aux interupteur, radar..
 //| nom_inter		|  type	|  pin     
-  | radar_bas		|  gpio	|  23
-  | inter_montee_haut	|  gpio	|  14
-  | inter_montee_bas	|  gpio	|  2
-  | inter_descente_haut	|  gpio	|  18
-  | inter_descente_bas	|  gpio	|  15
-  | capteur_ouverture	|  gpio	|  3
+  | radar_bas		|  gpio	|  21
+  | inter_bas_monté |  gpio | 26
+  | inter_bas_descente |  gpio | 19
+  | inter_haut_monté |  gpio | 13
+  | inter_haut_descente |  gpio | 6
+  | capteur_trappe      |  gpio | 5

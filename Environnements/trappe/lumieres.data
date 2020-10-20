@@ -2,4 +2,7 @@
 //4(1) = port 4 de la carte numéro 1
 //Nom_projecteur  |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
 //                |                   |              |                       |                   
-    secu_trappe   |	lampe         |	    4(gpio)  |			     |
+gyrophare         |     lampe         |     22(gpio) |                       |
+                                        //monter        // descendre                //aimant        // capteur
+trappe            |     trappe        |    17(gpio)     |   27(gpio)         |      23(gpio)        |  5(gpio) 
+    securité      |     variable      |              |                       |      1

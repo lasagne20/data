@@ -4,9 +4,37 @@
 verouiller:off
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
-    |	secu_trappe	    |	   0 	   |	  0	   |	   0	    | 	   
+    |   securité            |   init       |        0      |        0       |   True
 
 deverouiller
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
-    |	secu_trappe	    |	   100 	   |	  0	   |	   0	    | 	   
+    |   securité            |   init       |        0      |        0       |   False
+
+ordre_descendre
+ //   scenars                 | type_bt |   temps_init  |   test
+   |trappe.normal_1.descendre | scenar  |       0       |   not(securité)
+
+ordre_montée
+ //   scenars              | type_bt |   temps_init  |   test
+   |trappe.normal_1.monter | scenar  |       0       |   not(securité)
+
+descendre:on
+  //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
+  //|                       |              |               |                |                   |
+    |   gyrophare           |       1      |        0      |        0       |
+    |   trappe              |     descendre|        10     |        5       |
+    |   gyrophare           |       0      |        0      |        15      |
+    // scenar                           |   type    |   temps_init
+    |escalier.normal_1.allumer,clignoter|   scenar  |   0       |   0
+    |escalier.normal_1.allumer,clignoter|   scenar  |   15      |   1
+
+monter:off
+  //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
+  //|                       |              |               |                |                   |
+    |   gyrophare           |       1      |        0      |        0       |
+    |   trappe              |     monter   |        20     |        5       |
+    |   gyrophare           |       0      |        0      |        25      |
+    // scenar                   |   type    |   temps_init
+    |escalier.normal_1.allumer,clignoter|   scenar  |   0       |   0
+    |escalier.normal_1.allumer,clignoter|   scenar  |   25      |   1

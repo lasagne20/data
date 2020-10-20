@@ -1,6 +1,9 @@
 // ceci est la liste de tous les boutons et de ce qu'ils font pour ce scénario, 
 //ce peut être des inputs comme des boutons html
 //  |    nom        |   type    |   scénario(s)     | mode
-    |  securiser    | html      | verouiller        | simple 
-    |  deverouiller | html      | deverouiller      | simple 
+    |  securité     | html      | verouiller,deverouiller  | unique 
+    |  inter_bas_descente   | inter    | ordre_descendre   | poussoir
+    |  inter_haut_descente  | inter    | ordre_descendre   | poussoir
+    |  inter_haut_monté  | inter    | ordre_montée   | poussoir
+    |  inter_bas_monté  | inter    | ordre_montée   | poussoir
     
