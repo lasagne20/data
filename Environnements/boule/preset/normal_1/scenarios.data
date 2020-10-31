@@ -6,10 +6,11 @@ eteindre:off
   //|                       |              |               |                |                   |
     |   boule               |   program    |        0       |       0       |       0           |
 
-allumer*
+allumer
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
-    |   var2                |   random     |        0       |       0       |   (0,255)         |
-    |   boule               |   program    |        0       |       0       |       var2           |
-    |   boule               |   vitesse    |        0       |       30      |       200           |
+    |   var2                |   init       |        0       |       0       |   int(1.56*bpm-208)         |
+    |   var0                |   init       |        0       |       0       |   randint(0,255)        |
+    |   boule               |   program    |        0       |       0       |       var0           |
+    |   boule               |   vitesse    |        0       |       0      |       var2*(var2>0)    |
 
