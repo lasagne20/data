@@ -3,19 +3,22 @@
 
 //adresse de la st_nucleo
 
----   stnucleo   ---
-addresse = /dev/ttyACM0 
+---   stnucleos   ---
+nom, addresse, decal = st_nucleo1, /dev/ttyACM0, 0
+nom, addresse, decal = st_nucleo2, /dev/ttyACM1, 4
 
 --- spotify ---
 pi_id = a21317bcaedc7bea85e391db0af14d059b476c9e
 start = enceintes.normal_1.start_spotify
 stop = enceintes.normal_1.stop_spotify
 reload = enceintes.normal_1.change_volume
+analysis = non
 
 --- interrupt ---
 // port | type 	   | arguments
    12	| extender | 0x20,1
    6	| extender | 0x20,0
+   16	| extender | 0x24,1
 
 --- cartes ---  
 // numero | carte |   type   | nb_ports | arguments
@@ -23,10 +26,11 @@ reload = enceintes.normal_1.change_volume
       1	  | relais| extender |    16    | 0x21
       2	  | relais| extender |    16    | 0x22
 // triac
-      1	  | triac | st_nucleo|    8     |
-      2	  | triac | st_nucleo|    8     |
-      3	  | triac | st_nucleo|    8     |
-      4	  | triac | st_nucleo|    8     |
+      1	  | triac | st_nucleo1|    8     |
+      2	  | triac | st_nucleo1|    8     |
+      3	  | triac | st_nucleo1|    8     |
+      4	  | triac | st_nucleo1|    8     |
+      5	  | triac | st_nucleo2|    8     |
 
 --- ampli ---
 dax66 = /dev/ttyUSB0, 9(1)

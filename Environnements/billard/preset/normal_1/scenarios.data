@@ -15,7 +15,7 @@ eteindre
 
 reload_son
    //   scenars                                             |   type_bt |   temps_init
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |  scenar  |   0   |  (etat_spotify) and ((billard_etat) or (table_etat))
+  | enceintes.normal_1.allumer_billard, eteindre_billard    |  scenar  |   0   |  (etat_spotify) and ((billard_etat) or (table_etat) or (not(cuisine_etat) and (not(salon_etat))) or (etat_general))
 
 allumer_billard
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro

@@ -14,3 +14,9 @@
   | inter_12 | extender |   12    
   | inter_13 | extender |   13    
   | inter_14 | extender |   14    
+  | inter_15 | extender |   15
+  | inter_16 | extender |   16
+  | inter_17 | extender |   17
+  | inter_18 | extender |   18
+  | force_off|  cron    |   10:00:00
+  | force_on |  cron    |   17:00:00

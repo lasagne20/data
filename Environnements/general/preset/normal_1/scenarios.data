@@ -13,6 +13,10 @@ eteindre_tout:off
     |   salon.normal_1.eteindre       |  poussoir |       0
     |   table.normal_1.eteindre       |  poussoir |       3
 
+reload_son
+   //   scenars                                             |   type_bt |   temps_init
+  | enceintes.normal_1.allumer_billard, eteindre_billard    |  scenar  |   0   |  (etat_spotify) and ((billard_etat) or (table_etat) or (not(cuisine_etat) and (not(salon_etat))) or (etat_general))
+
 allumer_vers_cuisine
 //  |scenarios                             |   type    |   temps_init
     |table.normal_1.allumer_vers_cuisine   |   déco  |       3

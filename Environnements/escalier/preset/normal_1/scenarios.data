@@ -19,6 +19,17 @@ palier:on
   |     led_bas       |     0         |     3         |         0       |   0x000000        |
   |     led_haut      |     0         |     3         |         0       |   0x000000        |
 
+force_led
+//|   Lumiere         |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|                   |               |               |                 |                   |
+  |     led_bas       |     force=1   |     3         |         0       |   0x000000        |
+  |     led_haut      |     force=1   |     3         |         0       |   0x000000        |
+
+remove_force
+//|   Lumiere         |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|                   |               |               |                 |                   |
+  |     led_bas       |     force=0   |     3         |         0       |   0x000000        |
+  |     led_haut      |     force=0   |     3         |         0       |   0x000000        |
 
 
 eteindre_vers_le_haut:off

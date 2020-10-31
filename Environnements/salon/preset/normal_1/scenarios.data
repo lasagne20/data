@@ -15,6 +15,7 @@ eteindre:off
     |      projo_34         |       0      |        6      |        0       |                   |
     |      projo_35         |       0      |        6      |        0       |                   |
     |      projo_36         |       0      |        6      |        0       |                   |
+    |      projo_46         |       0      |        6      |        0       |                   |
     |     led_mur_droite    |       0      |        6      |        0       |   0x000000 
     |     led_mur_gauche    |       0      |        6      |        0       |   0x000000 
     |     led_mur_centre    |       0      |        6      |        0       |   0x000000 
@@ -38,6 +39,11 @@ allumer_faible
     |      projo_34         |       0      |        1      |        0       |                   |
     |      projo_35         |       0      |        1      |        0       |                   |
     |      projo_36         |       0      |        6      |        0       |                   |
+    |      projo_46         |       0      |        6      |        0       |                   |
+    |     led_mur_droite    |       0      |        9      |        0       |   0x000000        |
+    |     led_mur_gauche    |       0      |        9      |        0       |   0x000000        |   
+    |     led_mur_centre    |       0      |        9      |        0       |   0x000000        |   
+    |     led_sous_table    |       0      |        10     |        0       |   0x000000 
 
 
 allumer_moyen:on
@@ -54,6 +60,11 @@ allumer_moyen:on
     |      projo_34         |       0      |        1      |        0       |                   |
     |      projo_35         |       0      |        1      |        0       |                   |
     |      projo_36         |       20     |        3      |        0       |                   |
+    |      projo_46         |       0      |        6      |        0       |                   |
+    |     led_mur_droite    |       0      |        9      |        0       |   0x000000        |
+    |     led_mur_gauche    |       0      |        9      |        0       |   0x000000        |   
+    |     led_mur_centre    |       0      |        9      |        0       |   0x000000        |   
+    |     led_sous_table    |       0      |        10     |        0       |   0x000000 
 
 
 
@@ -72,6 +83,11 @@ allumer:on
     |      projo_34         |       0      |        1      |        0       |                   |
     |      projo_35         |       0      |        1      |        0       |                   |
     |      projo_36         |       40     |        3      |        12      |                   |
+    |      projo_46         |       0      |        6      |        0       |                   |
+    |     led_mur_droite    |       0      |        9      |        0       |   0x000000        |
+    |     led_mur_gauche    |       0      |        9      |        0       |   0x000000        |   
+    |     led_mur_centre    |       0      |        9      |        0       |   0x000000        |   
+    |     led_sous_table    |       0      |        10     |        0       |   0x000000 
 
 
 allumer_en_2_temps
@@ -93,6 +109,11 @@ allumer_en_2_temps
     |      projo_31         |       50     |        5      |        5       |                   |
     |      projo_32         |       50     |        5      |        7       |                   |
     |      projo_36         |       50     |        5      |        9       |                   |
+    |      projo_46         |       0      |        6      |        0       |                   |
+    |     led_mur_droite    |       0      |        9      |        0       |   0x000000        |
+    |     led_mur_gauche    |       0      |        9      |        0       |   0x000000        |   
+    |     led_mur_centre    |       0      |        9      |        0       |   0x000000        |   
+    |     led_sous_table    |       0      |        10     |        0       |   0x000000 
 
 
 

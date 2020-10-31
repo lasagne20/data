@@ -13,10 +13,6 @@ eteindre
   |     projo_19       |    0          |    2          |        2        |   
   |     poutre         |    0          |    2          |        0        |   
 
-reload_son
-   //   scenars                                             |   type_bt |   temps_init
-  | enceintes.normal_1.allumer_billard, eteindre_billard    |  scenar  |   0   |  (etat_spotify) and ((billard_etat) or (table_etat))
-
 allumer
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                    |               |               |                 |                   |
@@ -35,6 +31,11 @@ allumer
 |cuisine.soiree_1.deco_billard  |   déco    |       0
 |escalier.soiree_1.deco_billard |   déco    |       0
 
+reload_son
+   //   scenars                                             |   type_bt |   temps_init
+  | enceintes.normal_1.allumer_billard, eteindre_billard    |  scenar  |   0   |  (etat_spotify) and ((billard_etat) or (table_etat) or (not(cuisine_etat) and (not(salon_etat))))
+
+
 deco_salon:déco
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|                    |               |               |                 |                   |
@@ -45,7 +46,7 @@ deco_salon:déco
   |     projo_21       |    0         |    2          |        2        |   
   |     projo_22       |    0         |    2          |        2        |   
   |     projo_19       |    0         |    2          |        2        |   
-  |     poutre         |    15         |    3          |        0        |   
+  |     poutre         |    25         |    3          |        0        |   
 
 deco_table:déco
 //|   Lumiere          |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -57,5 +58,5 @@ deco_table:déco
   |     projo_21       |    0         |    2          |        2        |   
   |     projo_22       |    0         |    2          |        2        |   
   |     projo_19       |    0         |    2          |        2        |   
-  |     poutre         |    15         |    3          |        0        |   
+  |     poutre         |    20         |    3          |        0        |   
 

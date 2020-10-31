@@ -1,0 +1,8 @@
+//Contient toutes les informations relatives a l'environnement
+//qui vont etre donne a la page web et a la console
+
+eteindre:off
+//|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|                 |               |               |                 |                   |
+  | projo_24        |     0         |     3         |         0       |                  
+  | projo_47        |     0         |     3         |         0       |                  

@@ -7,6 +7,7 @@ eteindre
   | poutre          |     0         |     5         |         2       |                  
   | projo_24        |     0         |     3         |         0       |                  
   | projo_37        |     0         |     5         |         4       |                  
+  | projo_38        |     0         |     5         |         4       |                  
   | led_sol         |     0         |     1         |         0       |     0x000000        
   | decoupe_bois    |     0         |     1         |         0       |
   | led_caisson_bois|     0         |     1         |         0       |     0x000000
@@ -20,7 +21,8 @@ allumer
 //|                 |               |               |                 |                   |
   | poutre          |     100       |     5         |         0       |                 
   | projo_24        |     100       |     5         |         2       |                  
-  | projo_37        |     0         |     0         |         0       |                  
+  | projo_37        |     100       |     0         |         0       |                  
+  | projo_38        |     100       |     5         |         4       |                  
   |led_sol          |     0         |     0         |         0       |     0x000000        
   | decoupe_bois    |     0         |     0         |         0       |
   | led_caisson_bois|     0         |     0         |         0       |     0x000000
@@ -33,6 +35,7 @@ allumer_moyen
   | poutre          |     80        |     5         |         0       |                 
   | projo_24        |     50        |     5         |         2       |                  
   | projo_37        |     0         |     0         |         0       |                  
+  | projo_38        |     0         |     5         |         4       |                  
   |led_sol          |     0         |     0         |         0       |     0x000000        
   | decoupe_bois    |     0         |     0         |         0       |
   | led_caisson_bois|     0         |     0         |         0       |     0x000000
@@ -45,6 +48,7 @@ allumer_faible
   | poutre          |     50        |     5         |         0       |                 
   | projo_24        |     20        |     5         |         2       |                  
   | projo_37        |     0         |     0         |         0       |                  
+  | projo_38        |     0         |     5         |         4       |                  
   |led_sol          |     0         |     0         |         0       |     0x000000        
   | decoupe_bois    |     0         |     0         |         0       |
   | led_caisson_bois|     0         |     0         |         0       |     0x000000

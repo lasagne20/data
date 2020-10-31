@@ -5,3 +5,5 @@
     | cuisine       |  html     | allumer_cuisine, eteindre_cuisine |unique
     | billard       |  html     | allumer_billard, eteindre_billard |unique
     | exterieur     |  html     | allumer_exterieur, eteindre_exterieur |unique
+    | inter_17      |  inter    | allumer_salon, tout_eteindre_force | principal
+    | inter_15      |  inter    | allumer_cuisine, tout_eteindre_force | principal
