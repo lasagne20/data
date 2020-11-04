@@ -6,5 +6,5 @@
     |   salon       |   html    |   deco_salon|simple
     |   table       |   html    |   deco_table|simple
     |   on          |   html    |   allumer         |simple
-    |   inter_13    | inter     |   allumer,eteindre|principal
+    |   inter_13    | inter     |   allumer,allumer_tout|choix
     |   inter_14    | inter     |   eteindre        |poussoir

@@ -21,6 +21,18 @@ allumer:on
   | led_banque    |     70        |     3         |         0       |       general_couleur1    
   | hotte	  |	0	  |	3	  |	    0	    |	    
 
+allumer_tout:on
+//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|               |               |               |                 |                   |
+  |  poutre_evier |     80        |     3         |         0       | 
+  | poutre_banque |     0         |     3         |         0       | 
+  | led_exterieur |     0         |     3         |         0       |       0x000000    
+  | led_interieur |     100        |     3         |         0       |       general_couleur1    
+  | led_banque    |     70        |     3         |         0       |       general_couleur1    
+  | hotte	  |	1	  |	3	  |	    0	    |	    
+
+
+
 reload_son
    //   scenars                                             |   type_bt |   temps_init
   | enceintes.normal_1.allumer_cuisine , eteindre_cuisine   |  scenar  |   0   |  (etat_spotify) and ((cuisine_etat) or (table_etat))

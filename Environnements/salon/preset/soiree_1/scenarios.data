@@ -26,7 +26,7 @@ allumer:on
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
     |       poutre          |       50    |        20     |        0       |                   |  
-    |      projo_26         |       10   |        5      |        2       |                   |
+    |      projo_26         |       100   |        5      |        2       |                   |
     |      projo_27         |       10     |        5      |        4      |                   |
     |      projo_28         |       10     |        5      |        6      |                   |
     |      projo_30         |       10     |        5      |        8      |                   |
