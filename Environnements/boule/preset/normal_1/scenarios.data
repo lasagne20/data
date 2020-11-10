@@ -5,10 +5,12 @@ eteindre:off
   //|   Lumiere             |    type_inst |   Duree(s)    |   Temps init(s)|      arguments    |synchro_precedent
   //|                       |              |               |                |                   |
     |   boule               |   program    |        0       |       0       |       0           |
+    |   boule               |   relais     |        0       |       0       |       0           |
 
 allumer
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
+    |   boule               |   relais     |        0       |       0       |       1           |
     |   var2                |   init       |        0       |       0       |   int(1.56*bpm-208)         |
     |   var0                |   init       |        0       |       0       |   randint(0,255)        |
     |   boule               |   program    |        0       |       0       |       var0           |

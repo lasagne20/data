@@ -1,0 +1,46 @@
+//Contient toutes les informations relatives a l'environnement
+//qui vont etre donne a la page web et a la console
+
+eteindre:off
+  //|   Lumiere             |    type_inst |   Duree(s)    |   Temps init(s)|      arguments    |synchro_precedent
+  //|                       |              |               |                |                   |
+    |   projo_1             |       0      |        5      |        0       |
+    |   projo_2             |       0      |        5      |        0       |
+    |   projo_rond_1          |       0      |         5     |        0       |
+    |   projo_rond_2         |       0      |         5     |        0       |
+    |   projo_rond_3         |       0      |         5     |        0       |
+    |   projo_rond_6         |       0      |         5     |        0       |
+    |   projo_blanc_bois         |       0      |         5     |        0       |
+    |   projo_blanc_pierre         |       0      |         5     |        0       |
+
+allumer_salle
+  //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
+  //|                       |              |               |                |                   |
+    |   projo_1             |     100      |        5      |        0       |
+    |   projo_2             |     100      |        5      |        0       |
+    |   projo_rond_1        |     0        |        5      |        0       |
+    |   projo_rond_2        |     0        |        5      |        0       |
+    |   projo_rond_3        |     0        |        5      |        0       |
+    |   projo_rond_6        |     0        |        5      |        0       |
+    |   projo_blanc_pierre  |     100      |        5      |        0       |
+    |   projo_blanc_bois    |     100      |        5      |        0       |
+
+
+allumer
+  //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
+  //|                       |              |               |                |                   |
+    |   projo_1             |     100      |        5      |        0       |
+    |   projo_2             |     100      |        5      |        0       |
+    |   projo_rond_1        |     80       |        5      |        0       |
+    |   projo_rond_2        |     80       |        5      |        0       |
+    |   projo_rond_3        |     50       |        5      |        0       |
+    |   projo_rond_6        |     50       |        5      |        0       |
+    |   projo_blanc_pierre  |     50       |        5      |        0       |
+    |   projo_blanc_bois    |     50       |        5      |        0       |
+
+manger
+  //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
+  //|                       |              |               |                |                   |
+    |   projo_1             |     10      |        5      |        0       |
+    |   projo_2             |     10      |        5      |        0       |
+

@@ -1,2 +1,8 @@
 // creer les interruptions et on les lie aux interupteur, radar..
 //| nom_inter|  type	|  pin     
+  | inter_1  |  extender|   1
+  | inter_2  |  extender|   2
+  | inter_3  |  extender|   3
+  | inter_4  |  extender|   4
+  | inter_5  |  extender|   5
+  | inter_6  |  extender|   6

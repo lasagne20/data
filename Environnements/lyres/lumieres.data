@@ -2,10 +2,11 @@
 //4(1) = port 4 de la carte numéro 1
 //Nom_projecteur  |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
 //                |                   |              |                       |                   
-    lyre_1        |     lyre          |              |                       |      1
-    lyre_2        |     lyre          |              |                       |      11
-    lyre_3        |     lyre          |              |                       |      21
-    lyre_4        |     lyre          |              |                       |      31
+    lyre_1        |     lyre          |      1(1)   |                       |      1
+    lyre_2        |     lyre          |      1(1)   |                       |      11
+    lyre_3        |     lyre          |      1(1)    |                       |      21
+    lyre_4        |     lyre          |      1(1)    |                       |      31
+
     variable1     |     variable      |              |                       |      0 
     var2          |     variable      |              |                       |      255 
     couleur       |     variable      |              |                       |      0 

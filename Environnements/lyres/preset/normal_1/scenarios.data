@@ -12,6 +12,19 @@ eteindre:off
     |   lyre_3              |   dimmeur    |    1          |       0        |       0           |
     |   lyre_4              |   position   |    1          |       0        |       (0,0)       |
     |   lyre_4              |   dimmeur    |    1          |       0        |       0           |
+    |   lyre_1              |   relais     |    1          |       5        |       0           |
+    |   lyre_2              |   relais     |    1          |       5        |       0           |
+    |   lyre_3              |   relais     |    1          |       5        |       0           |
+    |   lyre_4              |   relais     |    1          |       5        |       0           |
+
+init
+  //|   Lumiere             |    type_inst |   Duree(s)    |   Temps init(s)|      arguments    |synchro_precedent
+  //|                       |              |               |                |                   |
+    |   lyre_1              |   relais     |    1          |       0        |       1           |
+    |   lyre_2              |   relais     |    1          |       0        |       1           |
+    |   lyre_3              |   relais     |    1          |       0        |       1           |
+    |   lyre_4              |   relais     |    1          |       0        |       1           |
+
 
 allumer*
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent

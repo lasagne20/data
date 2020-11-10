@@ -2,6 +2,5 @@
 //4(1) = port 4 de la carte numéro 1
 //Nom_projecteur  |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
 //                |                   |              |                       |                   
-    petit_strombo |     strombo       |      12(1)   |                       |      41
-    variable1     |     variable      |              |                       |      0 
-    var2          |     variable      |              |                       |      255 
+    ampli_gris     |     lampe         |   10(1)      |                       |
+    ampli_noir     |     lampe         |   9(1)      |                       |

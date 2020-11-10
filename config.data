@@ -2,12 +2,19 @@
 // avec tous les backend
 
 //adresse de la st_nucleo
+--- stnucleos ---
+nom, addresse, decal = st_nucleo1, /dev/ttyACM0, 0
 
 --- interrupt ---
 // port | type 	   | arguments
+    12  | extender |    0x23, 0
 
 --- cartes ---
 // numero | carte |   type   | nb_ports | arguments
+// relais
+      1	  | relais| extender |    16    | 0x22
+//triacs
+   1	  | triac | st_nucleo1|    8     |
 
 --- dmx ---
 adresse = /dev/ttyUSB0
