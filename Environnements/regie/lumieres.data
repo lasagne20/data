@@ -1,0 +1,8 @@
+//Contient la carte de montage de toutes les lumieres de l'environnement "Salon"
+//4(1) = port 4 de la carte numéro 1
+//Nom_projecteur        |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
+//                      |                   |              |                       |                   
+    projo_regie         |     projo_A200    |              |          7(1)         |
+    projo_couloir       |     projo_A200    |              |          8(1)         |
+    lampe_deco          |     lampe         |     14(2)    |                       |
+    led_rpi             |     lampe         |     16(1)    |                       |

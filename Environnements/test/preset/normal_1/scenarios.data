@@ -1,0 +1,29 @@
+//Contient toutes les informations relatives a l'environnement
+//qui vont etre donne a la page web et a la console
+
+eteindre:off
+  //|   Lumiere             |    type_inst |   Duree(s)    |   Temps init(s)|      arguments    |synchro_precedent
+  //|                       |              |               |                |                   |
+    |   pc_msi              |   eteindre   |      0        |        0       |                   |
+
+allumer
+  //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
+  //|                       |              |               |                |                   |
+    |   pc_msi              |   allumer    |      0        |        0       |                   |
+
+change_audio
+    |   pc_msi              |   mouse      |      0        |        0       |        1806,1069  |
+    |   pc_msi              |   mouse      |      0        |        1       |        1789,957   |
+    |   pc_msi              |   mouse      |      0        |        2       |        1752,917   |
+
+10_min
+    |   pc_msi              |   key      |      0        |        10*60       |        space  |
+    
+15_min
+    |   pc_msi              |   key      |      0        |        15*60       |        space  |
+
+play_pause
+    |   pc_msi              |   key      |      0        |        0       |        space  |
+    
+pass
+    |   pc_msi              |   key      |      0        |        0       |     right  |
