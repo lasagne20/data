@@ -2,6 +2,8 @@
 // avec tous les backend
 
 //adresse de la st_nucleo
+--- rpis ---
+nom, addresse = pi_salle, 192.168.1.22
 
 ---   stnucleos   ---
 nom, addresse, decal = st_nucleo1, /dev/ttyACM0, 0
@@ -13,6 +15,9 @@ start = enceintes.normal_1.start_spotify
 stop = enceintes.normal_1.stop_spotify
 reload = enceintes.normal_1.change_volume
 analysis = non
+
+--- extender ---
+adresses de 0x20 à 0x28
 
 --- interrupt ---
 // port | type 	   | arguments
@@ -34,3 +39,6 @@ analysis = non
 
 --- ampli ---
 dax66 = /dev/ttyUSB0, 9(1)
+
+--- dmx ---
+type, addr = rpiDMX, pi_salle

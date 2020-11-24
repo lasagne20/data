@@ -5,7 +5,6 @@ eteindre:off
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
     |       poutre          |       0      |        6      |        0       |                   |  
-    |      projo_26         |       0      |        6      |        0       |                   |
     |      projo_27         |       0      |        6      |        0       |                   |
     |      projo_28         |       0      |        6      |        0       |                   |
     |      projo_30         |       0      |        6      |        0       |                   |
@@ -21,6 +20,9 @@ eteindre:off
     |     led_mur_centre    |       0      |        6      |        0       |   0x000000 
     |     led_sous_table    |       0      |        6      |        0       |   0x000000 
 
+test:on
+    |     led_sous_table    |       100      |        6      |        0       |   0xff0000 
+
 reload_son
    //   scenars                                             |   type_bt |   temps_init
   | enceintes.normal_1.allumer_salon, eteindre_salon    |  scenar  |   0   |  (etat_spotify) and ((bar_etat) or (salon_etat))
@@ -29,7 +31,6 @@ allumer_faible
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
     |       poutre          |       80     |        5     |        0       |                   |  
-    |      projo_26         |       0      |        5      |        0       |                   |
     |      projo_27         |       0      |        1      |        0       |                   |
     |      projo_28         |       0      |        1      |        0       |                   |
     |      projo_30         |       0      |        1      |        0       |                   |
@@ -50,8 +51,7 @@ allumer_moyen:on
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
     |       poutre          |       80     |        8      |        0       |                   |  
-    |      projo_26         |       20     |        3      |        3       |                   |
-    |      projo_27         |       0      |        1      |        0       |                   |
+    |      projo_27         |       20     |        1      |        0       |                   |
     |      projo_28         |       0      |        1      |        0       |                   |
     |      projo_30         |       0      |        1      |        0       |                   |
     |      projo_31         |       15     |        3      |        6       |                   |
@@ -73,8 +73,7 @@ allumer:on
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
     |       poutre          |       80     |        8      |        0       |                   |  
-    |      projo_26         |       35     |        3      |        3       |                   |
-    |      projo_27         |       0      |        1      |        0       |                   |
+    |      projo_27         |       30     |        1      |        0       |                   |
     |      projo_28         |       0      |        1      |        0       |                   |
     |      projo_30         |       0      |        1      |        0       |                   |
     |      projo_31         |       30     |        3      |        6       |                   |
@@ -94,8 +93,7 @@ allumer_en_2_temps
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
     |       poutre          |       100    |        6      |        0       |                   |  
-    |      projo_26         |       10     |        2      |        2       |                   |
-    |      projo_27         |       0      |        1      |        0       |                   |
+    |      projo_27         |       10     |        1      |        0       |                   |
     |      projo_28         |       0      |        1      |        0       |                   |
     |      projo_30         |       0      |        1      |        0       |                   |
     |      projo_31         |       10     |        2      |        2       |                   |
@@ -105,7 +103,6 @@ allumer_en_2_temps
     |      projo_35         |       0      |        1      |        0       |                   |
     |      projo_36         |       10     |        2      |        2       |                   |
 
-    |      projo_26         |       50     |        5      |        0       |                   |
     |      projo_31         |       50     |        5      |        5       |                   |
     |      projo_32         |       50     |        5      |        7       |                   |
     |      projo_36         |       50     |        5      |        9       |                   |

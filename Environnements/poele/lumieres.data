@@ -3,4 +3,5 @@
 //Nom_projecteur  |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
 //                |                   |              |                       |                   
   projo_24        |   projo_A63       |              |          8(2)         |
+  projo_26        |   projo_A91       |       3(2)   |          4(2)         |
   projo_47        |   projo_A63       |              |          7(5)         |

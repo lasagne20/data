@@ -9,7 +9,7 @@ eteindre
   | projo_37        |     0         |     5         |         4       |                  
   | projo_38        |     0         |     5         |         4       |                  
   | led_sol         |     0         |     1         |         0       |     0x000000        
-  | decoupe_bois    |     0         |     1         |         0       |
+  | decoupe_bois    |   dimmeur     |     5         |         0       |       0           |
   | led_caisson_bois|     0         |     1         |         0       |     0x000000
 
 reload_son
@@ -24,7 +24,7 @@ allumer
   | projo_37        |     100       |     0         |         0       |                  
   | projo_38        |     100       |     5         |         4       |                  
   |led_sol          |     0         |     0         |         0       |     0x000000        
-  | decoupe_bois    |     0         |     0         |         0       |
+  | decoupe_bois    |   dimmeur     |     1         |         0       |       0           |
   | led_caisson_bois|     0         |     0         |         0       |     0x000000
 // scenarios                      |   type    |   temps_init
 |bureau.normal_1.allumer_bar_fort |   déco    |       4
@@ -37,10 +37,15 @@ allumer_moyen
   | projo_37        |     0         |     0         |         0       |                  
   | projo_38        |     0         |     5         |         4       |                  
   |led_sol          |     0         |     0         |         0       |     0x000000        
-  | decoupe_bois    |     0         |     0         |         0       |
+  | decoupe_bois    |   dimmeur     |     1         |         0       |       0           |
   | led_caisson_bois|     0         |     0         |         0       |     0x000000
 // scenarios                       |   type    |   temps_init
 |bureau.normal_1.allumer_bar_moyen |   déco    |       4
+
+decoupe
+//|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|                 |               |               |                 |                   |
+  | decoupe_bois    |   dimmeur     |     5         |         0       |       100         |
 
 allumer_faible
 //|   Lumiere       |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
@@ -50,6 +55,6 @@ allumer_faible
   | projo_37        |     0         |     0         |         0       |                  
   | projo_38        |     0         |     5         |         4       |                  
   |led_sol          |     0         |     0         |         0       |     0x000000        
-  | decoupe_bois    |     0         |     0         |         0       |
+  | decoupe_bois    |   dimmeur     |     1         |         0       |       0           |
   | led_caisson_bois|     0         |     0         |         0       |     0x000000
 

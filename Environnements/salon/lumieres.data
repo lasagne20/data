@@ -2,7 +2,6 @@
 //4(1) = port 4 de la carte numéro 1
 //Nom_projecteur  |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
 //                |                   |              |                       |                   
-  projo_26        |   projo_A91       |       3(2)   |          4(2)         |
   projo_27        |   projo_A61       |              |          3(2)         |
   projo_28        |   projo_A61       |              |          2(2)         |
   poutre          |   projo_A91       |       1(2)   |          1(1)         |
@@ -17,5 +16,5 @@
   led_mur_droite  |   led_lednet      |     5(1)     |                       |  10.0.0.58
   led_mur_centre  |   led_lednet      |     5(1)     |                       |  10.0.0.52
   led_mur_gauche  |   led_lednet      |     5(1)     |                       |  10.0.0.51
-  led_sous_table  |   led_lednet      |     5(1)     |                       |  10.0.0.59
+  led_sous_table  |   led_lednet      |13(pi_salle,1)|                       |  10.0.0.59
   couleur_1       |  variable         |              |                       |      0

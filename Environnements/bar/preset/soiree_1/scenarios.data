@@ -9,7 +9,7 @@ eteindre:off
   | projo_37        |     0         |     5         |         0       |                  
   | projo_38        |     0         |     5         |         0       |                  
   |led_sol          |     0         |     5         |         0       |     0x000000        
-  | decoupe_bois    |     0         |     1         |         0       |
+  | decoupe_bois    |   dimmeur     |     1         |         0       |       0           |
   | led_caisson_bois|     0         |     1         |         0       |     0x000000
 
 allumer:on
@@ -20,7 +20,7 @@ allumer:on
   | projo_37        |     0         |     5         |         0       |                  
   | projo_38        |     0         |     5         |         0       |                  
   |led_sol          |     100       |     10        |         0       |     general_couleur1        
-  | decoupe_bois    |     0         |     1         |         0       |
+  | decoupe_bois    |   dimmeur     |     1         |         0       |       0           |
   | led_caisson_bois|     0         |     5         |         0       |     0x000000
 // scenarios                       |   type    |   temps_init
 |bureau.soiree_1.allumer_bar_moyen |   déco    |       4
@@ -40,7 +40,7 @@ deco_salon:déco
   | projo_37        |     0         |     5         |         0       |                  
   | projo_38        |     0         |     5         |         0       |                  
   |led_sol          |     100       |     10        |         0       |     general_couleur2        
-  | decoupe_bois    |     50        |     1         |         0       |
+  | decoupe_bois    |   dimmeur     |     1         |         0       |       50           |
   | led_caisson_bois|     50        |     1         |         0       |     0x0f0f0f
 
 deco_billard:déco
@@ -51,7 +51,7 @@ deco_billard:déco
   | projo_37        |     0         |     5         |         0       |                  
   | projo_38        |     0         |     5         |         0       |                  
   |led_sol          |     100       |     10        |         0       |     0x000000
-  | decoupe_bois    |     50        |     1         |         0       |
+  | decoupe_bois    |   dimmeur     |     1         |         0       |       50           |
   | led_caisson_bois|     50        |     1         |         0       |     0x0f0f0f
 
 deco_table:déco
@@ -62,5 +62,5 @@ deco_table:déco
   | projo_37        |     0         |     5         |         0       |                  
   | projo_38        |     0         |     5         |         0       |                  
   |led_sol          |     0         |     10        |         0       |     0x000000        
-  | decoupe_bois    |     100       |     1         |         0       |
+  | decoupe_bois    |   dimmeur     |     1         |         0       |       50           |
   | led_caisson_bois|     0         |     1         |         0       |     0x000000

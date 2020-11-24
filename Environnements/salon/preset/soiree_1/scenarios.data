@@ -5,7 +5,6 @@ eteindre:off
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
     |       poutre          |       0      |        10     |        0       |                   |  
-    |      projo_26         |       0      |        3      |        0       |                   |
     |      projo_27         |       0      |        3      |        1       |                   |
     |      projo_28         |       0      |        3      |        2       |                   |
     |      projo_30         |       0      |        3      |        3       |                   |
@@ -26,8 +25,7 @@ allumer:on
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
     |       poutre          |       50    |        20     |        0       |                   |  
-    |      projo_26         |       100   |        5      |        2       |                   |
-    |      projo_27         |       10     |        5      |        4      |                   |
+    |      projo_27         |       20     |        5      |        4      |                   |
     |      projo_28         |       10     |        5      |        6      |                   |
     |      projo_30         |       10     |        5      |        8      |                   |
     |      projo_31         |       20     |        5      |        10      |                   |
@@ -57,7 +55,6 @@ deco_billard:déco
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
     |       poutre          |       15    |        10     |        0       |                   |  
-    |      projo_26         |       0      |        6      |        0       |                   |
     |      projo_27         |       0      |        1      |        0       |                   |
     |      projo_28         |       0      |        1      |        0       |                   |
     |      projo_30         |       0      |        1      |        0       |                   |
@@ -79,7 +76,6 @@ deco_table:déco
   //|   Lumiere             |    dimmeur(%)|   Duree(s)    |   Temps init(s)|   Couleur(hex)    |   synchro_precedent
   //|                       |              |               |                |                   |
     |       poutre          |       15    |        10     |        0       |                   |  
-    |      projo_26         |       0      |        6      |        0       |                   |
     |      projo_27         |       0      |        1      |        0       |                   |
     |      projo_28         |       0      |        1      |        0       |                   |
     |      projo_30         |       0      |        1      |        0       |                   |

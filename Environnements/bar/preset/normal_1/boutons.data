@@ -5,4 +5,5 @@
     |  faible       | html      | allumer_faible    | simple 
     |  moyen        | html      | allumer_moyen     | simple 
     |  fort         | html      | allumer           | simple 
+    |  test         | html      | decoupe           | simple 
     | inter_10      | inter     | allumer, eteindre |principal

@@ -16,7 +16,7 @@ allumer
 //|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
 //|               |               |               |                 |                   |
   |  poutre_table |     100       |     10        |         0       | 
-  |  projo_14     |     100        |     10         |         0       |                   
+  |  projo_14     |     0        |     5         |         0       |                   
   |  projo_15     |     0        |     5         |         5       |                   
   |  projo_5      |     0         |     3         |         0       |                   
   |  projo_6      |     0         |     3         |         0       |                   

@@ -8,4 +8,4 @@
   projo_38        |   projo_A91       |              |          5(5)         |
   led_caisson_bois|   led_lednet      |     6(1)     |                       |  10.0.0.55
   led_sol         |   led_bledom      |     6(1)     |                       |  be:89:20:00:23:3d
-  decoupe_bois    |   lampe           |     16(1)    |                       |
+  decoupe_bois    |   decoupe         |     16(1)    |                       |  500
