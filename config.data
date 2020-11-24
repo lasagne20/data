@@ -2,8 +2,8 @@
 // avec tous les backend
 
 //adresse de la st_nucleo
---- rpis ---
-nom, addresse = pi_salle, 192.168.1.22
+--- connections ---
+nom, type, args = pi_salle, rpi, 192.168.1.22
 
 ---   stnucleos   ---
 nom, addresse, decal = st_nucleo1, /dev/ttyACM0, 0
