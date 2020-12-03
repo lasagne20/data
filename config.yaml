@@ -1,0 +1,68 @@
+
+SOUND:
+    Spotify:
+        name : Maison
+        pi_id: a21317bcaedc7bea85e391db0af14d059b476c9e
+        scenar_start: 
+        scenar_stop:
+        scenar_volume:
+        analysis: no
+        volume_init: 50
+
+    Amps:
+        - name : ampli_6_zones
+          type : dax66
+          addr : /dev/ttyUSB0
+          relay : 9(1)
+
+DMX:
+    type : network
+    name : pi_salle
+
+Network:
+    - name : pi_salle
+      type : rpi
+      ip : 192.168.1.22
+
+BOARDS:
+    # ST_nucleos and port_extender boards
+    # the interrupts and boards with GPIO pins or network are listed
+    # directly in the config objects or interrupt
+    ST_nucleos:
+        # configure all board here
+        - name : ST_nucleo_1
+          addr : /dev/ttyACM0
+          triak_boards :
+              # index is the index when the board is called in connected objects config
+              - index,nb_triak : 1,8 
+              - index,nb_triak : 2,8 
+              - index,nb_triak : 3,8 
+              - index,nb_triak : 4,8 
+
+        - name : ST_nucleo_2
+          addr : /dev/ttyACM1
+          triak_boards :
+              - index,nb_triak : 5,8 
+
+    Port_extender:
+        relay_boards : 
+          - addr : 0x21
+            index,nb_relay: 1,16
+          
+          - addr : 0x22
+            index,nb_relay: 1,16
+
+        interrupts :    
+           # list of interrupt by 8 (one register and on gpio interrupt)
+           # /!\ the order is how to link with interrupt
+          - addr : 0x20
+            gpio_port : 12
+            register : 1
+
+          - addr : 0x20
+            gpio_port : 12
+            register : 0
+
+          - addr : 0x24
+            gpio_port : 16
+            register : 1

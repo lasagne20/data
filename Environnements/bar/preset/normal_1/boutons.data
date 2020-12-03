@@ -1,9 +1,0 @@
-// ceci est la liste de tous les boutons et de ce qu'ils font pour ce scénario, 
-//ce peut être des inputs comme des boutons html
-//  |    nom        |   type    |   scénario(s)     | mode
-    |  off          | html      | eteindre          | simple 
-    |  faible       | html      | allumer_faible    | simple 
-    |  moyen        | html      | allumer_moyen     | simple 
-    |  fort         | html      | allumer           | simple 
-    |  test         | html      | decoupe           | simple 
-    | inter_10      | inter     | allumer, eteindre |principal
