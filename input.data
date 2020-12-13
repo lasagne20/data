@@ -20,3 +20,4 @@
   | inter_18 | extender |   18
   | force_off|  cron    |   10:00:00
   | force_on |  cron    |   17:00:00
+  | sapin_on |  cron    |   6:00:00

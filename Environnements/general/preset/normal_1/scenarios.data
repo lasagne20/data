@@ -12,6 +12,8 @@ eteindre_tout:off
     |   portes.normal_1.eteindre      |  poussoir |       8
     |   salon.normal_1.eteindre       |  poussoir |       0
     |   table.normal_1.eteindre       |  poussoir |       3
+    |   poele.normal_1.eteindre       |  poussoir |       3
+    |   sapin.normal_1.eteindre       |  poussoir |       3
 
 reload_son
    //   scenars                                             |   type_bt |   temps_init

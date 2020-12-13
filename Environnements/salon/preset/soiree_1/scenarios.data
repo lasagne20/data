@@ -13,8 +13,6 @@ eteindre:off
     |      projo_33         |       0      |        3      |        6       |                   |
     |      projo_34         |       0      |        3      |        7       |                   |
     |      projo_35         |       0      |        3      |        8       |                   |
-    |      projo_36         |       0      |        3      |        9       |                   |
-    |      projo_46         |       0      |        6      |        0       |                   |
     |     led_mur_droite    |       0      |        9      |        0       |   0x000000        |
     |     led_mur_gauche    |       0      |        9      |        0       |   0x000000        |   
     |     led_mur_centre    |       0      |        9      |        0       |   0x000000        |   
@@ -33,8 +31,6 @@ allumer:on
     |      projo_33         |       10     |        5      |        14      |                   |
     |      projo_34         |       10     |        5      |        16      |                   |
     |      projo_35         |       10     |        5      |        18      |                   |
-    |      projo_36         |       20     |        5      |        20      |                   |
-    |      projo_46         |       10     |        5      |        19      |                   |
     |     led_mur_droite    |       50     |        10     |        0       |   general_couleur1   |
     |     led_mur_gauche    |       50     |        10     |        0       |   general_couleur1        |   
     |     led_mur_centre    |       60     |        10     |        3       |   general_couleur1        |   
@@ -63,8 +59,6 @@ deco_billard:déco
     |      projo_33         |       0      |        1      |        0       |                   |
     |      projo_34         |       0      |        1      |        0       |                   |
     |      projo_35         |       0      |        1      |        0       |                   |
-    |      projo_36         |       0      |        6      |        0       |                   |
-    |      projo_46         |       0      |        6      |        0       |                   |
     |     led_mur_droite    |       50     |        10     |        0       |   general_couleur2        |
     |     led_mur_gauche    |       50     |        10     |        0       |   general_couleur2        |   
     |     led_mur_centre    |       60     |        10     |        3       |   general_couleur2        |   
@@ -84,8 +78,6 @@ deco_table:déco
     |      projo_33         |       0      |        1      |        0       |                   |
     |      projo_34         |       0      |        1      |        0       |                   |
     |      projo_35         |       0      |        1      |        0       |                   |
-    |      projo_36         |       0      |        6      |        0       |                   |
-    |      projo_46         |       0      |        6      |        0       |                   |
     |     led_mur_droite    |       50     |        10     |        0       |   general_couleur2        |
     |     led_mur_gauche    |       50     |        10     |        0       |   general_couleur2        |   
     |     led_mur_centre    |       60     |        10     |        3       |   general_couleur2        |   

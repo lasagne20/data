@@ -1,0 +1,17 @@
+//Contient toutes les informations relatives a l'environnement
+//qui vont etre donne a la page web et a la console
+
+eteindre:off
+//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|               |               |               |                 |                   |
+  |  pc_sapin     |     0         |     1         |         0       | 
+  |      projo_36 |       0      |        6      |        0       |                   |
+  |      projo_46 |       0      |        6      |        0       |                   |
+
+allumer:on
+//|   Lumiere     |    dimmeur(%) |   Duree(s)    |   Temps init(s) |   Couleur(hex)    |   synchro
+//|               |               |               |                 |                   |
+  |  pc_sapin     |     100       |     1         |         0       | 
+  |      projo_36 |     100      |        6      |        0       |                   |
+  |      projo_46 |     100      |        6      |        0       |                   |
+

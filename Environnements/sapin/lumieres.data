@@ -1,0 +1,7 @@
+//Contient la carte de montage de toutes les lumieres de l'environnement "Bar"
+//4(1) = port 4 de la carte numéro 1
+//Nom_projecteur  |   Type            |  addr relais|     Addresse triac    | Addresse Bluetooth 
+//                |                   |             |                       |                   
+  pc_sapin        |     lampe_lol     |     14(1)   |                       |  
+  projo_36        |   projo_A91       |              |          7(1)         |
+  projo_46        |   projo_A91       |              |          6(5)         |
