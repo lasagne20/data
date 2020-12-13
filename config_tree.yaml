@@ -1,3 +1,13 @@
+MODES:
+    - name: normal
+      color: white
+      text_color: black
+      scenar_init : global.normal_1.eteindre
+
+    - name: soirée
+      color: black
+      text_color: white
+
 
 SOUND:
     Spotify:
@@ -6,7 +16,7 @@ SOUND:
         scenar_start: 
         scenar_stop:
         scenar_volume:
-        analysis: no
+        analysis: False
         volume_init: 50
 
     Amps:
@@ -19,7 +29,7 @@ DMX:
     type : network
     name : pi_salle
 
-Network:
+NETWORK:
     - name : pi_salle
       type : rpi
       ip : 192.168.1.22
