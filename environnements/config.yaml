@@ -1,0 +1,29 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+    - mode : soirée
+      preset : soirée_1
+
+Interrupts:
+    config : |
+        | name    | type     | args     |
+        | inter_1 | extender | 1        |
+        | inter   | gpio     | 16       |
+        | inter_1 | cron     | 12:00:00 |
+
+Variables:
+    config : |
+        | name      | value |
+        | variable1 | 0     |
+        | variable2 | 0     |
+
+
+Objects:
+    config : |
+        | name         | type     | sub_type  | relay/triak | addr      |
+        | led_test     | led      | lednet    | 9(1)        | 10.0.0.52 |
+        | projo_27     | dimmable | buld_65   | 5(1)        |           |
+

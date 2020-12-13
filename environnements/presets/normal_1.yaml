@@ -1,0 +1,30 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios
+        | inter_2 | principal | eteindre
+        | inter_3 | principal | eteindre
+
+HTML:
+    name: coucou
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name | type      | scenarios
+        | mdr  | principal | eteindre
+        | lol  | principal | allumer
+
+
+Scenarios:
+    - name: eteindre
+      loop : False
+      marker: OFF
+      instructions: |
+          | name                           | type             | delay | duration | args       |
+          | sub_env_test.normal_1.eteindre | button_principal | 0     | 0        | True       |
+
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name     | type  | delay | duration | args       |
+
