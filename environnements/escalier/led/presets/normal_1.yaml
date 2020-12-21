@@ -1,0 +1,47 @@
+
+Interrupts:
+    buttons : |
+        | name     | type      | scenarios         |
+        | inter_1  | principal | allumer, eteindre |
+        | inter_2  | principal | allumer, eteindre |
+        | force_on | principal | force_on          |
+        | force_off | principal | force_off          |
+
+HTML:
+    name: test
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name | type      | scenarios
+
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name     | type  | delay | duration | args       |
+          | led_haut | color | 0     | 3        | 0,0x000000 |
+          | led_bas  | color | 0     | 3        | 0,0x000000 |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name     | type  | delay | duration | args         |
+          | led_haut | color | 0     | 3        | 100,0xff0000 |
+          | led_bas  | color | 0     | 3        | 100,0xff0000 |
+
+    - name: force_on
+      marker: NONE
+      instructions: |
+          | name     | type  | delay | duration | args       |
+          | led_haut | force | 0     | 3        | True |
+          | led_bas  | force | 0     | 3        | True |
+
+    - name: force_off
+      marker: NONE
+      instructions: |
+          | name     | type  | delay | duration | args       |
+          | led_haut | force | 0     | 3        | False |
+          | led_bas  | force | 0     | 3        | False |
+
+
+

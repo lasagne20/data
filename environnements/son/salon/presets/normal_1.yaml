@@ -1,0 +1,41 @@
+
+Interrupts:
+    buttons : |
+        | name     | type      | scenarios |
+        | inter_17 | principal | allumer,eteindre   |
+
+HTML:
+    name: son_salon
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name    | type      | scenarios         |
+        | salon | principal | allumer, eteindre |
+
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name                        | type             | delay | duration | args     |
+          | volume_salon                      | variable         | 0     | 0        | 0        |
+          | son.salon.normal_1.reload | button_principal | wait     | 0        | env.son.state |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name                      | type             | delay | duration | args          |
+          | volume_salon              | variable         | 0     | 0        | 20            |
+          | son.salon.normal_1.reload | button_principal | wait  | 0        | env.son.state |
+
+    - name: reload
+      marker: NONE
+      instructions: |
+          | name     | type    | delay | duration | args |
+          | enceinte_salon | speakers | 0     | 3        | volume_salon   |
+
+    - name: off
+      marker: NONE
+      instructions: |
+          | name     | type    | delay | duration | args |
+          | enceinte_salon | speakers | 0     | 3        | 0   |
+

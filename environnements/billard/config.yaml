@@ -1,0 +1,27 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+    - mode: soirée
+      preset: soirée_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+        | inter_11 | extender | 11    |
+
+Variables:
+    config : |
+        | name      | value |
+
+
+Objects:
+    config : |
+        | name     | type     | sub_type | relay/triak | addr |
+        | poutre   | dimmable | buld_65  | 5(4)        |      |
+        | projo_3  | dimmable | buld_65  | 7(3)        |      |
+        | projo_4  | dimmable | buld_65  | 8(3)        |      |
+        | projo_17 | dimmable | buld_64  | 3(4)        |      |
+

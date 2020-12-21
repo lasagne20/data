@@ -1,0 +1,24 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+    - mode: soirée
+      preset: soirée_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+
+Variables:
+    config : |
+        | name      | value |
+
+
+Objects:
+    config : |
+        | name               | type | sub_type | relay/triak | addr              |
+        | led_porte_billard  | led  | triones  | 8(1)        | ff:ff:40:00:d8:91 |
+        | led_porte_escalier | led  | lednet   | 8(1)        | 10.0.0.53         |
+

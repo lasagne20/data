@@ -1,0 +1,26 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios
+
+HTML:
+    name: test
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name | type      | scenarios
+
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name               | type  | delay | duration | args       |
+          | led_porte_billard  | color | 0     | 5        | 0,0x000000 |
+          | led_porte_escalier | color | 0     | 5        | 0,0x000000 |
+
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name | type | delay | duration | args |
+

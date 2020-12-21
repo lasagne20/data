@@ -1,0 +1,49 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios
+        | inter_1 | principal | allumer_vers_le_bas, eteindre_vers_le_haut
+        | inter_2 | principal | allumer_vers_le_haut, eteindre_vers_le_bas
+
+HTML:
+    name: test
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name | type      | scenarios
+
+
+Scenarios:
+    - name: eteindre_vers_le_haut
+      marker: OFF
+      instructions: |
+          | name         | type  | delay | duration | args |
+          | projo_haut   | power | 2     | 3        | 0    |
+          | projo_milieu | power | 1     | 3        | 0    |
+          | projo_bas    | power | 0     | 3        | 0    |
+
+    - name: eteindre_vers_le_bas
+      marker: OFF
+      instructions: |
+          | name   | type   | delay | duration | args |
+          | projo_haut   | power | 0     | 3        | 0    |
+          | projo_milieu | power | 1     | 3        | 0    |
+          | projo_bas    | power | 2     | 3        | 0    |
+
+    - name: allumer_vers_le_haut
+      marker: ON
+      instructions: |
+          | name         | type  | delay | duration | args |
+          | projo_haut   | power | 2     | 3        | 100  |
+          | projo_milieu | power | 1     | 3        | 100  |
+          | projo_bas    | power | 0     | 3        | 100  |
+
+    - name: allumer_vers_le_bas
+      marker: ON
+      instructions: |
+          | name         | type  | delay | duration | args |
+          | projo_haut   | power | 0     | 3        | 100  |
+          | projo_milieu | power | 1     | 3        | 100  |
+          | projo_bas    | power | 2     | 3        | 100  |
+
+
+

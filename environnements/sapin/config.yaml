@@ -1,0 +1,25 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name     | type | args     |
+        | allumer | cron | 06:00:00 |
+        | remove_secu| cron | 20:00:00 |
+
+Variables:
+    config : |
+        | name | value |
+        | secu | 0     |
+
+
+Objects:
+    config : |
+        | name     | type     | sub_type | relay/triak | addr |
+        | projo_36 | dimmable | buld_91  | 7(1)        |      |
+        | projo_46 | dimmable | buld_91  | 6(5)        |      |
+        | sapin    | lamp     |          | 14(1)       |      |
+

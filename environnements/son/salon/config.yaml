@@ -1,0 +1,21 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+
+Variables:
+    config : |
+        | name         | value |
+        | volume_salon | 0     |
+
+
+Objects:
+    config : |
+        | name           | type     | sub_type | relay/triak      | addr |
+        | enceinte_salon | speakers |          | 2(ampli_6_zones) |      |
+

@@ -1,0 +1,26 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+    - mode: soirée
+      preset: soirée_1
+
+Interrupts:
+    config : |
+        | name      | type | args     |
+        | force_off | cron | 10:00:00 |
+        | force_on  | cron | 17:00:00 |
+
+Variables:
+    config : |
+        | name      | value |
+
+
+Objects:
+    config : |
+        | name     | type | sub_type | relay/triak | addr      |
+        | led_haut | led  | lednet   | 1(1)        | 10.0.0.56 |
+        | led_bas  | led  | lednet   | 1(1)        | 10.0.0.57 |
+

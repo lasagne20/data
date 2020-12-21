@@ -1,0 +1,83 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios                                    |
+        | inter_8 | principal | allumer_vers_escalier, eteindre_vers_cuisine |
+        | inter_6 | principal | allumer_vers_cuisine, eteindre_vers_escalier |
+
+Scenarios:
+    - name: eteindre_vers_cuisine
+      marker: OFF
+      instructions: |
+          | name     | type   | delay | duration | args |
+          | projo_1  | dimmer | 0     | 3        | 0    |
+          | projo_2  | dimmer | 1     | 3        | 0    |
+          | projo_5  | dimmer | 2     | 3        | 0    |
+          | projo_6  | dimmer | 3     | 3        | 0    |
+          | projo_7  | dimmer | 4     | 3        | 0    |
+          | projo_8  | dimmer | 5     | 3        | 0    |
+          | projo_14 | dimmer | 5     | 3        | 0    |
+          | projo_15 | dimmer | 4     | 3        | 0    |
+          | projo_16 | dimmer | 3     | 3        | 0    |
+          | projo_19 | dimmer | 2     | 3        | 0    |
+          | projo_21 | dimmer | 1     | 3        | 0    |
+          | projo_22 | dimmer | 0     | 3        | 0    |
+
+    - name: eteindre_vers_escalier
+      marker: OFF
+      instructions: |
+          | name     | type   | delay | duration | args |
+          | projo_1  | dimmer | 5     | 3        | 0    |
+          | projo_2  | dimmer | 4     | 3        | 0    |
+          | projo_5  | dimmer | 3     | 3        | 0    |
+          | projo_6  | dimmer | 2     | 3        | 0    |
+          | projo_7  | dimmer | 1     | 3        | 0    |
+          | projo_8  | dimmer | 0     | 3        | 0    |
+          | projo_14 | dimmer | 0     | 3        | 0    |
+          | projo_15 | dimmer | 1     | 3        | 0    |
+          | projo_16 | dimmer | 2     | 3        | 0    |
+          | projo_19 | dimmer | 3     | 3        | 0    |
+          | projo_21 | dimmer | 4     | 3        | 0    |
+          | projo_22 | dimmer | 5     | 3        | 0    |
+
+    - name: allumer_vers_escalier
+      marker: ON
+      instructions: |
+          | name                         | type             | delay | duration | args |
+          | projo_1                      | dimmer           | 5     | 3        | 100  |
+          | projo_2                      | dimmer           | 4     | 3        | 100  |
+          | projo_5                      | dimmer           | 3     | 3        | 100  |
+          | projo_6                      | dimmer           | 2     | 3        | 100  |
+          | projo_7                      | dimmer           | 1     | 3        | 100  |
+          | projo_8                      | dimmer           | 0     | 3        | 100  |
+          | projo_14                     | dimmer           | 0     | 3        | 100  |
+          | projo_15                     | dimmer           | 1     | 3        | 100  |
+          | projo_16                     | dimmer           | 2     | 3        | 100  |
+          | projo_19                     | dimmer           | 3     | 3        | 100  |
+          | projo_21                     | dimmer           | 4     | 3        | 100  |
+          | projo_22                     | dimmer           | 5     | 3        | 100  |
+          | son.billard.normal_1.allumer | button_secondary | 0     | 0        | True |
+
+    - name: allumer_vers_cuisine
+      marker: ON
+      instructions: |
+          | name                         | type             | delay | duration | args |
+          | projo_1                      | dimmer           | 0     | 3        | 100  |
+          | projo_2                      | dimmer           | 1     | 3        | 100  |
+          | projo_5                      | dimmer           | 2     | 3        | 100  |
+          | projo_6                      | dimmer           | 3     | 3        | 100  |
+          | projo_7                      | dimmer           | 4     | 3        | 100  |
+          | projo_8                      | dimmer           | 5     | 3        | 100  |
+          | projo_14                     | dimmer           | 5     | 3        | 100  |
+          | projo_15                     | dimmer           | 4     | 3        | 100  |
+          | projo_16                     | dimmer           | 3     | 3        | 100  |
+          | projo_19                     | dimmer           | 2     | 3        | 100  |
+          | projo_21                     | dimmer           | 1     | 3        | 100  |
+          | projo_22                     | dimmer           | 0     | 3        | 100  |
+          | son.billard.normal_1.allumer | button_secondary | 0     | 0        | True |
+          | son.cuisine.normal_1.allumer | button_secondary | 0     | 0        | True |
+
+
+
+      
+

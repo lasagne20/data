@@ -1,0 +1,51 @@
+
+Interrupts:
+    buttons : |
+        | name     | type      | scenarios
+        | inter_13 | choice    | allumer_feu, allumer_evier
+        | inter_14 | principal | eteindre
+
+HTML:
+    name: test
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name | type      | scenarios
+
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name                         | type             | delay | duration | args       |
+          | poutre_evier                 | dimmer           | 0     | 3        | 0          |
+          | poutre_banque                | dimmer           | 0     | 3        | 0          |
+          | led_exterieur                | color            | 0     | 3        | 0,0x000000 |
+          | led_interieur                | color            | 0     | 3        | 0,0x000000 |
+          | led_banque                   | color            | 0     | 3        | 0,0x000000 |
+          | hotte                        | power            | 0     | 3        | 0          |
+          | son.cuisine.normal_1.eteindre | button_principal | 0     | 0        | True       |
+
+    - name: allumer_evier
+      marker: ON
+      instructions: |
+          | name                         | type             | delay | duration | args         |
+          | poutre_evier                 | dimmer           | 0     | 3        | 100          |
+          | poutre_banque                | dimmer           | 0     | 3        | 0            |
+          | led_exterieur                | color            | 0     | 3        | 0,0x000000   |
+          | led_interieur                | color            | 0     | 3        | 100,0x0f0fff |
+          | led_banque                   | color            | 0     | 3        | 50, 0x0f0fff |
+          | hotte                        | power            | 0     | 3        | 0            |
+          | son.cuisine.normal_1.allumer | button_principal | 0     | 0        | True         |
+
+    - name: allumer_feu
+      marker: ON
+      instructions: |
+          | name                         | type             | delay | duration | args         |
+          | poutre_evier                 | dimmer           | 0     | 3        | 100          |
+          | poutre_banque                | dimmer           | 0     | 3        | 0            |
+          | led_exterieur                | color            | 0     | 3        | 0,0x000000   |
+          | led_interieur                | color            | 0     | 3        | 100,0xffffff |
+          | led_banque                   | color            | 0     | 3        | 80, 0x0f0fff |
+          | hotte                        | power            | 0     | 3        | 1            |
+          | son.cuisine.normal_1.allumer | button_principal | 0     | 0        | True         |
+

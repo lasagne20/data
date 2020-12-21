@@ -1,0 +1,57 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios
+        | inter_11 | principal | allumer, eteindre
+
+HTML:
+    name: test
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name | type      | scenarios
+
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name     | type   | delay | duration | args |
+          | poutre   | dimmer | 0     | 5        | 0    |
+          | projo_3  | dimmer | 0     | 3        | 0  |
+          | projo_4  | dimmer | 0     | 3        | 0  |
+          | projo_17 | dimmer | 0     | 3        | 0  |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name                               | type             | delay | duration | args |
+          | poutre                             | dimmer           | 0     | 3        | 80   |
+          | projo_3                            | dimmer           | 0     | 5        | 30   |
+          | projo_4                            | dimmer           | 0     | 5        | 30   |
+          | projo_17                           | dimmer           | 2     | 5        | 30   |
+          | son.billard.normal_1.allumer       | button_secondary | 0     | 0        | True |
+          | bar.soirée_1.deco                  | button_secondary | 0     | 0        | True |
+          | escalier.led.soirée_1.deco_billard | button_secondary | 0     | 0        | True |
+          | portes.soirée_1.deco_billard       | button_secondary | 0     | 0        | True |
+          | salon.soirée_1.deco_billard        | button_secondary | 0     | 0        | True |
+          | table.soirée_1.deco_billard        | button_secondary | 0     | 0        | True |
+          | cuisine.soirée_1.deco_billard      | button_secondary | 0     | 0        | True |
+
+    - name: deco_salon
+      marker: DECO
+      instructions: |
+          | name                         | type             | delay | duration | args |
+          | poutre                       | dimmer           | 0     | 3        | 20  |
+          | projo_3                      | dimmer           | 0     | 5        | 10  |
+          | projo_4                      | dimmer           | 0     | 5        | 10  |
+          | projo_17                     | dimmer           | 2     | 5        | 0  |
+
+    - name: deco_table
+      marker: DECO
+      instructions: |
+          | name                         | type             | delay | duration | args |
+          | poutre                       | dimmer           | 0     | 3        | 20  |
+          | projo_3                      | dimmer           | 0     | 5        | 20  |
+          | projo_4                      | dimmer           | 0     | 5        | 20  |
+          | projo_17                     | dimmer           | 2     | 5        | 0  |
+

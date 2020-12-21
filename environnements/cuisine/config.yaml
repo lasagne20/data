@@ -1,0 +1,31 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+    - mode: soirée
+      preset: soirée_1
+
+
+Interrupts:
+    config : |
+        | name     | type     | args |
+        | inter_13 | extender | 13   |
+        | inter_14 | extender | 14   |
+
+Variables:
+    config : |
+        | name      | value |
+
+
+Objects:
+    config : |
+        | name          | type     | sub_type | relay/triak | addr              |
+        | poutre_evier  | dimmable | buld_64  | 6(2)        |                   |
+        | poutre_banque | dimmable | buld_64  | 7(2)        |                   |
+        | led_exterieur | led      | bledom   | 7(1)        | be:ff:80:01:2b:33 |
+        | led_interieur | led      | lednet   | 7(1)        | 10.0.0.50         |
+        | led_banque    | led      | bledom   | 7(1)        | be:ff:80:01:31:02 |
+        | hotte         | lamp     |          | 10(1)       |                   |
+

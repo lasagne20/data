@@ -2,23 +2,14 @@ MODES:
     - name: normal
       color: white
       text_color: black
-      scenar_init : global.normal_1.eteindre
 
     - name: soirée
       color: black
       text_color: white
+      scenar_init: global.soirée_1.init
 
 
 SOUND:
-    Spotify:
-        name : Maison
-        pi_id: a21317bcaedc7bea85e391db0af14d059b476c9e
-        scenar_start: 
-        scenar_stop:
-        scenar_volume:
-        analysis: False
-        volume_init: 50
-
     Amps:
         - name : ampli_6_zones
           type : dax66
@@ -70,7 +61,7 @@ BOARDS:
             register : 1
 
           - addr : 0x20
-            gpio_port : 12
+            gpio_port : 6
             register : 0
 
           - addr : 0x24

@@ -1,0 +1,25 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+    - mode: soirée
+      preset: soirée_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+        | inter_4 | extender | 4    |
+
+Variables:
+    config : |
+        | name      | value |
+
+
+Objects:
+    config : |
+        | name             | type | sub_type | relay/triak | addr              |
+        | led_haut_billard | led  | lednet   | 8(1)        | 10.0.0.54         |
+        | led_haut_bureau  | led  | triones  | 8(1)        | ff:ff:40:00:dc:ba |
+

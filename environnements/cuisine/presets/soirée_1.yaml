@@ -1,0 +1,88 @@
+
+Interrupts:
+    buttons : |
+        | name     | type      | scenarios
+        | inter_13 | choice    | allumer_evier, allumer_feu
+        | inter_14 | principal | eteindre
+
+HTML:
+    name: test
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name | type      | scenarios
+
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name                         | type             | delay | duration | args       |
+          | poutre_evier                 | dimmer           | 0     | 3        | 0          |
+          | poutre_banque                | dimmer           | 0     | 3        | 0          |
+          | led_exterieur                | color            | 0     | 3        | 0,0x000000 |
+          | led_interieur                | color            | 0     | 3        | 0,0x000000 |
+          | led_banque                   | color            | 0     | 3        | 0,0x000000 |
+          | hotte                        | power            | 0     | 3        | 0          |
+          | son.cuisine.normal_1.eteindre | button_principal | 0     | 0        | True       |
+
+    - name: allumer_evier
+      marker: ON
+      instructions: |
+          | name                         | type             | delay | duration | args                  |
+          | poutre_evier                 | dimmer           | 0     | 3        | 40                    |
+          | poutre_banque                | dimmer           | 0     | 3        | 0                     |
+          | led_exterieur                | color            | 0     | 3        | 0,0x000000            |
+          | led_interieur                | color            | 0     | 3        | 70,env.global.color1  |
+          | led_banque                   | color            | 0     | 3        | 60,env.global.color1 |
+          | hotte                        | power            | 0     | 3        | 0                     |
+          | son.cuisine.normal_1.allumer | button_principal | 0     | 0        | True                  |
+          | billard.soirée_1.deco_table  | button_secondary | 0     | 0        | True                  |
+          | table.soirée_1.deco_billard  | button_secondary | 0     | 0        | True                  |
+
+    - name: allumer_feu
+      marker: ON
+      instructions: |
+          | name                         | type             | delay | duration | args                  |
+          | poutre_evier                 | dimmer           | 0     | 3        | 70                    |
+          | poutre_banque                | dimmer           | 0     | 3        | 0                     |
+          | led_exterieur                | color            | 0     | 3        | 0,0x000000            |
+          | led_interieur                | color            | 0     | 3        | 100,env.global.color2 |
+          | led_banque                   | color            | 0     | 3        | 80, env.global.color2 |
+          | hotte                        | power            | 0     | 3        | 1                     |
+          | son.cuisine.normal_1.allumer | button_principal | 0     | 0        | True                  |
+          | billard.soirée_1.deco_table  | button_secondary | 0     | 0        | True                  |
+          | table.soirée_1.deco_billard  | button_secondary | 0     | 0        | True                  |
+
+    - name: deco_salon
+      marker: DECO
+      instructions: |
+          | name          | type   | delay | duration | args                 |
+          | poutre_evier  | dimmer | 0     | 3        | 0                    |
+          | poutre_banque | dimmer | 0     | 3        | 30                   |
+          | led_exterieur | color  | 0     | 3        | 20,env.global.color1 |
+          | led_interieur | color  | 0     | 3        | 30,env.global.color2 |
+          | led_banque    | color  | 0     | 3        | 0, 0x000000          |
+          | hotte         | power  | 0     | 3        | 0                    |
+
+    - name: deco_table
+      marker: DECO
+      instructions: |
+          | name          | type   | delay | duration | args                 |
+          | poutre_evier  | dimmer | 0     | 3        | 0                    |
+          | poutre_banque | dimmer | 0     | 3        | 30                   |
+          | led_exterieur | color  | 0     | 3        | 30,env.global.color2 |
+          | led_interieur | color  | 0     | 3        | 40,env.global.color1 |
+          | led_banque    | color  | 0     | 3        | 0, 0x000000          |
+          | hotte         | power  | 0     | 3        | 0                    |
+
+    - name: deco_billard
+      marker: DECO
+      instructions: |
+          | name          | type   | delay | duration | args                 |
+          | poutre_evier  | dimmer | 0     | 3        | 0                    |
+          | poutre_banque | dimmer | 0     | 3        | 30                   |
+          | led_exterieur | color  | 0     | 3        | 30,env.global.color1 |
+          | led_interieur | color  | 0     | 3        | 40,env.global.color2 |
+          | led_banque    | color  | 0     | 3        | 0, 0x000000          |
+          | hotte         | power  | 0     | 3        | 0                    |
+

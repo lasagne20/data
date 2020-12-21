@@ -1,0 +1,25 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+        | inter_1 | extender | 1    |
+        | inter_2 | extender | 2    |
+
+Variables:
+    config : |
+        | name      | value |
+
+
+Objects:
+    config : |
+        | name         | type | sub_type | relay/triak | addr |
+        | projo_haut   | lamp |          | 2(1)        |      |
+        | projo_milieu | lamp |          | 3(1)        |      |
+        | projo_bas    | lamp |          | 4(1)        |      |
+
+

@@ -1,0 +1,21 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+        | inter_4 | extender | 4    |
+
+Variables:
+    config : |
+        | name      | value |
+
+
+Objects:
+    config : |
+        | name     | type | sub_type | relay/triak | addr              |
+        | led_fond | led  | triones  | 8(1)        | ff:ff:40:00:de:04 |
+        | led_rpi  | led  | bledom   | 8(1)        | be:89:20:00:26:04 |

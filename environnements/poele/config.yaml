@@ -1,0 +1,23 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name     | type     | args |
+        | inter_18 | extender | 18   |
+
+Variables:
+    config : |
+        | name      | value |
+
+
+Objects:
+    config : |
+        | name     | type     | sub_type | relay/triak | addr |
+        | projo_24 | dimmable | buld_63  | 8(2)        |      |
+        | projo_26 | dimmable | buld_91  | 4(2)        |      |
+        | projo_47 | dimmable | buld_63  | 7(5)        |      |
+

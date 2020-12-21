@@ -1,30 +1,32 @@
 
 Interrupts:
     buttons : |
-        | name    | type      | scenarios
-        | inter_2 | principal | eteindre
-        | inter_3 | principal | eteindre
+        | name    | type      | scenarios     |
+        | inter_7 | principal | eteindre_tout |
 
 HTML:
-    name: coucou
+    name: test
     colors: 0xff0000,0x00ff00
     buttons: | # buttons need to be in the order
-        | name | type      | scenarios
-        | mdr  | principal | eteindre
-        | lol  | principal | allumer
+        | name | type | scenarios |
 
 
 Scenarios:
     - name: eteindre
-      loop : False
       marker: OFF
       instructions: |
-          | name                           | type             | delay | duration | args       |
-          | sub_env_test.normal_1.eteindre | button_principal | 0     | 0        | True       |
+          | name | type | delay | duration | args |
 
-
-    - name: allumer
-      marker: ON
+    - name: eteindre_tout
+      marker: NONE
       instructions: |
-          | name     | type  | delay | duration | args       |
-
+          | name                                   | type             | delay | duration | args |
+          | salon.normal_1.eteindre                | button_principal | 0     | 0        | True |
+          | sapin.normal_1.test_eteindre           | button_principal | 0     | 0        | True |
+          | cuisine.normal_1.eteindre              | button_principal | 0     | 0        | True |
+          | bar.normal_1.eteindre                  | button_principal | 3     | 0        | True |
+          | billard.normal_1.eteindre              | button_principal | 3     | 0        | True |
+          | son.billard.normal_1.eteindre          | button_principal | 3     | 0        | True |
+          | chemin.normal_1.eteindre_vers_escalier | button_principal | 2     | 0        | True |
+          | poele.normal_1.eteindre                | button_principal | 2     | 0        | True |
+          | table.normal_1.eteindre                | button_principal | 1     | 0        | True |

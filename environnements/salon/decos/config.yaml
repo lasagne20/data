@@ -1,0 +1,30 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+    - mode: soirée
+      preset: soirée_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+
+Variables:
+    config : |
+        | name      | value |
+
+
+Objects:
+    config : |
+        | name           | type     | sub_type | relay/triak    | addr      |
+        | projo_28       | dimmable | buld_61  | 2(2)           |           |
+        | projo_30       | dimmable | buld_61  | 1(2)           |           |
+        | projo_33       | dimmable | buld_91  | 3(1)           |           |
+        | projo_34       | dimmable | buld_91  | 4(1)           |           |
+        | projo_35       | dimmable | buld_91  | 6(1)           |           |
+        | led_mur_gauche | led      | lednet   | 5(1)           | 10.0.0.51 |
+        | led_mur_centre | led      | lednet   | 5(1)           | 10.0.0.52 |
+        | led_mur_droite | led      | lednet   | 5(1)           | 10.0.0.58 |
+        | led_sous_table | led      | lednet   | 13(pi_salle.1) | 10.0.0.59 |

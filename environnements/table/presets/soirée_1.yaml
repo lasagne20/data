@@ -1,0 +1,46 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios
+        | inter_4 | principal | allumer, eteindre
+
+HTML:
+    name: test
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name | type      | scenarios
+
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name   | type   | delay | duration | args |
+          | poutre | dimmer | 0     | 3        | 0    |
+
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name                             | type             | delay | duration | args |
+          | poutre                           | dimmer           | 0     | 3        | 100  |
+          | son.billard.normal_1.allumer     | button_secondary | 0     | 0        | True |
+          | son.cuisine.normal_1.allumer     | button_secondary | 0     | 0        | True |
+          | bar.soirée_1.deco                | button_secondary | 0     | 0        | True |
+          | salon.soirée_1.deco_table        | button_secondary | 0     | 0        | True |
+          | escalier.led.soirée_1.deco_table | button_secondary | 0     | 0        | True |
+          | cuisine.soirée_1.deco_table      | button_secondary | 0     | 0        | True |
+          | portes.soirée_1.deco_table       | button_secondary | 0     | 0        | True |
+
+    - name: deco_salon
+      marker: DECO
+      instructions: |
+          | name   | type   | delay | duration | args |
+          | poutre | dimmer | 0     | 3        | 20  |
+
+    - name: deco_billard
+      marker: DECO
+      instructions: |
+          | name   | type   | delay | duration | args |
+          | poutre | dimmer | 0     | 3        | 35   |
+

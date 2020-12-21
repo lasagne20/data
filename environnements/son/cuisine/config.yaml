@@ -1,0 +1,21 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+
+Variables:
+    config : |
+        | name   | value |
+        | volume_cuisine | 0     |
+
+
+Objects:
+    config : |
+        | name             | type     | sub_type | relay/triak      | addr |
+        | enceinte_cuisine | speakers |          | 1(ampli_6_zones) |      |
+

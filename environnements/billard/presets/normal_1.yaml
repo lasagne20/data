@@ -1,0 +1,33 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios
+        | inter_11 | principal | allumer, eteindre
+
+HTML:
+    name: test
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name | type      | scenarios
+
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name     | type   | delay | duration | args |
+          | poutre   | dimmer | 0     | 5        | 0    |
+          | projo_3  | dimmer | 0     | 3        | 0  |
+          | projo_4  | dimmer | 0     | 3        | 0  |
+          | projo_17 | dimmer | 0     | 3        | 0  |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name                         | type             | delay | duration | args |
+          | poutre                       | dimmer           | 0     | 3        | 100  |
+          | projo_3                      | dimmer           | 0     | 5        | 100  |
+          | projo_4                      | dimmer           | 0     | 5        | 100  |
+          | projo_17                     | dimmer           | 2     | 5        | 100  |
+          | son.billard.normal_1.allumer | button_secondary | 0     | 0        | True |
+

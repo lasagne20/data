@@ -1,0 +1,45 @@
+
+Interrupts:
+    buttons : |
+        | name      | type      | scenarios
+        | allumer   | principal | allumer
+        | remove_secu | principal | remove_secu
+
+HTML:
+    name: test
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name | type      | scenarios
+
+
+Scenarios:
+
+    - name: test_eteindre
+      marker: NONE
+      instructions: |
+          | name                    | type             | delay | duration | args  |
+          | sapin.normal_1.eteindre | button_principal | 0     | 0        | not(secu) |
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name     | type   | delay | duration | args |
+          | projo_36 | dimmer | 0     | 5        | 0    |
+          | projo_46 | dimmer | 0     | 5        | 0    |
+          | sapin    | power  | 0     | 1        | False|
+
+    - name: remove_secu
+      marker: NONE
+      instructions: |
+          | name | type     | delay | duration | args |
+          | secu | variable | 0     | 0        | 0    |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name     | type    | delay | duration | args |
+          | secu     | variable | 0     | 0        | 1    |
+          | projo_36 | dimmer  | 0     | 5        | 100  |
+          | projo_46 | dimmer  | 0     | 5        | 100  |
+          | sapin    | power   | 0     | 1        | True |
+

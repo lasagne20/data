@@ -1,0 +1,31 @@
+
+Interrupts:
+    buttons : |
+        | name     | type      | scenarios
+        | inter_18 | principal | allumer, eteindre
+
+HTML:
+    name: test
+    colors: 0xff0000,0x00ff00
+    buttons: | # buttons need to be in the order
+        | name | type      | scenarios
+
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name     | type   | delay | duration | args |
+          | projo_24 | dimmer | 0     | 3        | 0    |
+          | projo_26 | dimmer | 0     | 3        | 0    |
+          | projo_47 | dimmer | 0     | 3        | 0    |
+
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name     | type   | delay | duration | args |
+          | projo_24 | dimmer | 0     | 3        | 100    |
+          | projo_26 | dimmer | 0     | 3        | 100    |
+          | projo_47 | dimmer | 0     | 3        | 100    |
+
