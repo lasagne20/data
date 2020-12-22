@@ -1,0 +1,5 @@
+MODES:
+    - name: normal
+      color: white
+      text_color: black
+
