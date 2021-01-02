@@ -1,0 +1,25 @@
+NAME: pi_test
+
+MODES:
+    - name: normal
+      html:
+          - name: home.test1.but_test2
+            type: button
+            background_image: cinema.png
+            inactive_color: black
+            active_color: grey
+
+    - name: soirée
+      html:
+          - name: home.test1.mode2
+            type: button
+            background_image: cinema.png
+            inactive_color: black
+            active_color: grey
+
+                       
+        
+
+
+
+

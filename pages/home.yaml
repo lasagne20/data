@@ -1,0 +1,19 @@
+
+Config:
+    background_color: grey
+    background_image:
+
+
+Sections:
+  - name: liens
+    title: Rpis
+    lenght: 3
+    index: 0
+
+  - name: test1
+    title: test1
+    lenght: 3
+    index: 1
+
+
+

@@ -1,14 +1,18 @@
 
 Interrupts:
     buttons : |
-        | name    | type      | scenarios     |
+        | name    | type      | scenarios |
 
 HTML:
-    name: test
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name | type | scenarios |
-
+    - name: home.test1.but_test
+      type: button
+      background_image: cinema.png
+      inactive_color: black
+      active_color: grey
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
 
 Scenarios:
     - name: eteindre
@@ -16,7 +20,7 @@ Scenarios:
       instructions: |
           | name | type | delay | duration | args |
 
-    - name: eteindre_tout
-      marker: NONE
+    - name: allumer
+      marker: ON
       instructions: |
           | name                                   | type             | delay | duration | args |
