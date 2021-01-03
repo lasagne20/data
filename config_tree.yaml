@@ -1,5 +1,21 @@
+ME : pi_son
+
+
 MODES:
     - name: normal
       color: white
       text_color: black
 
+
+SOUND:
+    Spotify:
+        name: pi_son
+        pi_id: a21317bcaedc7bea85e391db0af14d059b476c9e
+        analysis: False
+        scenar_start: global.normal_1.start
+        scenar_stop: global.normal_1.stop
+
+NETWORK:
+    - name: pi_maison
+      type: rpi
+      ip: 192.168.1.20

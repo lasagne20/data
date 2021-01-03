@@ -1,22 +1,38 @@
 
 Interrupts:
     buttons : |
-        | name    | type      | scenarios     |
+        | name           | type      | scenarios         |
+        | change_spotify | principal | allumer, eteindre |
 
 HTML:
-    name: test
+    name: spotify
     colors: 0xff0000,0x00ff00
     buttons: | # buttons need to be in the order
-        | name | type | scenarios |
+        | name          | type      | scenarios         |
+        | spotify       | principal | allumer, eteindre |
 
 
 Scenarios:
     - name: eteindre
       marker: OFF
       instructions: |
-          | name | type | delay | duration | args |
+          | name    | type    | delay | duration | args |
+          | spotify | spotify | 0     | 0        | stop |
 
-    - name: eteindre_tout
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name    | type    | delay | duration | args |
+          | spotify | spotify | 0     | 0        | start |
+
+    - name: start
       marker: NONE
       instructions: |
-          | name                                   | type             | delay | duration | args |
+          | name      | type      | delay | duration | args        |
+          | pi_maison | interrupt | 0     | 0        | power_amp,1 |
+
+    - name: stop
+      marker: NONE
+      instructions: |
+          | name      | type      | delay | duration | args        |
+          | pi_maison | interrupt | 0     | 0        | power_amp,0 |

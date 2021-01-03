@@ -6,7 +6,8 @@ Modes:
 
 Interrupts:
     config : |
-        | name    | type     | args |
+        | name           | type    | args      |
+        | change_spotify | network | pi_maison |
 
 Variables:
     config : |
