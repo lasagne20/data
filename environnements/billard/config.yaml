@@ -20,8 +20,8 @@ Variables:
 Objects:
     config : |
         | name     | type     | sub_type | relay/triak | addr |
-        | poutre   | dimmable | buld_65  | 5(4)        |      |
+        | poutre   | dimmable | buld_200 | 5(4)        |      |
         | projo_3  | dimmable | buld_65  | 7(3)        |      |
         | projo_4  | dimmable | buld_65  | 8(3)        |      |
-        | projo_17 | dimmable | buld_64  | 3(4)        |      |
+        | projo_17 | dimmable | buld_65  | 3(4)        |      |
 

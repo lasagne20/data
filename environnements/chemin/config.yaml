@@ -23,14 +23,14 @@ Objects:
     config : |
         | name     | type     | sub_type | relay/triak | addr |
         | projo_1  | dimmable | buld_65  | 5(3)        |      |
-        | projo_2  | dimmable | buld_65  | 6(3)        |      |
-        | projo_5  | dimmable | buld_64  | 1(5)        |      |
-        | projo_6  | dimmable | buld_64  | 2(5)        |      |
-        | projo_7  | dimmable | buld_64  | 3(5)        |      |
-        | projo_8  | dimmable | buld_64  | 4(5)        |      |
-        | projo_14 | dimmable | buld_61  | 1(3)        |      |
-        | projo_15 | dimmable | buld_61  | 1(4)        |      |
-        | projo_16 | dimmable | buld_63  | 2(4)        |      |
+        | projo_2  | dimmable | buld_200 | 6(3)        |      |
+        | projo_5  | dimmable | buld_65  | 1(5)        |      |
+        | projo_6  | dimmable | buld_65  | 2(5)        |      |
+        | projo_7  | dimmable | buld_65  | 3(5)        |      |
+        | projo_8  | dimmable | buld_65  | 4(5)        |      |
+        | projo_14 | dimmable | buld_65  | 1(3)        |      |
+        | projo_15 | dimmable | buld_65  | 1(4)        |      |
+        | projo_16 | dimmable | buld_65  | 2(4)        |      |
         | projo_19 | dimmable | buld_65  | 4(4)        |      |
         | projo_21 | dimmable | buld_65  | 2(3)        |      |
         | projo_22 | dimmable | buld_65  | 6(4)        |      |

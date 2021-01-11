@@ -4,13 +4,6 @@ Interrupts:
         | name    | type      | scenarios     |
         | inter_7 | principal | eteindre_tout |
 
-HTML:
-    name: test
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name | type | scenarios |
-
-
 Scenarios:
     - name: eteindre
       marker: OFF
@@ -30,11 +23,11 @@ Scenarios:
       instructions: |
           | name                                   | type             | delay | duration | args |
           | salon.soirée_1.eteindre                | button_principal | 0     | 0        | True |
-          | sapin.normal_1.test_eteindre           | button_principal | 0     | 0        | True |
           | cuisine.soirée_1.eteindre              | button_principal | 0     | 0        | True |
-          | bar.soirée_1.eteindre                  | button_principal | 3     | 0        | True |
-          | billard.soirée_1.eteindre              | button_principal | 3     | 0        | True |
-          | son.billard.normal_1.eteindre          | button_principal | 3     | 0        | True |
-          | chemin.soirée_1.eteindre_vers_escalier | button_principal | 2     | 0        | True |
-          | poele.normal_1.eteindre                | button_principal | 2     | 0        | True |
-          | table.soirée_1.eteindre                | button_principal | 1     | 0        | True |
+          | bar.soirée_1.eteindre                  | button_principal | 0     | 0        | True |
+          | billard.soirée_1.eteindre              | button_principal | 0     | 0        | True |
+          | chemin.soirée_1.eteindre_vers_escalier | button_principal | 1     | 0        | True |
+          | poele.normal_1.eteindre                | button_principal | 0     | 0        | True |
+          | table.soirée_1.eteindre                | button_principal | 0     | 0        | True |
+          | son.billard.normal_1.eteindre          | button_principal | 1     | 0        | True |
+          | son.normal_1.eteindre                  | button_principal | 2     | 0        | True |

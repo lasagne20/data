@@ -3,13 +3,6 @@ Interrupts:
     buttons : |
         | name    | type      | scenarios
 
-HTML:
-    name: test
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name | type      | scenarios
-
-
 Scenarios:
     - name: eteindre
       marker: OFF
@@ -25,15 +18,13 @@ Scenarios:
           | name                               | type             | delay | duration | args              |
           | led_porte_billard                  | color            | 0     | 5        | 100,env.global.color1 |
           | led_porte_escalier                 | color            | 0     | 5        | 100,env.global.color1 |
-          | portes.barre.soirée_1.deco_billard | button_secondary | 0     | 0        | True              |
 
     - name: deco_table
       marker: DECO
       instructions: |
-          | name                               | type             | delay | duration | args              |
+          | name                               | type             | delay | duration | args                  |
           | led_porte_billard                  | color            | 0     | 5        | 100,env.global.color2 |
           | led_porte_escalier                 | color            | 0     | 5        | 100,env.global.color2 |
-          | portes.barre.soirée_1.deco_billard | button_secondary | 0     | 0        | True              |
 
 
 

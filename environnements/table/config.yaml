@@ -10,8 +10,8 @@ Modes:
 
 Interrupts:
     config : |
-        | name    | type     | args |
-        | inter_4 | extender | 4    |
+        | name      | type     | args  |
+        | inter_4   | extender | 4     |
 
 Variables:
     config : |

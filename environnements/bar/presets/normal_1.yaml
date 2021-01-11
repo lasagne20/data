@@ -4,14 +4,6 @@ Interrupts:
         | name    | type      | scenarios
         | inter_10 | principal | allumer, eteindre
 
-HTML:
-    name: bar
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name   | type      | scenarios         |
-        | on/off | principal | allumer, eteindre |
-
-
 Scenarios:
     - name: eteindre
       marker: OFF
@@ -40,5 +32,18 @@ Scenarios:
           | led_caisson                | color            | 0     | 3        | 0,0x000000 |
           | decoupe                    | dimmer           | 0     | 3        | 0          |
           | son.salon.normal_1.allumer | button_secondary | 0     | 0        | True       |
+
+    - name: ranger_bois
+      marker: DECO
+      instructions: |
+          | name                       | type             | delay | duration | args         |
+          | poutre                     | dimmer           | 0     | 5        | 0          |
+          | projo_37                   | dimmer           | 1     | 3        | 0            |
+          | projo_38                   | dimmer           | 2     | 3        | 0            |
+          | projo_39                   | dimmer           | 3     | 3        | 0            |
+          | projo_40                   | dimmer           | 4     | 3        | 0            |
+          | led_sol                    | color            | 0     | 3        | 0,0x000000   |
+          | led_caisson                | color            | 0     | 3        | 100,0xffffff |
+          | decoupe                    | dimmer           | 0     | 3        | 0            |
 
 

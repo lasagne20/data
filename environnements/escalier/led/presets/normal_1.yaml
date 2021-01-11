@@ -7,13 +7,6 @@ Interrupts:
         | force_on | principal | force_on          |
         | force_off | principal | force_off          |
 
-HTML:
-    name: test
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name | type      | scenarios
-
-
 Scenarios:
     - name: eteindre
       marker: OFF

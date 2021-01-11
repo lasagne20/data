@@ -3,13 +3,6 @@ Interrupts:
     buttons : |
         | name    | type      | scenarios
 
-HTML:
-    name: test
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name | type      | scenarios
-
-
 Scenarios:
     - name: eteindre
       marker: OFF

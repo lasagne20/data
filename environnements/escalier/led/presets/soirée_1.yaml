@@ -1,16 +1,11 @@
 
 Interrupts:
     buttons : |
-        | name     | type      | scenarios         |
-        | inter_1  | principal | allumer, eteindre |
-        | inter_2  | principal | allumer, eteindre |
-
-HTML:
-    name: test
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name | type      | scenarios
-
+        | name      | type      | scenarios         |
+        | inter_1   | principal | allumer, eteindre |
+        | inter_2   | principal | allumer, eteindre |
+        | force_on  | principal | force_on          |
+        | force_off | principal | force_off         |
 
 Scenarios:
     - name: eteindre
@@ -26,6 +21,20 @@ Scenarios:
           | name     | type  | delay | duration | args                 |
           | led_haut | color | 0     | 3        | 50,env.global.color1 |
           | led_bas  | color | 0     | 3        | 50,env.global.color1 |
+
+    - name: force_on
+      marker: NONE
+      instructions: |
+          | name     | type  | delay | duration | args |
+          | led_haut | force | 0     | 3        | True |
+          | led_bas  | force | 0     | 3        | True |
+
+    - name: force_off
+      marker: NONE
+      instructions: |
+          | name     | type  | delay | duration | args  |
+          | led_haut | force | 0     | 3        | False |
+          | led_bas  | force | 0     | 3        | False |
 
     - name: deco_bar
       marker: DECO

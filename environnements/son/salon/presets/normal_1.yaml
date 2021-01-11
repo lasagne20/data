@@ -4,14 +4,6 @@ Interrupts:
         | name     | type      | scenarios |
         | inter_17 | principal | allumer,eteindre   |
 
-HTML:
-    name: son_salon
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name    | type      | scenarios         |
-        | salon | principal | allumer, eteindre |
-
-
 Scenarios:
     - name: eteindre
       marker: OFF
@@ -23,9 +15,9 @@ Scenarios:
     - name: allumer
       marker: ON
       instructions: |
-          | name                      | type             | delay | duration | args          |
-          | volume_salon              | variable         | 0     | 0        | 20            |
-          | son.salon.normal_1.reload | button_principal | wait  | 0        | env.son.state |
+          | name                      | type             | delay | duration | args                   |
+          | volume_salon              | variable         | 0     | 0        | env.son.volume_general |
+          | son.salon.normal_1.reload | button_principal | wait  | 0        | env.son.state          |
 
     - name: reload
       marker: NONE

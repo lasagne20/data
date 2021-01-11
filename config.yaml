@@ -1,13 +1,23 @@
+ME: pi_maison
+
+
 MODES:
     - name: normal
-      color: white
-      text_color: black
+      html:
+          - name: maison.modes.normal
+            type: button
+            background_image: sun.png
+            inactive_color: black
+            active_color: grey
 
     - name: soirée
-      color: black
-      text_color: white
-      scenar_init: global.soirée_1.init
-
+      scenario_init: global.soirée_1.init
+      html:
+          - name: maison.modes.soirée
+            type: button
+            background_image: night.png
+            inactive_color: black
+            active_color: grey
 
 SOUND:
     Amps:
@@ -24,6 +34,10 @@ NETWORK:
     - name : pi_salle
       type : rpi
       ip : 192.168.1.22
+    
+    - name: pi_son
+      type: rpi
+      ip: 10.0.0.3
 
 BOARDS:
     # ST_nucleos and port_extender boards

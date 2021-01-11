@@ -4,12 +4,6 @@ Interrupts:
         | name    | type      | scenarios
         | inter_11 | principal | allumer, eteindre
 
-HTML:
-    name: test
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name | type      | scenarios
-
 
 Scenarios:
     - name: eteindre
@@ -36,6 +30,7 @@ Scenarios:
           | salon.soirée_1.deco_billard        | button_secondary | 0     | 0        | True |
           | table.soirée_1.deco_billard        | button_secondary | 0     | 0        | True |
           | cuisine.soirée_1.deco_billard      | button_secondary | 0     | 0        | True |
+          | portes.barre.soirée_1.deco_billard | button_secondary | 0     | 0        | True |
 
     - name: deco_salon
       marker: DECO

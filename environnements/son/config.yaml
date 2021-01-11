@@ -6,13 +6,16 @@ Modes:
 
 Interrupts:
     config : |
-        | name     | type     | args |
-        | inter_15 | extender | 15   |
-        | inter_17 | extender | 17   |
+        | name      | type     | args   |
+        | inter_16  | extender | 16     |
+        | inter_17  | extender | 17     |
+        | inter_5   | extender | 5      |
+        | power_amp | network  | pi_son |
 
 Variables:
     config : |
-        | name      | value |
+        | name           | value |
+        | volume_general | 28    |
 
 
 Objects:

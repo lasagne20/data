@@ -3,14 +3,6 @@ Interrupts:
     buttons : |
         | name     | type      | scenarios         |
 
-HTML:
-    name: son_cuisine
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name    | type      | scenarios         |
-        | cuisine | principal | allumer, eteindre |
-
-
 Scenarios:
     - name: eteindre
       marker: OFF
@@ -23,9 +15,9 @@ Scenarios:
     - name: allumer
       marker: ON
       instructions: |
-          | name                        | type             | delay | duration | args          |
-          | volume_cuisine              | variable         | 0     | 0        | 20            |
-          | son.cuisine.normal_1.reload | button_principal | wait  | 0        | env.son.state |
+          | name                        | type             | delay | duration | args                   |
+          | volume_cuisine              | variable         | 0     | 0        | env.son.volume_general |
+          | son.cuisine.normal_1.reload | button_principal | wait  | 0        | env.son.state          |
 
     - name: reload
       marker: NONE

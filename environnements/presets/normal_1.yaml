@@ -5,10 +5,17 @@ Interrupts:
         | inter_7 | principal | eteindre_tout |
 
 HTML:
-    name: test
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name | type | scenarios |
+    - name: maison.racourcis.menage
+      type: button
+      background_image: menage.png
+      inactive_color: black
+      active_color: green
+      action:
+          type: button
+          button: principal
+          scenarios: menage, eteindre
+
+
 
 
 Scenarios:
@@ -17,16 +24,30 @@ Scenarios:
       instructions: |
           | name | type | delay | duration | args |
 
+    - name: menage
+      marker: ON
+      instructions: |
+          | name                                 | type             | delay | duration | args |
+          | salon.normal_1.allumer               | button_principal | 0     | 0        | True |
+          | cuisine.normal_1.allumer_tout        | button_principal | 0     | 0        | True |
+          | bar.normal_1.allumer                 | button_principal | 3     | 0        | True |
+          | billard.normal_1.allumer             | button_principal | 3     | 0        | True |
+          | chemin.normal_1.allumer_vers_cuisine | button_principal | 2     | 0        | True |
+          | poele.normal_1.allumer               | button_principal | 2     | 0        | True |
+          | table.normal_1.allumer               | button_principal | 1     | 0        | True |
+          | son.normal_1.allumer                 | button_principal | 3     | 0        | True |
+ 
+
     - name: eteindre_tout
-      marker: NONE
+      marker: OFF
       instructions: |
           | name                                   | type             | delay | duration | args |
           | salon.normal_1.eteindre                | button_principal | 0     | 0        | True |
-          | sapin.normal_1.test_eteindre           | button_principal | 0     | 0        | True |
           | cuisine.normal_1.eteindre              | button_principal | 0     | 0        | True |
-          | bar.normal_1.eteindre                  | button_principal | 3     | 0        | True |
-          | billard.normal_1.eteindre              | button_principal | 3     | 0        | True |
-          | son.billard.normal_1.eteindre          | button_principal | 3     | 0        | True |
-          | chemin.normal_1.eteindre_vers_escalier | button_principal | 2     | 0        | True |
-          | poele.normal_1.eteindre                | button_principal | 2     | 0        | True |
-          | table.normal_1.eteindre                | button_principal | 1     | 0        | True |
+          | bar.normal_1.eteindre                  | button_principal | 0     | 0        | True |
+          | billard.normal_1.eteindre              | button_principal | 0     | 0        | True |
+          | chemin.normal_1.eteindre_vers_escalier | button_principal | 0     | 0        | True |
+          | poele.normal_1.eteindre                | button_principal | 0     | 0        | True |
+          | table.normal_1.eteindre                | button_principal | 0     | 0        | True |
+          | son.billard.normal_1.eteindre          | button_principal | 0     | 0        | True |
+          | son.normal_1.eteindre                  | button_principal | 0     | 0        | True |

@@ -4,13 +4,6 @@ Interrupts:
         | name    | type      | scenarios
         | inter_11 | principal | allumer, eteindre
 
-HTML:
-    name: test
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name | type      | scenarios
-
-
 Scenarios:
     - name: eteindre
       marker: OFF

@@ -4,16 +4,7 @@ Interrupts:
         | name    | type      | scenarios
         | inter_3 | principal | allumer, eteindre
         | inter_9 | principal | allumer, eteindre
-        | inter_16 | principal | allumer, eteindre
-
-HTML:
-    name: salon
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name | type      | scenarios
-        | off   | principal |eteindre
-        | on   | principal |allumer
-
+        | inter_15 | principal | allumer, eteindre
 
 Scenarios:
     - name: eteindre
@@ -23,6 +14,7 @@ Scenarios:
           | projo_27 | dimmer | 0     | 3        | 0    |
           | projo_31 | dimmer | 0     | 3        | 0    |
           | projo_32 | dimmer | 0     | 3        | 0    |
+          | projo_36 | dimmer | 0     | 3        | 0    |
           | poutre   | dimmer | 0     | 6        | 0    |
           | son.salon.normal_1.eteindre | button_principal | 0     | 0        | True |
 
@@ -34,6 +26,7 @@ Scenarios:
           | projo_27 | dimmer | 0     | 3        | 100  |
           | projo_31 | dimmer | 1     | 3        | 100  |
           | projo_32 | dimmer | 2     | 3        | 100  |
+          | projo_36 | dimmer | 3     | 3        | 100  |
           | poutre   | dimmer | 0     | 6        | 100  |
           | son.salon.normal_1.allumer | button_principal | 0     | 0        | True |
 

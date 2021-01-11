@@ -9,10 +9,10 @@ Modes:
 
 Interrupts:
     config : |
-        | name    | type     | args |
-        | inter_3 | extender | 3    |
-        | inter_9 | extender | 9    |
-        | inter_16 | extender | 16    |
+        | name     | type     | args |
+        | inter_3  | extender | 3    |
+        | inter_9  | extender | 9    |
+        | inter_15 | extender | 15   |
 
 Variables:
     config : |
@@ -22,8 +22,9 @@ Variables:
 Objects:
     config : |
         | name     | type     | sub_type | relay/triak | addr |
-        | projo_27 | dimmable | buld_61  | 3(2)        |      |
+        | projo_27 | dimmable | buld_200 | 3(2)        |      |
         | projo_31 | dimmable | buld_91  | 8(1)        |      |
         | projo_32 | dimmable | buld_91  | 2(1)        |      |
+        | projo_36 | dimmable | buld_91  | 7(1)        |      |
         | poutre   | dimmable | buld_91  | 1(1)        |      |
 

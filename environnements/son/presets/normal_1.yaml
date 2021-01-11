@@ -1,26 +1,22 @@
 
 Interrupts:
     buttons : |
-        | name     | type      | scenarios         |
-        | inter_15 | principal | allumer_juste_cuisine, eteindre |
-        | inter_17 | principal | allumer, eteindre |
-
-HTML:
-    name: son
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name    | type      | scenarios |
-        | mettre_son | principal | allumer, eteindre   |
-
+        | name      | type      | scenarios                       |
+        | inter_16  | principal | allumer_juste_cuisine, eteindre |
+        | inter_17  | principal | allumer_salon, eteindre         |
+        | inter_5   | principal | allumer, eteindre               |
+        | power_amp | principal | allumer, eteindre               |
 
 Scenarios:
     - name: eteindre
       marker: OFF
       instructions: |
-          | name                     | type             | delay | duration | args |
-          | son.cuisine.normal_1.off | button_principal | 0     | 0        | True |
-          | son.salon.normal_1.off   | button_principal | 0     | 0        | True |
-          | son.billard.normal_1.off | button_principal | 0     | 0        | True |
+          | name                     | type             | delay | duration | args             |
+          | son.cuisine.normal_1.off | button_principal | 0     | 0        | True             |
+          | son.salon.normal_1.off   | button_principal | 0     | 0        | True             |
+          | son.billard.normal_1.off | button_principal | 0     | 0        | True             |
+          | pi_son                   | interrupt        | 10    | 0        | change_spotify,0 |
+
 
 
     - name: reload
@@ -34,14 +30,41 @@ Scenarios:
     - name: allumer
       marker: ON
       instructions: |
-          | name                         | type             | delay | duration | args |
-          | son.billard.normal_1.allumer | button_principal | 0     | 0        | True |
-          | son.normal_1.reload          | button_principal | wait  | 0        | True |
+          | name                         | type             | delay | duration | args             |
+          | son.billard.normal_1.allumer | button_principal | 0     | 0        | True             |
+          | son.normal_1.reload          | button_principal | wait  | 0        | True             |
+          | pi_son                       | interrupt        | 0     | 0        | change_spotify,1 |
+
+    - name: allumer_salon
+      marker: ON
+      instructions: |
+          | name                         | type             | delay | duration | args             |
+          | son.billard.normal_1.allumer | button_principal | 0     | 0        | True             |
+          | son.salon.normal_1.allumer   | button_principal | 0     | 0        | True             |
+          | son.normal_1.reload          | button_principal | wait  | 0        | True             |
+          | pi_son                       | interrupt        | 0     | 0        | change_spotify,1 |
 
     - name: allumer_juste_cuisine
       marker: ON
       instructions: |
-          | name                         | type             | delay | duration | args |
-          | son.cuisine.normal_1.allumer | button_principal | 0     | 0        | True |
-          | son.normal_1.reload          | button_principal | wait  | 0        | True |
+          | name                         | type             | delay | duration | args             |
+          | son.cuisine.normal_1.allumer | button_principal | 0     | 0        | True             |
+          | son.normal_1.reload          | button_principal | wait  | 0        | True             |
+          | pi_son                       | interrupt        | 0     | 0        | change_spotify,1 |
+
+    - name: set_volume_max
+      marker: NONE
+      instructions: |
+          | name                | type             | delay | duration | args |
+          | volume_general      | variable         | 0     | 0        | 25   |
+          | son.normal_1.reload | button_principal | wait  | 0        | True |
+
+    - name: set_volume_normal
+      marker: NONE
+      instructions: |
+          | name                | type             | delay | duration | args |
+          | volume_general      | variable         | 0     | 0        | 20   |
+          | son.normal_1.reload | button_principal | wait  | 0        | True |
+
+
 
