@@ -1,0 +1,18 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios |
+        | inter_3 | principal | allumer, eteindre
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name        | type   | delay | duration | args |
+          | projo_blanc | dimmer | 0     | 3        | 0    |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name        | type   | delay | duration | args |
+          | projo_blanc | dimmer | 0     | 3        | 50    |

@@ -1,0 +1,22 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios     |
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name | type | delay | duration | args |
+
+    - name: init
+      marker: NONE
+      instructions: |
+          | name                         | type             | delay | duration | args  |
+          | salle.lyres.soirée_1.allumer | button_principal | 0     | 0        | True  |
+
+    - name: finish
+      marker: NONE
+      instructions: |
+          | name                          | type             | delay | duration | args |
+          | salle.lyres.soirée_1.eteindre | button_principal | 0     | 0        | True |

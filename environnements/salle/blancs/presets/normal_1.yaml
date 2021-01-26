@@ -1,0 +1,33 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios         |
+        | inter_1 | principal | allumer, eteindre |
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name          | type   | delay | duration | args |
+          | projo_1       | dimmer | 0     | 3        | 0    |
+          | projo_2       | dimmer | 0     | 3        | 0    |
+          | projos_bois   | dimmer | 0     | 3        | 0    |
+          | projos_pierre | dimmer | 0     | 3        | 0    |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name          | type   | delay | duration | args |
+          | projo_1       | dimmer | 0     | 3        | 100    |
+          | projo_2       | dimmer | 0     | 3        | 100    |
+          | projos_bois   | dimmer | 0     | 3        | 100    |
+          | projos_pierre | dimmer | 0     | 3        | 100    |
+
+    - name: couloir
+      marker: ON
+      instructions: |
+          | name          | type   | delay | duration | args |
+          | projo_1       | dimmer | 0     | 3        | 100  |
+          | projo_2       | dimmer | 0     | 3        | 0    |
+          | projos_bois   | dimmer | 0     | 3        | 0    |
+          | projos_pierre | dimmer | 0     | 3        | 100  |

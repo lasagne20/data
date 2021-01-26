@@ -1,0 +1,59 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios     |
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name       | type     | delay | duration | args |
+          | lyre_1     | position | 0     | 3        | 0,0  |
+          | lyre_1     | dimmer   | 0     | 3        | 0    |
+          | lyre_2     | position | 0     | 3        | 0,0  |
+          | lyre_2     | dimmer   | 0     | 3        | 0    |
+          | lyre_3     | position | 0     | 3        | 0,0  |
+          | lyre_3     | dimmer   | 0     | 3        | 0    |
+          | lyre_4     | position | 0     | 3        | 0,0  |
+          | lyre_4     | dimmer   | 0     | 3        | 0    |
+          | lyre_1     | force    | 5     | 0        | 0    |
+          | lyre_2     | force    | 5     | 0        | 0    |
+          | lyre_3     | force    | 5     | 0        | 0    |
+          | lyre_4     | force    | 5     | 0        | 0    |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name                        | type             | delay | duration | args |
+          | lyre_1                      | force            | 0     | 0        | 1    |
+          | lyre_2                      | force            | 0     | 0        | 1    |
+          | lyre_3                      | force            | 0     | 0        | 1    |
+          | lyre_4                      | force            | 0     | 0        | 1    |
+          | lyre_1                      | dimmer           | 0     | 0        | 100  |
+          | lyre_2                      | dimmer           | 0     | 0        | 100  |
+          | lyre_3                      | dimmer           | 0     | 0        | 100  |
+          | lyre_4                      | dimmer           | 0     | 0        | 100  |
+          | salle.lyres.soirée_1.boucle | button_principal | wait  | 0        | 1    |
+
+    - name: boucle
+      loop: True
+      marker: ON
+      instructions: |
+          | name    | type        | delay | duration | args             |
+          | pan_1   | variable    | 0     | 0        | randint(125,175) |
+          | pan_2   | variable    | 0     | 0        | randint(0,45)    |
+          | tilt    | variable    | 0     | 0        | randint(0,125)   |
+          | couleur | variable    | 0     | 0        | randint(0,7)     |
+          | gobo    | variable    | 0     | 0        | randint(0,7)     |
+          | lyre_1  | position    | wait  | 3        | pan_1, tilt      |
+          | lyre_2  | position    | 0     | 3        | pan_2, tilt      |
+          | lyre_3  | position    | 0     | 3        | pan_1, tilt      |
+          | lyre_4  | position    | 0     | 3        | pan_2, tilt      |
+          | lyre_1  | color_wheel | 0     | 0        | couleur          |
+          | lyre_2  | color_wheel | 0     | 0        | couleur          |
+          | lyre_3  | color_wheel | 0     | 0        | couleur          |
+          | lyre_4  | color_wheel | 0     | 0        | couleur          |
+          | lyre_1  | gobo        | 0     | 0        | gobo             |
+          | lyre_2  | gobo        | 0     | 0        | gobo             |
+          | lyre_3  | gobo        | 0     | 0        | gobo             |
+          | lyre_4  | gobo        | 0     | 0        | gobo             |

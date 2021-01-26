@@ -1,0 +1,18 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios     |
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name       | type  | delay | duration | args |
+          | ampli_gris | power | 0     | 0        | 0    |
+          | ampli_noir | power | 0     | 0        | 0    |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name       | type  | delay | duration | args |
+          | ampli_noir | power | 0     | 0        | 1    |

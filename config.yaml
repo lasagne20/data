@@ -1,0 +1,70 @@
+
+ME: pi_salle
+
+MODES:
+    - name: normal
+      html:
+          - name: salle.modes.normal
+            type: button
+            background_image: sun.png
+            inactive_color: black
+            active_color: grey
+
+    - name: cinema
+      scenario_init: global.cinema_1.init
+      scenario_end: global.cinema_1.finish
+      html:
+          - name: salle.modes.cinema
+            type: button
+            background_image: cinema.png
+            inactive_color: black
+            active_color: grey
+
+
+    - name: soirée
+      scenario_end: global.soirée_1.finish
+      html:
+          - name: salle.modes.soirée
+            type: button
+            background_image: soirée.png
+            inactive_color: black
+            active_color: grey
+
+
+
+DMX:
+    type: kingDMX
+    addr: /dev/ttyUSB0
+    wireless:
+        - relay: 15(2)
+          mini: 500
+          maxi: 512
+
+NETWORK:
+    - name: pc_msi
+      type: pc
+      ip: 192.168.1.45
+      mac: 30:9C:23:89:28:AF
+
+BOARDS:
+    ST_nucleos:
+        - name: st_nucleo_1
+          addr: /dev/ttyACM0
+          triak_boards:
+              - index,nb_triak: 1,8
+
+    Port_extender:
+        relay_boards:
+            - addr: 0x22
+              index,nb_relay: 1,16
+            - addr: 0x20
+              index,nb_relay: 2,16
+
+        interrupts:
+             - addr: 0x23
+               gpio_port: 12
+               register: 0
+
+             - addr: 0x23
+               gpio_port: 6
+               register: 1

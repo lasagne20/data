@@ -1,0 +1,20 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+
+Variables:
+    config : |
+        | name        | value |
+
+
+Objects:
+    config : |
+        | name | type | sub_type | relay/triak | addr |
+        | vmc  | lamp |          | 13(2)       |      |
+

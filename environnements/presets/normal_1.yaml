@@ -1,0 +1,32 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios       |
+        | regie_1 | principal | set_mode_normal |
+        | regie_2 | principal | set_mode_cinema |
+        | regie_3 | principal | set_mode_soirée |
+
+Scenarios:
+    - name: off
+      marker: OFF
+      instructions: |
+          | name | type | delay | duration | args |
+
+    - name: set_mode_normal
+      marker: NONE
+      instructions: |
+          | name   | type | delay | duration | args |
+          | normal | mode | 0     | 0        |      |
+
+    - name: set_mode_soirée
+      marker: NONE
+      instructions: |
+          | name   | type | delay | duration | args |
+          | soirée | mode | 0     | 0        |      |
+
+    - name: set_mode_cinema
+      marker: NONE
+      instructions: |
+          | name   | type | delay | duration | args |
+          | cinema | mode | 0     | 0        |      |
+

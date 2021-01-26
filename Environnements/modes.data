@@ -1,4 +1,0 @@
-//               LISTES DES DIFF�~IRENTS MODES
-
-normal : normal_style.css : black
-soirée : soiree_style.css : white

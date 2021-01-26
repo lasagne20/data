@@ -1,0 +1,27 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+    - mode : cinema
+      preset : cinema_1
+
+    - mode: soirée
+      preset: soirée_1
+
+Interrupts:
+    config : |
+        | name    | type | args |
+
+Variables:
+    config : |
+        | name        | value |
+
+
+Objects:
+    config : |
+        | name       | type | sub_type | relay/triak | addr |
+        | ampli_gris | lamp |          | 10(1)       |      |
+        | ampli_noir | lamp |          | 9(1)       |      |
+

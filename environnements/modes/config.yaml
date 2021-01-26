@@ -1,0 +1,25 @@
+
+
+Modes:
+    - mode : normal
+      preset : global
+
+    - mode : cinema
+      preset : global
+
+Interrupts:
+    config : |
+        | name    | type     | args   |
+        | regie_1   | extender | 8    |
+        | regie_2   | extender | 9    |
+        | regie_3   | extender | 10   |
+
+Variables:
+    config : |
+        | name        | value |
+
+
+Objects:
+    config : |
+        | name          | type     | sub_type | relay/triak | addr |
+

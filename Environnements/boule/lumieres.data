@@ -1,8 +1,0 @@
-//Contient la carte de montage de toutes les lumieres de l'environnement "Salon"
-//4(1) = port 4 de la carte numéro 1
-//Nom_projecteur  |   Type            |  addr relais |     Addresse triac    | Addresse Bluetooth 
-//                |                   |              |                       |                   
-    boule         |     boule         |    6(1)      |                       |      52
-    variable1     |     variable      |              |                       |      0 
-    var2          |     variable      |              |                       |      255 
-    var0          |     variable      |              |                       |      255 

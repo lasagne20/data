@@ -1,0 +1,23 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+        | inter_3 | extender | 3    |
+
+Variables:
+    config : |
+        | name        | value |
+
+
+Objects:
+    config : |
+        | name        | type     | sub_type | relay/triak | addr |
+        | projo_blanc | dimmable | buld_200 | 7(1)        |      |
+        | projo_deco  | lamp     |          | 14(2)       |      |
+        | led_rpi     | lamp     |          | 16(1)       |      |
+

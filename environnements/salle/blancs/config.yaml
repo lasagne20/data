@@ -1,0 +1,27 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+    - mode : cinema
+      preset : soirée_1
+
+Interrupts:
+    config : |
+        | name    | type     | args   |
+        | inter_1 | extender | 1      |
+
+Variables:
+    config : |
+        | name        | value |
+
+
+Objects:
+    config : |
+        | name          | type     | sub_type | relay/triak | addr |
+        | projo_1       | dimmable | buld_200 | 1(1)        |      |
+        | projo_2       | dimmable | buld_200 | 2(1)        |      |
+        | projos_bois   | dimmable | buld_200 | 5(1)        |      |
+        | projos_pierre | dimmable | buld_200 | 6(1)        |      |
+

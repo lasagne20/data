@@ -1,0 +1,19 @@
+
+Interrupts:
+    buttons : |
+        | name      | type      | scenarios         |
+        | inter_4   | principal | allumer, eteindre |
+        | bas_porte | principal | allumer, eteindre |
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name          | type   | delay | duration | args |
+          | projo_couloir | dimmer | 0     | 3        | 0    |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name          | type   | delay | duration | args |
+          | projo_couloir | dimmer | 0     | 3        | 50  |

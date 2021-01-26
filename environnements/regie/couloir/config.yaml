@@ -1,0 +1,21 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+        | inter_4 | extender | 4    |
+
+Variables:
+    config : |
+        | name        | value |
+
+
+Objects:
+    config : |
+        | name          | type     | sub_type | relay/triak | addr |
+        | projo_couloir | dimmable | buld_200 | 8(1)        |      |
+

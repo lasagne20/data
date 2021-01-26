@@ -1,0 +1,40 @@
+
+Config:
+    background_color: grey
+    background_image:
+
+
+Sections:
+  - name: liens
+    lenght: 3
+    index: 0
+
+  - name: modes
+    title: Modes
+    lenght: 3
+    index: 1
+
+  - name: racourcis
+    title: Racourcis
+    lenght: 6
+
+Static_icons:
+   - name: Maison
+     section: liens
+     type: redirection
+     background_image: maison.png
+     background_color: black
+     link: 192.168.1.20
+
+   - name: Salle
+     section: liens
+     type: redirection
+     background_image: cinema.png
+     link: 192.168.1.22
+
+
+
+
+
+
+

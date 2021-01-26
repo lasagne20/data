@@ -1,0 +1,38 @@
+
+Interrupts:
+    buttons : |
+        | name      | type      | scenarios |
+        | bas_porte | principal | pause     |
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name | type | delay | duration | args |
+
+    - name: init
+      marker: NONE
+      instructions: |
+          | name                     | type             | delay | duration | args |
+          | global.cinema_1.start_pc | button_principal | 0     | 0        | 1    |
+
+    - name: start_pc
+      marker: NONE
+      instructions: |
+          | name   | type | delay | duration | args       |
+          | pc_msi | pc   | 0     | 0        | power_on() |
+
+    - name: finish
+      marker: NONE
+      instructions: |
+          | name   | type | delay | duration | args        |
+          | pc_msi | pc   | 0     | 0        | power_off() |
+
+    - name: pause
+      marker: NONE
+      instructions: |
+          | name   | type | delay | duration | args       |
+          | pc_msi | pc   | 0     | 0        | key(space) |
+
+
+

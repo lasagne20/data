@@ -1,0 +1,29 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios     |
+
+HTML:
+   - name: salle.racourcis.vmc
+     type: button
+     background_image: maison.png
+     inactive_color: black
+     active_color: green
+     action:
+          type: button
+          button: principal
+          scenarios: vmc_on, vmc_off
+
+
+Scenarios:
+    - name: vmc_off
+      marker: OFF
+      instructions: |
+          | name | type  | delay | duration | args |
+          | vmc  | power | 0     | 0        | 0    |
+
+    - name: vmc_on
+      marker: ON
+      instructions: |
+          | name | type  | delay | duration | args |
+          | vmc  | power | 0     | 0        | 1    |
