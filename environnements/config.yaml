@@ -11,7 +11,7 @@ Interrupts:
 
 Variables:
     config : |
-        | name        | value |
+        | name           | value |
 
 
 Objects:

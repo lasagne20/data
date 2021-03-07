@@ -5,11 +5,25 @@ Interrupts:
         | change_spotify | principal | allumer, eteindre |
 
 HTML:
-    name: spotify
-    colors: 0xff0000,0x00ff00
-    buttons: | # buttons need to be in the order
-        | name          | type      | scenarios         |
-        | spotify       | principal | allumer, eteindre |
+    - name: spotify.spotify.volume
+      type: slider
+      min_value: 0
+      max_value: 100
+      index: 1
+      lenght: 5
+      action:
+          type: variable
+          variable: spotify_volume
+
+    - name: spotify.spotify.play
+      type: button
+      background_image: menage.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
 
 
 Scenarios:
@@ -22,8 +36,8 @@ Scenarios:
     - name: allumer
       marker: ON
       instructions: |
-          | name    | type    | delay | duration | args |
-          | spotify | spotify | 0     | 0        | start |
+          | name    | type    | delay | duration | args                  |
+          | spotify | spotify | 0     | 0        | start                 |
 
     - name: start
       marker: NONE
