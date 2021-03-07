@@ -2,8 +2,6 @@
 Interrupts:
     buttons : |
         | name      | type      | scenarios         |
-        | inter_1   | principal | allumer, eteindre |
-        | inter_2   | principal | allumer, eteindre |
         | force_on  | principal | force_on          |
         | force_off | principal | force_off         |
 

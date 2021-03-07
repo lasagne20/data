@@ -4,6 +4,17 @@ Interrupts:
         | name    | type      | scenarios
         | inter_11 | principal | allumer, eteindre
 
+HTML:
+    - name: maison.eclairage.billard
+      type: button
+      background_image: billard_1.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
+
 Scenarios:
     - name: eteindre
       marker: OFF
@@ -18,9 +29,9 @@ Scenarios:
       marker: ON
       instructions: |
           | name                         | type             | delay | duration | args |
-          | poutre                       | dimmer           | 0     | 3        | 100  |
-          | projo_3                      | dimmer           | 0     | 5        | 100  |
-          | projo_4                      | dimmer           | 0     | 5        | 100  |
-          | projo_17                     | dimmer           | 2     | 5        | 100  |
+          | poutre                       | dimmer           | 0     | 3        | dimmer_general  |
+          | projo_3                      | dimmer           | 0     | 5        | dimmer_general  |
+          | projo_4                      | dimmer           | 0     | 5        | dimmer_general  |
+          | projo_17                     | dimmer           | 2     | 5        | dimmer_general  |
           | son.billard.normal_1.allumer | button_secondary | 0     | 0        | True |
 

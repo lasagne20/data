@@ -20,6 +20,6 @@ Variables:
 Objects:
     config : |
         | name             | type | sub_type | relay/triak | addr              |
-        | led_haut_billard | led  | lednet   | 8(1)        | 10.0.0.54         |
+        | led_haut_billard | led  | lednet   | 8(1)        | 192.168.1.104     |
         | led_haut_bureau  | led  | triones  | 8(1)        | ff:ff:40:00:dc:ba |
 

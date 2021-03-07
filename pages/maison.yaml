@@ -1,37 +1,65 @@
 
 Config:
-    background_color: grey
+    background_color: black
     background_image:
 
 
 Sections:
   - name: liens
-    lenght: 3
-    index: 0
+    background_color: rgb(80,80,80)
+    lenght: 4
 
   - name: modes
     title: Modes
+    text_color: white
+    background_color: rgb(80,80,80)
     lenght: 3
-    index: 1
 
   - name: racourcis
     title: Racourcis
+    text_color: white
+    background_color: grey
     lenght: 6
+
+  - name: eclairage
+    title: Eclairage
+    text_color: white
+    background_color: grey
+    lenght: 6
+
+  - name: enceintes
+    title: Enceintes
+    text_color: white
+    background_color: grey
+    lenght: 5
 
 Static_icons:
    - name: Maison
      section: liens
      type: redirection
      background_image: maison.png
-     link: 192.168.1.20
+     link: http://maison
+
+   - name: Son
+     section: liens
+     type: redirection
+     background_image: spotify_off.jpg
+     background_color: black
+     link: http://son
 
    - name: Salle
      section: liens
      type: redirection
      background_image: cinema.png
      background_color: black
-     link: 192.168.1.22
+     link: http://salle
 
+   - name: Trappe
+     section: liens
+     type: redirection
+     background_image: trappe_1.png
+     background_color: black
+     link: http://trappe
 
 
 

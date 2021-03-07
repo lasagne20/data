@@ -2,55 +2,66 @@
 Interrupts:
     buttons : |
         | name      | type      | scenarios                       |
-        | inter_16  | principal | allumer_juste_cuisine, eteindre |
+        | inter_15  | principal | allumer_juste_cuisine, eteindre |
         | inter_17  | principal | allumer_salon, eteindre         |
         | inter_5   | principal | allumer, eteindre               |
         | power_amp | principal | allumer, eteindre               |
+
+HTML:
+    - name: maison.enceintes.son
+      type: button
+      background_image: power_1.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
 
 Scenarios:
     - name: eteindre
       marker: OFF
       instructions: |
-          | name                     | type             | delay | duration | args             |
-          | son.cuisine.normal_1.off | button_principal | 0     | 0        | True             |
-          | son.salon.normal_1.off   | button_principal | 0     | 0        | True             |
-          | son.billard.normal_1.off | button_principal | 0     | 0        | True             |
-          | pi_son                   | interrupt        | 10    | 0        | change_spotify,0 |
-
-
+          | name                            | type             | delay | duration | args             |
+          | son.cuisine.normal_1.off        | button_principal | 0     | 0        | True             |
+          | son.salon.normal_1.off          | button_principal | 0     | 0        | True             |
+          | son.billard.normal_1.off        | button_principal | 0     | 0        | True             |
+          | son.exterieur.normal_1.eteindre | button_principal | 0     | 0        | True             |
+          | pi_son                          | interrupt        | 10    | 0        | change_spotify,0 |
 
     - name: reload
       marker: NONE
       instructions: |
-          | name                         | type             | delay | duration | args |
-          | son.cuisine.normal_1.reload  | button_principal | 0     | 0        | True |
-          | son.salon.normal_1.reload    | button_principal | 0     | 0        | True |
-          | son.billard.normal_1.reload  | button_principal | 0     | 0        | True |
+          | name                          | type             | delay | duration | args |
+          | son.cuisine.normal_1.reload   | button_principal | 0     | 0        | True |
+          | son.salon.normal_1.reload     | button_principal | 0     | 0        | True |
+          | son.billard.normal_1.reload   | button_principal | 0     | 0        | True |
+          | son.exterieur.normal_1.reload | button_principal | 0     | 0        | True |
 
     - name: allumer
       marker: ON
       instructions: |
-          | name                         | type             | delay | duration | args             |
-          | son.billard.normal_1.allumer | button_principal | 0     | 0        | True             |
-          | son.normal_1.reload          | button_principal | wait  | 0        | True             |
-          | pi_son                       | interrupt        | 0     | 0        | change_spotify,1 |
+          | name                         | type             | delay | duration | args                          |
+          | son.billard.normal_1.allumer | button_principal | 0     | 0        | True                          |
+          | son.normal_1.reload          | button_principal | wait  | 0        | True                          |
+          | pi_son                       | interrupt        | 0     | 0        | change_spotify,1              |
 
     - name: allumer_salon
       marker: ON
       instructions: |
-          | name                         | type             | delay | duration | args             |
-          | son.billard.normal_1.allumer | button_principal | 0     | 0        | True             |
-          | son.salon.normal_1.allumer   | button_principal | 0     | 0        | True             |
-          | son.normal_1.reload          | button_principal | wait  | 0        | True             |
-          | pi_son                       | interrupt        | 0     | 0        | change_spotify,1 |
+          | name                         | type             | delay | duration | args                          |
+          | son.billard.normal_1.allumer | button_principal | 0     | 0        | True                          |
+          | son.salon.normal_1.allumer   | button_principal | 0     | 0        | True                          |
+          | son.normal_1.reload          | button_principal | wait  | 0        | True                          |
+          | pi_son                       | interrupt        | 0     | 0        | change_spotify,1              |
 
     - name: allumer_juste_cuisine
       marker: ON
       instructions: |
-          | name                         | type             | delay | duration | args             |
-          | son.cuisine.normal_1.allumer | button_principal | 0     | 0        | True             |
-          | son.normal_1.reload          | button_principal | wait  | 0        | True             |
-          | pi_son                       | interrupt        | 0     | 0        | change_spotify,1 |
+          | name                         | type             | delay | duration | args                          |
+          | son.cuisine.normal_1.allumer | button_principal | 0     | 0        | True                          |
+          | son.normal_1.reload          | button_principal | wait  | 0        | True                          |
+          | pi_son                       | interrupt        | 0     | 0        | change_spotify,1              |
 
     - name: set_volume_max
       marker: NONE

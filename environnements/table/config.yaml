@@ -15,11 +15,10 @@ Interrupts:
 
 Variables:
     config : |
-        | name      | value |
-
+        | name           | value              |
 
 Objects:
     config : |
         | name   | type     | sub_type | relay/triak | addr |
-        | poutre | dimmable | buld_73  | 5(2)        |      |
+        | poutre | dimmable | buld_200 | 5(2)        |      |
 

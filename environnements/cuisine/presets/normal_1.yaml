@@ -5,6 +5,17 @@ Interrupts:
         | inter_13 | choice    | allumer_feu, allumer_evier
         | inter_14 | principal | eteindre
 
+HTML:
+    - name: maison.eclairage.cuisine
+      type: button
+      background_image: cuisine_1.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer_evier, eteindre
+
 Scenarios:
     - name: eteindre
       marker: OFF
@@ -22,7 +33,7 @@ Scenarios:
       marker: ON
       instructions: |
           | name                         | type             | delay | duration | args         |
-          | poutre_evier                 | dimmer           | 0     | 3        | 100          |
+          | poutre_evier                 | dimmer           | 0     | 3        | dimmer_general          |
           | poutre_banque                | dimmer           | 0     | 3        | 0            |
           | led_exterieur                | color            | 0     | 3        | 0,0x000000   |
           | led_interieur                | color            | 0     | 0        | 100,0x0f0fff |
@@ -34,7 +45,7 @@ Scenarios:
       marker: ON
       instructions: |
           | name                         | type             | delay | duration | args         |
-          | poutre_evier                 | dimmer           | 0     | 3        | 100          |
+          | poutre_evier                 | dimmer           | 0     | 3        | dimmer_general          |
           | poutre_banque                | dimmer           | 0     | 3        | 0            |
           | led_exterieur                | color            | 0     | 3        | 0,0x000000   |
           | led_interieur                | color            | 0     | 0        | 100,0xffffff |
@@ -45,12 +56,12 @@ Scenarios:
     - name: allumer_tout
       marker: ON
       instructions: |
-          | name                         | type             | delay | duration | args         |
-          | poutre_evier                 | dimmer           | 0     | 3        | 100          |
-          | poutre_banque                | dimmer           | 0     | 3        | 100          |
-          | led_exterieur                | color            | 0     | 3        | 0,0x000000   |
+          | name                         | type             | delay | duration | args                    |
+          | poutre_evier                 | dimmer           | 0     | 3        | dimmer_general          |
+          | poutre_banque                | dimmer           | 0     | 3        | dimmer_general          |
+          | led_exterieur                | color            | 0     | 3        | 0,0x000000              |
           | led_interieur                | color            | 0     | 0        | 100,0xffffff |
-          | led_banque                   | color            | 0     | 3        | 80, 0x0f0fff |
-          | hotte                        | power            | 0     | 3        | 1            |
-          | son.cuisine.normal_1.allumer | button_principal | 0     | 0        | True         |
+          | led_banque                   | color            | 0     | 3        | 80, 0x0f0fff            |
+          | hotte                        | power            | 0     | 3        | 1                       |
+          | son.cuisine.normal_1.allumer | button_principal | 0     | 0        | True                    |
 

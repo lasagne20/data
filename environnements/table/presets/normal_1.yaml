@@ -4,6 +4,19 @@ Interrupts:
         | name      | type      | scenarios         |
         | inter_4   | principal | allumer, eteindre |
 
+HTML:
+    - name: maison.eclairage.table
+      type: button
+      background_image: table_1.png
+      inactive_color: grey
+      active_color: black
+      index: 2
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
+
+
 Scenarios:
     - name: eteindre
       marker: OFF
@@ -11,12 +24,11 @@ Scenarios:
           | name   | type   | delay | duration | args |
           | poutre | dimmer | 0     | 3        | 0    |
 
-
     - name: allumer
       marker: ON
       instructions: |
-          | name                         | type             | delay | duration | args |
-          | poutre                       | dimmer           | 0     | 3        | 100  |
-          | son.billard.normal_1.allumer | button_secondary | 0     | 0        | True |
-          | son.cuisine.normal_1.allumer | button_secondary | 0     | 0        | True |
+          | name                         | type             | delay | duration | args           |
+          | poutre                       | dimmer           | 0     | 3        | dimmer_general |
+          | son.billard.normal_1.allumer | button_secondary | 0     | 0        | True           |
+          | son.cuisine.normal_1.allumer | button_secondary | 0     | 0        | True           |
 

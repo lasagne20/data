@@ -17,10 +17,10 @@ Scenarios:
     - name: allumer
       marker: ON
       instructions: |
-          | name                       | type             | delay | duration | args |
-          | projo_24                   | dimmer           | 0     | 3        | 100  |
-          | projo_26                   | dimmer           | 0     | 3        | 100  |
-          | projo_47                   | dimmer           | 0     | 3        | 100  |
-          | bar.normal_1.ranger_bois   | button_secondary | 0     | 0        | True |
-          | son.salon.normal_1.allumer | button_secondary | 0     | 0        | True |
+          | name                       | type             | delay | duration | args           |
+          | projo_24                   | dimmer           | 0     | 3        | dimmer_general |
+          | projo_26                   | dimmer           | 0     | 3        | dimmer_general |
+          | projo_47                   | dimmer           | 0     | 3        | 100            |
+          | bar.normal_1.ranger_bois   | button_secondary | 0     | 0        | True           |
+          | son.salon.normal_1.allumer | button_secondary | 0     | 0        | True           |
 

@@ -1,0 +1,44 @@
+
+Interrupts:
+    buttons : |
+        | name     | type      | scenarios |
+        | inter_17 | principal | allumer,eteindre   |
+
+HTML:
+    - name: maison.enceintes.son_exterieur
+      type: button
+      background_image: table_1.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name                        | type             | delay | duration | args     |
+          | volume_exterieur                      | variable         | 0     | 0        | 0        |
+          | son.exterieur.normal_1.reload | button_principal | wait     | 0        | env.son.state |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name                      | type             | delay | duration | args                   |
+          | volume_exterieur              | variable         | 0     | 0        | env.son.volume_general |
+          | son.exterieur.normal_1.reload | button_principal | wait  | 0        | env.son.state          |
+
+    - name: reload
+      marker: NONE
+      instructions: |
+          | name     | type    | delay | duration | args |
+          | enceinte_exterieur | speakers | 0     | 3        | volume_exterieur   |
+
+    - name: off
+      marker: NONE
+      instructions: |
+          | name     | type    | delay | duration | args |
+          | enceinte_exterieur | speakers | 0     | 3        | 0   |
+

@@ -30,9 +30,9 @@ Scenarios:
           | projo_35       | dimmer | 4     | 5        | 15                   |
           | projo_46       | dimmer | 5     | 5        | 15                   |
           | led_sous_table | color  | 0     | 10       | 50,env.global.color1 |
-          | led_mur_gauche | color  | 0     | 5        | 30,env.global.color2 |
-          | led_mur_centre | color  | 0     | 5        | 30,env.global.color2 |
-          | led_mur_droite | color  | 0     | 5        | 30,env.global.color2 |
+          | led_mur_gauche | color  | 0     | 5        | 50,env.global.color2 |
+          | led_mur_centre | color  | 0     | 5        | 50,env.global.color2 |
+          | led_mur_droite | color  | 0     | 5        | 50,env.global.color2 |
 
     - name: deco_billard
       marker: DECO
@@ -44,10 +44,10 @@ Scenarios:
           | projo_34       | dimmer | 3     | 5        | 0                    |
           | projo_35       | dimmer | 4     | 5        | 0                    |
           | projo_46       | dimmer | 5     | 5        | 0                    |
-          | led_sous_table | color  | 0     | 10       | 10,env.global.color1 |
-          | led_mur_gauche | color  | 0     | 5        | 15,env.global.color2 |
-          | led_mur_centre | color  | 0     | 5        | 15,env.global.color2 |
-          | led_mur_droite | color  | 0     | 5        | 15,env.global.color2 |
+          | led_sous_table | color  | 0     | 10       | 90,env.global.color1 |
+          | led_mur_gauche | color  | 0     | 5        | 80,env.global.color2 |
+          | led_mur_centre | color  | 0     | 5        | 80,env.global.color2 |
+          | led_mur_droite | color  | 0     | 5        | 80,env.global.color2 |
 
     - name: deco_table
       marker: DECO
@@ -59,10 +59,10 @@ Scenarios:
           | projo_34       | dimmer | 3     | 5        | 0                    |
           | projo_35       | dimmer | 4     | 5        | 0                    |
           | projo_46       | dimmer | 5     | 5        | 0                    |
-          | led_sous_table | color  | 0     | 10       | 10,env.global.color2 |
-          | led_mur_gauche | color  | 0     | 5        | 15,env.global.color1 |
-          | led_mur_centre | color  | 0     | 5        | 15,env.global.color1 |
-          | led_mur_droite | color  | 0     | 5        | 15,env.global.color1 |
+          | led_sous_table | color  | 0     | 10       | 60,env.global.color2 |
+          | led_mur_gauche | color  | 0     | 5        | 65,env.global.color1 |
+          | led_mur_centre | color  | 0     | 5        | 65,env.global.color1 |
+          | led_mur_droite | color  | 0     | 5        | 65,env.global.color1 |
 
 
 

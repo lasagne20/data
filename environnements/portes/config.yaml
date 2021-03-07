@@ -20,5 +20,5 @@ Objects:
     config : |
         | name               | type | sub_type | relay/triak | addr              |
         | led_porte_billard  | led  | triones  | 8(1)        | ff:ff:40:00:d8:91 |
-        | led_porte_escalier | led  | lednet   | 8(1)        | 10.0.0.53         |
+        | led_porte_escalier | led  | lednet   | 8(1)        | 192.168.1.105     |
 

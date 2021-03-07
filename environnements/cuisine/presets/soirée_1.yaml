@@ -5,6 +5,17 @@ Interrupts:
         | inter_13 | choice    | allumer_evier, allumer_feu
         | inter_14 | principal | eteindre
 
+HTML:
+    - name: maison.eclairage.cuisine
+      type: button
+      background_image: cuisine_1.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer_evier, eteindre
+
 Scenarios:
     - name: eteindre
       marker: OFF

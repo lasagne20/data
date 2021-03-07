@@ -18,10 +18,3 @@ Scenarios:
           | led_mur_gauche | color  | 0     | 5        | 0,0x000000 |
           | led_mur_centre | color  | 0     | 5        | 0,0x000000 |
           | led_mur_droite | color  | 0     | 5        | 0,0x000000 |
-
-
-    - name: allumer
-      marker: ON
-      instructions: |
-          | name   | type   | delay | duration | args |
-

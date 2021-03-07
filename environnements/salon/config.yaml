@@ -11,8 +11,9 @@ Interrupts:
     config : |
         | name     | type     | args |
         | inter_3  | extender | 3    |
-        | inter_9  | extender | 9    |
-        | inter_15 | extender | 15   |
+        | inter_9  | extender | 9    | # there are an issue on the pin 16 (port extender 0x20,0 pin 8)
+        | inter_16 | extender | 19   | # it just blink when we dim a light. solve : link 2 cables, remove pin 16
+        
 
 Variables:
     config : |

@@ -18,14 +18,14 @@ Variables:
 
 Objects:
     config : |
-        | name           | type     | sub_type | relay/triak    | addr      |
-        | projo_28       | dimmable | buld_200 | 2(2)           |           |
-        | projo_30       | dimmable | buld_200 | 1(2)           |           |
-        | projo_33       | dimmable | buld_91  | 3(1)           |           |
-        | projo_34       | dimmable | buld_91  | 4(1)           |           |
-        | projo_35       | dimmable | buld_91  | 6(1)           |           |
-        | projo_46       | dimmable | buld_91  | 6(5)           |           |
-        | led_mur_gauche | led      | lednet   | 5(1)           | 10.0.0.51 |
-        | led_mur_centre | led      | lednet   | 5(1)           | 10.0.0.52 |
-        | led_mur_droite | led      | lednet   | 5(1)           | 10.0.0.58 |
-        | led_sous_table | led      | lednet   | 13(pi_salle.1) | 10.0.0.59 |
+        | name           | type     | sub_type | relay/triak    | addr          |
+        | projo_28       | dimmable | buld_200 | 2(2)           |               |
+        | projo_30       | dimmable | buld_200 | 1(2)           |               |
+        | projo_33       | dimmable | buld_91  | 3(1)           |               |
+        | projo_34       | dimmable | buld_91  | 4(1)           |               |
+        | projo_35       | dimmable | buld_91  | 6(1)           |               |
+        | projo_46       | dimmable | buld_91  | 6(5)           |               |
+        | led_mur_gauche | led      | dmx      | 5(1)           | 406           |
+        | led_mur_centre | led      | dmx      | 5(1)           | 400           |
+        | led_mur_droite | led      | dmx      | 5(1)           | 403           |
+        | led_sous_table | led      | lednet   | 13(pi_salle.1) | 192.168.1.108 |

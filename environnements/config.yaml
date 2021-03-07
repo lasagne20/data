@@ -14,10 +14,11 @@ Interrupts:
 
 Variables:
     config : |
-        | name        | value |
-        | color_index | 0     |
-        | color1      | 0     |
-        | color2      | 0     |
+        | name           | value |
+        | color_index    | 0     |
+        | color1         | 0     |
+        | color2         | 0     |
+        | dimmer_general | 100   |
 
 
 Objects:

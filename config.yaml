@@ -7,7 +7,6 @@ MODES:
           - name: maison.modes.normal
             type: button
             background_image: sun.png
-            inactive_color: black
             active_color: grey
 
     - name: soirée
@@ -16,7 +15,6 @@ MODES:
           - name: maison.modes.soirée
             type: button
             background_image: night.png
-            inactive_color: black
             active_color: grey
 
 SOUND:
@@ -37,7 +35,7 @@ NETWORK:
     
     - name: pi_son
       type: rpi
-      ip: 10.0.0.3
+      ip: 192.168.1.23
 
 BOARDS:
     # ST_nucleos and port_extender boards
@@ -75,7 +73,7 @@ BOARDS:
             register : 1
 
           - addr : 0x20
-            gpio_port : 6
+            gpio_port : 13
             register : 0
 
           - addr : 0x24

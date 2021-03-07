@@ -4,6 +4,17 @@ Interrupts:
         | name    | type      | scenarios     |
         | inter_7 | principal | eteindre_tout |
 
+HTML:
+    - name: maison.racourcis.couleur
+      type: button
+      background_image: couleurs.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: init
+
 Scenarios:
     - name: eteindre
       marker: OFF
@@ -15,8 +26,8 @@ Scenarios:
       instructions: |
           | name              | type             | delay | duration | args                                               |
           | color_index       | variable         | 0     | 0        | randint(0,2)                                       |
-          | color1            | variable         | wait  | 0        | randint(0, 0xffffff) \| 0xff<<(8*color_index) \| 0 |
-          | color2            | variable         | 0     | 0        | randint(0, 0xffffff) \| 0xff<<(8*color_index) \| 0 |
+          | color1            | variable         | wait  | 3        | randint(0, 0xffffff) \| 0xff<<(8*color_index) \| 0 |
+          | color2            | variable         | 0     | 3        | randint(0, 0xffffff) \| 0xff<<(8*color_index) \| 0 |
 
     - name: eteindre_tout
       marker: NONE

@@ -9,8 +9,9 @@ Modes:
 
 Interrupts:
     config : |
-        | name    | type     | args |
-        | inter_10 | extender | 10    |
+        | name      | type     | args |
+        | inter_10  | extender | 10   |
+        | radar_bar | extender | 20   |
 
 Variables:
     config : |
@@ -25,7 +26,7 @@ Objects:
         | projo_38    | dimmable | buld_91  | 5(5)        |                   |
         | projo_39    | dimmable | buld_200 | 7(4)        |                   |
         | projo_40    | dimmable | buld_200 | 8(4)        |                   |
-        | led_caisson | led      | lednet   | 6(1)        | 10.0.0.55         |
+        | led_caisson | led      | lednet   | 6(1)        | 192.168.1.103     |
         | led_sol     | led      | bledom   | 6(1)        | be:89:20:00:23:3d |
         | decoupe     | dimmable | dmx      | 16(1)       | 500               |
 

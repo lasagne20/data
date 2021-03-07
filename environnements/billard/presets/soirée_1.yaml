@@ -4,6 +4,16 @@ Interrupts:
         | name    | type      | scenarios
         | inter_11 | principal | allumer, eteindre
 
+HTML:
+    - name: maison.eclairage.billard
+      type: button
+      background_image: billard_1.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
 
 Scenarios:
     - name: eteindre

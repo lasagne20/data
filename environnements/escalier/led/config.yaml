@@ -20,7 +20,7 @@ Variables:
 
 Objects:
     config : |
-        | name     | type | sub_type | relay/triak | addr      |
-        | led_haut | led  | lednet   | 1(1)        | 10.0.0.56 |
-        | led_bas  | led  | lednet   | 1(1)        | 10.0.0.57 |
+        | name     | type | sub_type | relay/triak | addr          |
+        | led_haut | led  | lednet   | 1(1)        | 192.168.1.101 |
+        | led_bas  | led  | lednet   | 1(1)        | 192.168.1.100 |
 

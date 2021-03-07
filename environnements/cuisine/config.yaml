@@ -24,7 +24,7 @@ Objects:
         | poutre_evier  | dimmable | buld_200 | 6(2)        |                   |
         | poutre_banque | dimmable | buld_200 | 7(2)        |                   |
         | led_exterieur | led      | bledom   | 7(1)        | be:ff:80:01:2b:33 |
-        | led_interieur | led      | lednet   | 7(1)        | 10.0.0.50         |
+        | led_interieur | led      | lednet   | 7(1)        | 192.168.1.102     |
         | led_banque    | led      | bledom   | 7(1)        | be:ff:80:01:31:02 |
         | hotte         | lamp     |          | 10(1)       |                   |
 

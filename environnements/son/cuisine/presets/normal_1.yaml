@@ -3,6 +3,18 @@ Interrupts:
     buttons : |
         | name     | type      | scenarios         |
 
+HTML:
+    - name: maison.enceintes.son_cuisine
+      type: button
+      background_image: cuisine_1.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
+
+
 Scenarios:
     - name: eteindre
       marker: OFF

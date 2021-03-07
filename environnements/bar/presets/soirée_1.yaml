@@ -1,8 +1,21 @@
 
 Interrupts:
     buttons : |
-        | name    | type      | scenarios
-        | inter_10 | principal | allumer, eteindre
+        | name      | type      | scenarios
+        | inter_10  | principal | allumer, eteindre
+        | radar_bar | principal | allumer, eteindre
+
+HTML:
+    - name: maison.eclairage.bar
+      type: button
+      background_image: bar_1.png
+      inactive_color: grey
+      active_color: black
+      index: 1
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
 
 Scenarios:
     - name: eteindre
