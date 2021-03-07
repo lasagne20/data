@@ -19,20 +19,26 @@ Scenarios:
     - name: start_pc
       marker: NONE
       instructions: |
-          | name   | type | delay | duration | args       |
-          | pc_msi | pc   | 0     | 0        | power_on() |
+          | name   | type | delay | duration | args         |
+          | pc_msi | pc   | 0     | 0        | power_on()   |
+          | pc_msi | pc   | 0     | 0        | keys(cmd, p) |
+          | pc_msi | pc   | wait  | 0        | keys(down)   |
+          | pc_msi | pc   | wait  | 0        | keys(enter)   |
 
     - name: finish
       marker: NONE
       instructions: |
-          | name   | type | delay | duration | args        |
-          | pc_msi | pc   | 0     | 0        | power_off() |
+          | name   | type | delay | duration | args         |
+          | pc_msi | pc   | 0     | 0        | keys(cmd, p) |
+          | pc_msi | pc   | wait  | 0        | keys(up)   |
+          | pc_msi | pc   | wait  | 0        | keys(enter)   |
+          | pc_msi | pc   | wait  | 0        | power_off()  |
 
     - name: pause
       marker: NONE
       instructions: |
           | name   | type | delay | duration | args       |
-          | pc_msi | pc   | 0     | 0        | key(space) |
+          | pc_msi | pc   | 0     | 0        | keys(space) |
 
 
 

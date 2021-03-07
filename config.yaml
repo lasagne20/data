@@ -37,7 +37,7 @@ DMX:
     addr: /dev/ttyUSB0
     wireless:
         - relay: 15(2)
-          mini: 500
+          mini: 400
           maxi: 512
 
 NETWORK:

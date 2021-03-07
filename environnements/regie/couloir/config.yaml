@@ -4,6 +4,9 @@ Modes:
     - mode : normal
       preset : normal_1
 
+    - mode : cinema
+      preset : cinema_1
+
 Interrupts:
     config : |
         | name    | type     | args |
