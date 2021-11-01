@@ -6,7 +6,7 @@ Interrupts:
 HTML:
     - name: home.test1.but_test
       type: button
-      background_image: cinema.png
+      background_image: cuisine_1.png
       inactive_color: black
       active_color: grey
       action:

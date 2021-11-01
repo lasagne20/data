@@ -1,11 +1,11 @@
-NAME: pi_test
+ME: pi_test
 
 MODES:
     - name: normal
       html:
           - name: home.test1.but_test2
             type: button
-            background_image: cinema.png
+            background_image: sun.png
             inactive_color: black
             active_color: grey
 
@@ -13,7 +13,7 @@ MODES:
       html:
           - name: home.test1.mode2
             type: button
-            background_image: cinema.png
+            background_image: night.png
             inactive_color: black
             active_color: grey
 
