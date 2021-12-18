@@ -1,0 +1,17 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios |
+        | inter_general | principal | eteindre, allumer |
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name   | type  | delay | duration | args |
+          | canapé | dimmer | 0     | 3        | 0    |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name   | type  | delay | duration | args |
+          | canapé | dimmer | 0     | 3      | 100    |

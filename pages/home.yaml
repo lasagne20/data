@@ -5,15 +5,8 @@ Config:
 
 
 Sections:
-  - name: liens
-    title: Rpis
+  - name: lol
     lenght: 3
-    index: 0
-
-  - name: test1
-    title: test1
-    lenght: 3
-    index: 1
 
 
 

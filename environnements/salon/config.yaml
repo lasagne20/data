@@ -1,0 +1,22 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+
+Variables:
+    config : |
+        | name        | value |
+        | color_index | 0     |
+        | color       | 0     |
+
+
+Objects:
+    config : |
+        | name   | type     | sub_type | relay/triak | addr |
+        | canapé | dimmable | buld_200 | 8(1)        |      |
+

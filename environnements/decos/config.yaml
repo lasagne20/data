@@ -1,0 +1,29 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name  | type | args     |
+        | lever | cron | 06:00:00 |
+        | coucher | cron | 23:00:00 |
+
+Variables:
+    config : |
+        | name        | value |
+        | color_index | 0     |
+        | color       | 0     |
+
+
+Objects:
+    config : |
+        | name            | type     | sub_type | relay/triak | addr |
+        | sapin           | lamp     |          | 25(gpio)    |      |
+        | led_rpi         | lamp     |          | 24(gpio)    |      |
+        | coté_salon      | dimmable | buld_200 | 8(3)        |      |
+        | couloir_cuisine | dimmable | buld_200 | 4(1)        |      |
+        | couloir_salon   | dimmable | buld_200 | 2(1)        |      |
+        | coté_banque     | dimmable | buld_200 | 3(1)        |      |
+

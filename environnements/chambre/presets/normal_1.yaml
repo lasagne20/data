@@ -1,0 +1,30 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios |
+
+HTML:
+    - name: home.lol.chambre
+      type: button
+      background_image: night.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name            | type  | delay | duration | args       |
+          | led_sous_lit | color | 0     | 5        | 0,0x000000 |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name            | type     | delay | duration | args                                               |
+          | color_index     | variable | 0     | 0        | randint(0,2)                                       |
+          | color           | variable | wait  | 3        | randint(0, 0xffffff) \| 0xff<<(8*color_index) \| 0 |
+          | led_sous_lit | color    | wait  | 5        | 100, color                                         |

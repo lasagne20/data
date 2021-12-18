@@ -1,0 +1,21 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name | type | args     |
+
+Variables:
+    config : |
+        | name        | value |
+
+
+Objects:
+    config : |
+        | name  | type     | sub_type | relay/triak | addr |
+        | table | dimmable | buld_200 | 6(1)        |      |
+        | 2_eme | lamp     |          | 17(gpio)     |      |
+

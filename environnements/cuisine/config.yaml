@@ -1,0 +1,25 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name          | type | args |
+        | inter_cuisine | gpio | 6   |
+
+Variables:
+    config : |
+        | name        | value |
+        | color_index | 0     |
+        | color       | 0     |
+
+
+Objects:
+    config : |
+        | name            | type     | sub_type | relay/triak | addr          |
+        | led_sous_banque | led      | lednet   |             | 192.168.1.100 |
+        | evier           | lamp     |          | 23(gpio)    |               |
+        | banque          | dimmable | buld_200 | 7(1)    |               |
+

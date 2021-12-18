@@ -3,17 +3,6 @@ Interrupts:
     buttons : |
         | name    | type      | scenarios |
 
-HTML:
-    - name: home.test1.but_test
-      type: button
-      background_image: cuisine_1.png
-      inactive_color: black
-      active_color: grey
-      action:
-          type: button
-          button: principal
-          scenarios: allumer, eteindre
-
 Scenarios:
     - name: eteindre
       marker: OFF

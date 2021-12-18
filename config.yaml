@@ -1,25 +1,19 @@
-ME: pi_test
+ME: appart
 
 MODES:
     - name: normal
-      html:
-          - name: home.test1.but_test2
-            type: button
-            background_image: sun.png
-            inactive_color: black
-            active_color: grey
-
-    - name: soirée
-      html:
-          - name: home.test1.mode2
-            type: button
-            background_image: night.png
-            inactive_color: black
-            active_color: grey
-
-                       
-        
 
 
-
-
+BOARDS:
+    # ST_nucleos and port_extender boards
+    # the interrupts and boards with GPIO pins or network are listed
+    # directly in the config objects or interrupt
+    ST_nucleos:
+        # configure all board here
+        - name : ST_nucleo_1
+          addr : /dev/ttyACM0
+          triak_boards :
+              # index is the index when the board is called in connected objects config
+              - index,nb_triak : 1,8 
+              - index,nb_triak : 2,8 
+              - index,nb_triak : 3,8 
