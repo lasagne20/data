@@ -1,8 +1,8 @@
 
 Interrupts:
     buttons : |
-        | name    | type      | scenarios |
-        | inter_3 | principal | allumer, eteindre
+        | name               | type      | scenarios         |
+        | inter_regie_droite | principal | allumer, eteindre
 
 Scenarios:
     - name: eteindre
@@ -10,9 +10,13 @@ Scenarios:
       instructions: |
           | name        | type   | delay | duration | args |
           | projo_blanc | dimmer | 0     | 3        | 0    |
+          | projo_deco  | power  | 0     | 0        | 0    |
+          | led_rpi     | power  | 0     | 0        | 0    |
 
     - name: allumer
       marker: ON
       instructions: |
           | name        | type   | delay | duration | args |
           | projo_blanc | dimmer | 0     | 3        | 50    |
+          | projo_deco  | power  | 0     | 0        | 0    |
+          | led_rpi     | power  | 0     | 0        | 0    |

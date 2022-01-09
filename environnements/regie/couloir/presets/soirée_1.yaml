@@ -9,12 +9,3 @@ Scenarios:
       instructions: |
           | name | type | delay | duration | args |
 
-    - name: init
-      marker: NONE
-      instructions: |
-          | name              | type             | delay | duration | args                                               |
-
-    - name: eteindre_tout
-      marker: NONE
-      instructions: |
-          | name                                   | type             | delay | duration | args |

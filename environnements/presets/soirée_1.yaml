@@ -12,11 +12,15 @@ Scenarios:
     - name: init
       marker: NONE
       instructions: |
-          | name                         | type             | delay | duration | args  |
-          | salle.lyres.soirée_1.allumer | button_principal | 0     | 0        | True  |
+          | name                                  | type             | delay | duration | args  |
+          | salle.lyres.soirée_1.allumer          | button_principal | 0     | 0        | True  |
+          | salle.boule.soirée_1.allumer          | button_principal | 0     | 0        | True  |
+          | salle.strombos.soirée_1.allumer_petit | button_principal | 0     | 0        | True  |
+          | salle.brouillard.soirée_1.allumer     | button_principal | 0     | 0        | True  |
 
     - name: finish
       marker: NONE
       instructions: |
-          | name                          | type             | delay | duration | args |
-          | salle.lyres.soirée_1.eteindre | button_principal | 0     | 0        | True |
+          | name                               | type             | delay | duration | args |
+          | salle.lyres.soirée_1.eteindre      | button_principal | 0     | 0        | True |
+          | salle.brouillard.soirée_1.eteindre | button_principal | 0     | 0        | True |

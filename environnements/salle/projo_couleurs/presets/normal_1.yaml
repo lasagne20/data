@@ -1,0 +1,17 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios         |
+
+
+Scenarios:
+     - name: eteindre
+       marker: OFF
+       instructions: |
+          | name    | type  | delay | duration | args |
+          | projo_1 | power | 0     | 0        | 0    |
+          | projo_2 | power | 0     | 0        |  0    |
+          | projo_3 | power | 0     | 0        | 0 |
+          | projo_4 | power | 0     | 0        | 0 |
+          | projo_5 | power | 0     | 0        | 0 |
+          | projo_6 | power | 0     | 0        | 0 |

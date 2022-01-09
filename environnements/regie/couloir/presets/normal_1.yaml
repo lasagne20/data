@@ -1,9 +1,9 @@
 
 Interrupts:
     buttons : |
-        | name      | type      | scenarios         |
-        | inter_4   | principal | allumer, eteindre |
-        | bas_porte | principal | allumer, eteindre |
+        | name          | type      | scenarios         |
+        | inter_couloir | principal | allumer, eteindre |
+        | bas_porte     | principal | allumer, eteindre |
 
 Scenarios:
     - name: eteindre

@@ -1,20 +1,23 @@
 
 Interrupts:
     buttons : |
-        | name    | type      | scenarios     |
+        | name          | type      | scenarios         |
+        | inter_couloir | principal | allumer, eteindre |
 
 Scenarios:
     - name: eteindre
       marker: OFF
       instructions: |
-          | name | type | delay | duration | args |
+          | name        | type   | delay | duration | args |
+          | projo_blanc | dimmer | 0     | 3        | 0    |
+          | projo_deco  | power  | 0     | 0        | 0    |
+          | led_rpi     | power  | 0     | 0        | 0    |
 
-    - name: init
-      marker: NONE
+    - name: allumer
+      marker: ON
       instructions: |
-          | name              | type             | delay | duration | args                                               |
+          | name        | type   | delay | duration | args |
+          | projo_blanc | dimmer | 0     | 3        | 0    |
+          | projo_deco  | power  | 0     | 0        | 1    |
+          | led_rpi     | power  | 0     | 0        | 1    |
 
-    - name: eteindre_tout
-      marker: NONE
-      instructions: |
-          | name                                   | type             | delay | duration | args |

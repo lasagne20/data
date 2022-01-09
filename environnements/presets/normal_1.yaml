@@ -10,7 +10,7 @@ Scenarios:
     - name: off
       marker: OFF
       instructions: |
-          | name | type | delay | duration | args |
+          | name | type  | delay | duration | args       |
 
     - name: set_mode_normal
       marker: NONE

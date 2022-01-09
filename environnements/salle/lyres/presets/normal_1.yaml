@@ -5,8 +5,21 @@ Interrupts:
 
 
 Scenarios:
-    - name: eteindre
-      marker: OFF
-      instructions: |
+     - name: eteindre
+       marker: OFF
+       instructions: |
           | name       | type     | delay | duration | args |
- 
+          | lyre_1     | position | 0     | 3        | 0,0  |
+          | lyre_1     | dimmer   | 0     | 3        | 0    |
+          | lyre_2     | position | 0     | 3        | 0,0  |
+          | lyre_2     | dimmer   | 0     | 3        | 0    |
+          | lyre_3     | position | 0     | 3        | 0,0  |
+          | lyre_3     | dimmer   | 0     | 3        | 0    |
+          | lyre_4     | position | 0     | 3        | 0,0  |
+          | lyre_4     | dimmer   | 0     | 3        | 0    |
+          | lyre_1     | force    | 5     | 0        | 0    |
+          | lyre_2     | force    | 5     | 0        | 0    |
+          | lyre_3     | force    | 5     | 0        | 0    |
+          | lyre_4     | force    | 5     | 0        | 0    |
+
+

@@ -16,18 +16,19 @@ Scenarios:
     - name: set_mode_normal
       marker: NONE
       instructions: |
-          | name   | type | delay | duration | args |
-          | normal | mode | 0     | 0        |      |
+          | name                                 | type             | delay | duration | args |
+          | normal                               | mode             | 0     | 0        | 1    |
+          | global.salle.blancs.normal_1.allumer | button_principal | wait  | 0        | 1    |
 
     - name: set_mode_soirée
       marker: NONE
       instructions: |
           | name   | type | delay | duration | args |
-          | soirée | mode | 0     | 0        |      |
+          | soirée | mode | 0     | 0        |  1   |
 
     - name: set_mode_cinema
       marker: NONE
       instructions: |
           | name   | type | delay | duration | args |
-          | cinema | mode | 0     | 0        |      |
+          | cinema | mode | 0     | 0        |  1   |
 

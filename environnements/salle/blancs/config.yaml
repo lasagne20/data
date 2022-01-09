@@ -5,12 +5,18 @@ Modes:
       preset : normal_1
 
     - mode : cinema
+      preset : cinema_1
+
+    - mode : soirée
       preset : soirée_1
+
+    - mode : soirée_calme
+      preset : soirée_calme
+
 
 Interrupts:
     config : |
         | name    | type     | args   |
-        | inter_1 | extender | 1      |
 
 Variables:
     config : |

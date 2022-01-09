@@ -13,8 +13,9 @@ Scenarios:
     - name: init
       marker: NONE
       instructions: |
-          | name                     | type             | delay | duration | args |
-          | global.cinema_1.start_pc | button_principal | 0     | 0        | 1    |
+          | name                                  | type             | delay | duration | args |
+          | global.cinema_1.start_pc              | button_principal | 0     | 0        | 1    |
+          | global.salle.blancs.cinema_1.eteindre | button_principal | 0     | 0        | 1    |
 
     - name: start_pc
       marker: NONE

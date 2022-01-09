@@ -4,10 +4,16 @@ Modes:
     - mode : normal
       preset : normal_1
 
+    - mode : cinema
+      preset : normal_1
+
+    - mode : soirée
+      preset : soirée_1
+
+
 Interrupts:
     config : |
         | name    | type     | args |
-        | inter_3 | extender | 3    |
 
 Variables:
     config : |

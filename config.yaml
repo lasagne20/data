@@ -11,8 +11,8 @@ MODES:
             active_color: grey
 
     - name: cinema
-      scenario_init: global.cinema_1.init
-      scenario_end: global.cinema_1.finish
+      #scenario_init: global.cinema_1.init
+      #scenario_end: global.cinema_1.finish
       html:
           - name: salle.modes.cinema
             type: button
@@ -22,6 +22,7 @@ MODES:
 
 
     - name: soirée
+      scenario_init: global.soirée_1.init
       scenario_end: global.soirée_1.finish
       html:
           - name: salle.modes.soirée
@@ -30,21 +31,43 @@ MODES:
             inactive_color: black
             active_color: grey
 
+    - name: soirée_calme
+      scenario_init: global.soirée_calme.init
+      html:
+          - name: salle.modes.soirée_calme
+            type: button
+            background_image: maison.png
+            inactive_color: black
+            active_color: grey
 
+
+
+SOUND:
+    Spotify:
+        name: pi_son
+        pi_id: a21317bcaedc7bea85e391db0af14d059b476c9e
+        analysis: True
 
 DMX:
     type: kingDMX
     addr: /dev/ttyUSB0
     wireless:
         - relay: 15(2)
-          mini: 400
+          mini: 500
           maxi: 512
+        - relay: 12(2)
+          mini: 400
+          maxi: 499
 
 NETWORK:
     - name: pc_msi
       type: pc
       ip: 192.168.1.45
       mac: 30:9C:23:89:28:AF
+
+    - name: pi_maison
+      type: rpi
+      ip: 192.168.1.20
 
 BOARDS:
     ST_nucleos:

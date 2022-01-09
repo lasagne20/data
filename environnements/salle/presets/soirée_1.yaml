@@ -1,20 +1,23 @@
 
 Interrupts:
     buttons : |
-        | name    | type      | scenarios     |
+        | name               | type      | scenarios                 |
+        | inter_regie_droite | principal | blackout_strombo, init |
 
 Scenarios:
-    - name: eteindre
+    - name: init
       marker: OFF
       instructions: |
-          | name | type | delay | duration | args |
+          | name                                         | type             | delay | duration | args |
+          | global.salle.lyres.soirée_1.allumer          | button_principal | 0     | 0        | 1    |
+          | global.salle.boule.soirée_1.allumer          | button_principal | 0     | 0        | 1    |
+          | global.salle.strombos.soirée_1.allumer_petit | button_principal | 0     | 0        | 1    |
 
-    - name: init
-      marker: NONE
+    - name: blackout_strombo
+      marker: ON
       instructions: |
-          | name              | type             | delay | duration | args                                               |
+          | name                                        | type             | delay | duration | args |
+          | global.salle.lyres.soirée_1.eteindre        | button_principal | 0     | 0        | 1    |
+          | global.salle.boule.soirée_1.eteindre        | button_principal | 0     | 0        | 1    |
+          | global.salle.strombos.soirée_1.allumer_gros | button_principal | 0     | 0        | 1    |
 
-    - name: eteindre_tout
-      marker: NONE
-      instructions: |
-          | name                                   | type             | delay | duration | args |

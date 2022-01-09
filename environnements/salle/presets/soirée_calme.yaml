@@ -1,0 +1,14 @@
+
+Interrupts:
+    buttons : |
+        | name               | type      | scenarios                 |
+
+Scenarios:
+    - name: init
+      marker: OFF
+      instructions: |
+          | name                                              | type             | delay | duration | args |
+          | global.salle.projos_couleurs.soirée_calme.allumer | button_principal | 0     | 0        | 1    |
+          | global.salle.blancs.soirée_calme.allumer          | button_principal | 0     | 0        | 1    |
+          | global.regie.blancs.soirée_calme.allumer          | button_principal | 0     | 0        | 1    |
+

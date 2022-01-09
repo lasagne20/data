@@ -1,0 +1,13 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios         |
+
+
+Scenarios:
+     - name: eteindre
+       marker: OFF
+       instructions: |
+          | name  | type  | delay | duration | args |
+          | boule | power | 0     | 0        | 0    |
+

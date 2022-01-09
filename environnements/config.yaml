@@ -10,11 +10,16 @@ Modes:
     - mode : cinema
       preset : cinema_1
 
+    - mode : soirée_calme
+      preset : soirée_calme
+
 Interrupts:
     config : |
-        | name      | type     | args |
-        | inter_7   | extender | 7    |
-        | bas_porte | extender | 2    |
+        | name               | type     | args |
+        | inter_couloir      | extender | 4    |
+        | inter_regie_droite | extender | 3    |
+        | inter_7            | extender | 7    |
+        | bas_porte          | extender | 2    |
 
 Variables:
     config : |
@@ -23,5 +28,5 @@ Variables:
 
 Objects:
     config : |
-        | name         | type     | sub_type  | relay/triak | addr      |
+        | name | type | sub_type | relay/triak | addr |
 

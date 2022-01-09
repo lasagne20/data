@@ -1,0 +1,39 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+    - mode : cinema
+      preset : normal_1
+
+    - mode : soirée
+      preset : normal_1
+
+    - mode: soirée_calme
+      preset: soirée_calme
+
+Interrupts:
+    config : |
+        | name    | type     | args |
+
+Variables:
+    config : |
+        | name    | value |
+        | pan_1   | 0     |
+        | pan_2   | 0     |
+        | tilt    | 0     |
+        | couleur | 0     |
+        | gobo    | 0     |
+
+
+Objects:
+    config : |
+        | name    | type | sub_type | relay/triak | addr |
+        | projo_1 | lamp |          | 5(1)        |      |
+        | projo_2 | lamp |          | 4(1)        |      |
+        | projo_3 | lamp |          | 3(1)        |      |
+        | projo_4 | lamp |          | 3(1)        |      |
+        | projo_5 | lamp |          | 7(1)        |      |
+        | projo_6 | lamp |          | 15(1)       |      |
+

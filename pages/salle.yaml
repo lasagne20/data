@@ -24,13 +24,13 @@ Static_icons:
      type: redirection
      background_image: maison.png
      background_color: black
-     link: 192.168.1.20
+     link: http://maison
 
    - name: Salle
      section: liens
      type: redirection
      background_image: cinema.png
-     link: 192.168.1.22
+     link: http://salle
 
 
 

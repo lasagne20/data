@@ -1,0 +1,45 @@
+
+Interrupts:
+    buttons : |
+        | name               | type      | scenarios                      |
+        | bas_porte          | choice    | bpm_lent, bpm_rapide, eteindre |
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name  | type  | delay | duration | args |
+          | gros  | power | 0     | 0        | 0    |
+
+    - name: allumer_petit
+      marker: ON
+      instructions: |
+          | name                                    | type             | delay | duration | args |
+          | gros                                    | power            | 0     | 0        | 0    |
+          | petit                                   | force            | 0     | 0        | 1    |
+          | global.salle.strombos.soirée_1.bpm_lent | button_principal | 0     | 0        | 1    |
+
+    - name: bpm_lent
+      loop : True
+      marker: ON
+      instructions: |
+          | name  | type   | delay   | duration | args |
+          | petit | dimmer | bpm_2+0 | 0        | 20   |
+          | petit | dimmer | wait    | 0        | 0    |
+
+    - name: bpm_rapide
+      loop : True
+      marker: ON
+      instructions: |
+          | name  | type   | delay   | duration | args |
+          | petit | dimmer | bpm_1+0 | 0        | 20   |
+          | petit | dimmer | wait    | 0        | 0    |
+
+    - name: allumer_gros
+      marker: ON
+      instructions: |
+          | name  | type  | delay | duration | args |
+          | gros  | power | 0     | 0        | 1    |
+          | petit | force | 0     | 0        | 0    |
+
+

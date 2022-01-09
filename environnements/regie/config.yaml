@@ -10,6 +10,9 @@ Modes:
     - mode: soirée
       preset: soirée_1
 
+    - mode: soirée_calme
+      preset: soirée_calme
+
 Interrupts:
     config : |
         | name    | type | args |
