@@ -1,0 +1,25 @@
+
+Interrupts:
+    buttons : |
+        | name     | type      | scenarios
+        | inter_18 | principal | allumer, eteindre
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name     | type   | delay | duration | args |
+          | projo_24 | dimmer | 0     | 3        | 0    |
+          | projo_26 | dimmer | 0     | 3        | 0    |
+          | projo_47 | dimmer | 0     | 3        | 0    |
+
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name                       | type             | delay | duration | args |
+          | projo_24                   | dimmer           | 0     | 3        | 0    |
+          | projo_26                   | dimmer           | 0     | 3        | 50   |
+          | projo_47                   | dimmer           | 0     | 3        | 30   |
+          | son.salon.normal_1.allumer | button_secondary | 0     | 0        | True |
+

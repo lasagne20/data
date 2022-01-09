@@ -9,8 +9,8 @@ Modes:
 
 Interrupts:
     config : |
-        | name    | type     | args |
-        | inter_7 | extender | 7    |
+        | name               | type     | args |
+        | inter_7            | extender | 7    |
 
 Variables:
     config : |

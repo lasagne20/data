@@ -10,8 +10,8 @@ Modes:
 Interrupts:
     config : |
         | name      | type | args     |
-        | force_off | cron | 10:00:00 |
-        | force_on  | cron | 17:00:00 |
+        | force_off | cron | 8:00:00 |
+        | force_on  | cron | 21:00:00 |
 
 Variables:
     config : |

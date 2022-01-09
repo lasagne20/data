@@ -42,11 +42,11 @@ Scenarios:
       marker: DECO
       instructions: |
           | name   | type   | delay | duration | args |
-          | poutre | dimmer | 0     | 3        | 15  |
+          | poutre | dimmer | 0     | 3        | 10  |
 
     - name: deco_billard
       marker: DECO
       instructions: |
           | name   | type   | delay | duration | args |
-          | poutre | dimmer | 0     | 3        | 25   |
+          | poutre | dimmer | 0     | 3        | 20   |
 

@@ -13,7 +13,6 @@ Scenarios:
           | projo_33       | dimmer | 2     | 5        | 0          |
           | projo_34       | dimmer | 3     | 5        | 0          |
           | projo_35       | dimmer | 4     | 5        | 0          |
-          | projo_46       | dimmer | 4     | 5        | 0          |
           | led_sous_table | color  | 0     | 10       | 0,0x000000 |
           | led_mur_gauche | color  | 0     | 5        | 0,0x000000 |
           | led_mur_centre | color  | 0     | 5        | 0,0x000000 |

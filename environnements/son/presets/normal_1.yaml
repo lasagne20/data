@@ -22,12 +22,12 @@ Scenarios:
     - name: eteindre
       marker: OFF
       instructions: |
-          | name                            | type             | delay | duration | args             |
-          | son.cuisine.normal_1.off        | button_principal | 0     | 0        | True             |
-          | son.salon.normal_1.off          | button_principal | 0     | 0        | True             |
-          | son.billard.normal_1.off        | button_principal | 0     | 0        | True             |
-          | son.exterieur.normal_1.eteindre | button_principal | 0     | 0        | True             |
-          | pi_son                          | interrupt        | 10    | 0        | change_spotify,0 |
+          | name                       | type             | delay | duration | args             |
+          | son.cuisine.normal_1.off   | button_principal | 0     | 0        | True             |
+          | son.salon.normal_1.off     | button_principal | 0     | 0        | True             |
+          | son.billard.normal_1.off   | button_principal | 0     | 0        | True             |
+          | son.exterieur.normal_1.off | button_principal | 0     | 0        | True             |
+          | pi_son                     | interrupt        | 10    | 0        | change_spotify,0 |
 
     - name: reload
       marker: NONE

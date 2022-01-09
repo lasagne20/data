@@ -1,0 +1,24 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+Interrupts:
+    config : |
+        | name        | type   | sub_type | args |
+        | capteur_bar | zigbee | temp&hum | 7abe |
+        | matin | cron | | 06:00:00 |
+
+Variables:
+    config : |
+        | name     | value |
+        | temp_max | 20    |
+        | temp_min | 18    |
+
+
+Objects:
+    config : |
+        | name      | type | sub_type | relay/triak | addr |
+        | chaudiere | lamp |          | 9(2)        |      |
+

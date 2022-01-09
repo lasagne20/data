@@ -13,7 +13,6 @@ Scenarios:
           | projo_33       | dimmer | 2     | 5        | 0          |
           | projo_34       | dimmer | 3     | 5        | 0          |
           | projo_35       | dimmer | 4     | 5        | 0          |
-          | projo_46       | dimmer | 5     | 5        | 0          |
           | led_sous_table | color  | 0     | 10       | 0,0x000000 |
           | led_mur_gauche | color  | 0     | 5        | 0,0x000000 |
           | led_mur_centre | color  | 0     | 5        | 0,0x000000 |
@@ -28,7 +27,6 @@ Scenarios:
           | projo_33       | dimmer | 2     | 5        | 15                   |
           | projo_34       | dimmer | 3     | 5        | 15                   |
           | projo_35       | dimmer | 4     | 5        | 15                   |
-          | projo_46       | dimmer | 5     | 5        | 15                   |
           | led_sous_table | color  | 0     | 10       | 50,env.global.color1 |
           | led_mur_gauche | color  | 0     | 5        | 50,env.global.color2 |
           | led_mur_centre | color  | 0     | 5        | 50,env.global.color2 |
@@ -43,7 +41,6 @@ Scenarios:
           | projo_33       | dimmer | 2     | 5        | 0                    |
           | projo_34       | dimmer | 3     | 5        | 0                    |
           | projo_35       | dimmer | 4     | 5        | 0                    |
-          | projo_46       | dimmer | 5     | 5        | 0                    |
           | led_sous_table | color  | 0     | 10       | 90,env.global.color1 |
           | led_mur_gauche | color  | 0     | 5        | 80,env.global.color2 |
           | led_mur_centre | color  | 0     | 5        | 80,env.global.color2 |
@@ -58,7 +55,6 @@ Scenarios:
           | projo_33       | dimmer | 2     | 5        | 0                    |
           | projo_34       | dimmer | 3     | 5        | 0                    |
           | projo_35       | dimmer | 4     | 5        | 0                    |
-          | projo_46       | dimmer | 5     | 5        | 0                    |
           | led_sous_table | color  | 0     | 10       | 60,env.global.color2 |
           | led_mur_gauche | color  | 0     | 5        | 65,env.global.color1 |
           | led_mur_centre | color  | 0     | 5        | 65,env.global.color1 |

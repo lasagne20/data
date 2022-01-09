@@ -20,12 +20,11 @@ Scenarios:
     - name: eteindre_vers_le_haut
       marker: OFF
       instructions: |
-          | name                           | type             | delay | duration | args |
-          | projo_haut                     | power            | 2     | 3        | 0    |
-          | projo_milieu                   | power            | 1     | 3        | 0    |
-          | projo_bas                      | power            | 0     | 3        | 0    |
-          | escalier.led.normal_1.eteindre | button_principal | 0     | 0        | 1    |
-          | escalier.led.soirée_1.eteindre | button_principal | 0     | 0        | 1    |
+          | name                           | type             | delay | duration | args                  |
+          | projo_haut                     | power            | 2     | 3        | 0                     |
+          | projo_milieu                   | power            | 1     | 3        | 0                     |
+          | projo_bas                      | power            | 0     | 3        | 0                     |
+          | escalier.led.normal_1.eteindre | button_principal | 0     | 0        | 1                     |
 
     - name: eteindre_vers_le_bas
       marker: OFF
@@ -35,7 +34,6 @@ Scenarios:
           | projo_milieu                   | power            | 1     | 3        | 0    |
           | projo_bas                      | power            | 2     | 3        | 0    |
           | escalier.led.normal_1.eteindre | button_principal | 0     | 0        | 1    |
-          | escalier.led.soirée_1.eteindre | button_principal | 0     | 0        | 1    |
 
     - name: allumer_vers_le_haut
       marker: ON
@@ -45,7 +43,6 @@ Scenarios:
           | projo_milieu                  | power            | 1     | 3        | 100  |
           | projo_bas                     | power            | 0     | 3        | 100  |
           | escalier.led.normal_1.allumer | button_principal | 0     | 0        | 1    |
-          | escalier.led.soirée_1.allumer | button_principal | 0     | 0        | 1    |
 
     - name: allumer_vers_le_bas
       marker: ON
@@ -55,7 +52,6 @@ Scenarios:
           | projo_milieu                  | power            | 1     | 3        | 100  |
           | projo_bas                     | power            | 2     | 3        | 100  |
           | escalier.led.normal_1.allumer | button_principal | 0     | 0        | 1    |
-          | escalier.led.soirée_1.allumer | button_principal | 0     | 0        | 1    |
 
 
 

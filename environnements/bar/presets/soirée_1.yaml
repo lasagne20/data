@@ -3,7 +3,7 @@ Interrupts:
     buttons : |
         | name      | type      | scenarios
         | inter_10  | principal | allumer, eteindre
-        | radar_bar | principal | allumer, eteindre
+        | radar_bar | tempo,60 | allumer, eteindre
 
 HTML:
     - name: maison.eclairage.bar

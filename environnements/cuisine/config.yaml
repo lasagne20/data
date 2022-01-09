@@ -9,9 +9,9 @@ Modes:
 
 Interrupts:
     config : |
-        | name     | type     | args |
-        | inter_13 | extender | 13   |
-        | inter_14 | extender | 14   |
+        | name      | type     | sub_type  | args |
+        | inter_13  | extender |           | 13   |
+        | inter_14  | extender |           | 14   |
 
 Variables:
     config : |

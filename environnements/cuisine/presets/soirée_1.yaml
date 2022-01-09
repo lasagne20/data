@@ -62,7 +62,7 @@ Scenarios:
       instructions: |
           | name                          | type             | delay | duration | args                 |
           | poutre_evier                  | dimmer           | 1     | 3        | 0                    |
-          | poutre_banque                 | dimmer           | 0     | 3        | 30                   |
+          | poutre_banque                 | dimmer           | 0     | 3        | 20                   |
           | led_exterieur                 | color            | 0     | 3        | 20,env.global.color1 |
           | led_interieur                 | color            | 0     | 0        | 30,env.global.color2 |
           | led_banque                    | color            | 0     | 3        | 0, 0x000000          |
@@ -72,21 +72,21 @@ Scenarios:
     - name: deco_table
       marker: DECO
       instructions: |
-          | name                          | type             | delay | duration | args                 |
-          | poutre_evier                  | dimmer           | 1     | 3        | 0                    |
-          | poutre_banque                 | dimmer           | 0     | 3        | 30                   |
-          | led_exterieur                 | color            | 0     | 3        | 30,env.global.color2 |
-          | led_interieur                 | color            | 0     | 0        | 40,env.global.color1 |
-          | led_banque                    | color            | 0     | 3        | 0, 0x000000          |
-          | hotte                         | power            | 0     | 3        | 0                    |
-          | son.cuisine.normal_1.eteindre | button_principal | 0     | 0        | True                 |
+          | name                         | type             | delay | duration | args                 |
+          | poutre_evier                 | dimmer           | 1     | 3        | 0                    |
+          | poutre_banque                | dimmer           | 0     | 3        | 15                   |
+          | led_exterieur                | color            | 0     | 3        | 30,env.global.color2 |
+          | led_interieur                | color            | 0     | 0        | 40,env.global.color1 |
+          | led_banque                   | color            | 0     | 3        | 0, 0x000000          |
+          | hotte                        | power            | 0     | 3        | 0                    |
+          | son.cuisine.normal_1.allumer | button_principal | 0     | 0        | True                 |
 
     - name: deco_billard
       marker: DECO
       instructions: |
           | name                          | type             | delay | duration | args                 |
           | poutre_evier                  | dimmer           | 1     | 3        | 0                    |
-          | poutre_banque                 | dimmer           | 0     | 3        | 30                   |
+          | poutre_banque                 | dimmer           | 0     | 3        | 10                   |
           | led_exterieur                 | color            | 0     | 3        | 30,env.global.color1 |
           | led_interieur                 | color            | 0     | 0        | 40,env.global.color2 |
           | led_banque                    | color            | 0     | 3        | 0, 0x000000          |

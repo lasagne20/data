@@ -3,7 +3,7 @@ Interrupts:
     buttons : |
         | name      | type      | scenarios
         | inter_10  | principal | allumer, eteindre
-        | radar_bar | principal | allumer, eteindre
+        | radar_bar | tempo,60  | allumer,eteindre
 
 HTML:
     - name: maison.eclairage.bar
@@ -45,16 +45,6 @@ Scenarios:
           | led_caisson                | color            | 0     | 3        | 0,0x000000     |
           | decoupe                    | dimmer           | 0     | 3        | 0              |
           | son.salon.normal_1.allumer | button_secondary | 0     | 0        | True           |
-
-    - name: allumer_tempo
-      marker: ON
-      instructions: |
-          | name                  | type             | delay | duration | args |
-          | bar.normal_1.allumer  | button_principal | 0     | 0        | True |
-          | bar.normal_1.eteindre | button_principal | 10    | 0        | True |
-
-
-
     - name: ranger_bois
       marker: DECO
       instructions: |

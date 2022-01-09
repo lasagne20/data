@@ -1,0 +1,29 @@
+
+Interrupts:
+    buttons : |
+        | name        | type     | scenarios   |
+        | capteur_bar| principal| tester|
+        | matin| principal| allumer|
+
+Scenarios:
+
+    - name: tester
+      marker: NONE
+      instructions: |
+          | name                        | type             | delay | duration | args                           |
+          | chauffage.normal_1.allumer  | button_principal | 0     | 0        | capteur_bar['temp'] < temp_min |
+          | chauffage.normal_1.eteindre | button_principal | 0     | 0        | capteur_bar['temp'] > temp_max |
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name     | type   | delay | duration | args |
+          | chaudiere | power | 0     | 0        | 0    |
+
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name      | type  | delay | duration | args |
+          | chaudiere | power | 0     | 0        | True |
+

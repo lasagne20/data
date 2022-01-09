@@ -7,7 +7,7 @@ Interrupts:
 HTML:
     - name: maison.enceintes.son_exterieur
       type: button
-      background_image: table_1.png
+      background_image: terrace1.png
       inactive_color: grey
       active_color: black
       action:

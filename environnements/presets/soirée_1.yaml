@@ -15,30 +15,61 @@ HTML:
           button: principal
           scenarios: init
 
-Scenarios:
-    - name: eteindre
-      marker: OFF
-      instructions: |
-          | name | type | delay | duration | args |
+    - name: maison.liens.reset
+      type: button
+      background_image: reset.png
+      inactive_color: black
+      active_color: black
+      index: 4
+      action:
+          type: button
+          button: principal
+          scenarios: reset
 
+
+
+Scenarios:
     - name: init
       marker: NONE
       instructions: |
-          | name              | type             | delay | duration | args                                               |
-          | color_index       | variable         | 0     | 0        | randint(0,2)                                       |
-          | color1            | variable         | wait  | 3        | randint(0, 0xffffff) \| 0xff<<(8*color_index) \| 0 |
-          | color2            | variable         | 0     | 3        | randint(0, 0xffffff) \| 0xff<<(8*color_index) \| 0 |
+          | name                         | type             | delay | duration | args                                               |
+          | color_index                  | variable         | 0     | 0        | randint(0,2)                                       |
+          | color1                       | variable         | wait  | 3        | randint(0, 0xffffff) \| 0xff<<(8*color_index) \| 0 |
+          | color2                       | variable         | 0     | 3        | randint(0, 0xffffff) \| 0xff<<(8*color_index) \| 0 |
+          | global.soirée_1.allumer_tout | button_principal | wait  | 0        | True                                               |
+
+    - name: allumer_tout
+      marker : ON
+      instructions: |
+          | name                               | type             | delay | duration | args |
+          | salon.soirée_1.deco_billard        | button_secondary | 0     | 0        | True |
+          | cuisine.soirée_1.deco_billard      | button_secondary | 0     | 0        | True |
+          | bar.soirée_1.deco                  | button_secondary | 0     | 0        | True |
+          | billard.soirée_1.deco_table        | button_secondary | 0     | 0        | True |
+          | table.soirée_1.deco_salon          | button_secondary | 0     | 0        | True |
+          | portes.soirée_1.deco_billard       | button_secondary | 0     | 0        | True |
+          | escalier.led.soirée_1.deco_billard | button_secondary | 0     | 0        | True |
+
 
     - name: eteindre_tout
-      marker: NONE
+      marker: OFF
       instructions: |
           | name                                   | type             | delay | duration | args |
           | salon.soirée_1.eteindre                | button_principal | 0     | 0        | True |
           | cuisine.soirée_1.eteindre              | button_principal | 0     | 0        | True |
           | bar.soirée_1.eteindre                  | button_principal | 0     | 0        | True |
-          | billard.soirée_1.eteindre              | button_principal | 0     | 0        | True |
           | chemin.soirée_1.eteindre_vers_escalier | button_principal | 1     | 0        | True |
+          | billard.soirée_1.eteindre              | button_principal | 0     | 0        | True |
           | poele.normal_1.eteindre                | button_principal | 0     | 0        | True |
           | table.soirée_1.eteindre                | button_principal | 0     | 0        | True |
+          | portes.soirée_1.eteindre               | button_principal | 1     | 0        | True |
           | son.billard.normal_1.eteindre          | button_principal | 1     | 0        | True |
           | son.normal_1.eteindre                  | button_principal | 2     | 0        | True |
+          | salon.sapin.normal_1.test_eteindre     | button_principal | 0     | 0        | True |
+          | normal                                 | mode             | 10    | 0        | True |
+
+    - name: reset
+      marker: NONE
+      instructions: |
+          | name               | type    | delay | duration | args |
+          | /home/pi/maison/launch.sh | command | 0     | 0        | True |

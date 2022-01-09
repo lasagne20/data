@@ -1,0 +1,34 @@
+
+Interrupts:
+    buttons : |
+        | name    | type      | scenarios
+        | lever   | principal | allumer
+        | coucher | principal | change_value
+
+Scenarios:
+    - name: test_eteindre
+      marker: OFF
+      instructions: |
+          | name                          | type             | delay | duration | args                         |
+          | salon.sapin.normal_1.eteindre | button_principal | 0     | 0        | peut_etre_eteint |
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name     | type   | delay | duration | args |
+          | projo_36 | dimmer | 0     | 5        | 0    |
+          | sapin    | power  | 0     | 0        | 0    |
+
+    - name: allumer
+      marker: OFF
+      instructions: |
+          | name     | type   | delay | duration | args |
+          | projo_36 | dimmer | 0     | 5        | 100  |
+          | sapin    | power  | 0     | 0        | True |
+          | peut_etre_eteint | variable | 0     | 0        | False |
+
+    - name: change_value
+      marker: OFF
+      instructions: |
+          | name             | type     | delay | duration | args |
+          | peut_etre_eteint | variable | 0     | 0        | True |

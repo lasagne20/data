@@ -4,6 +4,7 @@ Interrupts:
         | name     | type      | scenarios
         | inter_13 | choice    | allumer_feu, allumer_evier
         | inter_14 | principal | eteindre
+        | ir_sensor| tempo, 80 | allumer_evier, eteindre
 
 HTML:
     - name: maison.eclairage.cuisine

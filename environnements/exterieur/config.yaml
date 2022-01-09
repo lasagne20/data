@@ -1,0 +1,23 @@
+
+
+Modes:
+    - mode : normal
+      preset : normal_1
+
+    - mode: soirée
+      preset: normal_1
+
+
+Interrupts:
+    config : |
+        | name      | type     | args  |
+
+Variables:
+    config : |
+        | name           | value              |
+
+Objects:
+    config : |
+        | name   | type     | sub_type | relay/triak | addr |
+        | poutre | lamp | | 11(1)        |      |
+

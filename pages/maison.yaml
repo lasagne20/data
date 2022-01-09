@@ -7,7 +7,7 @@ Config:
 Sections:
   - name: liens
     background_color: rgb(80,80,80)
-    lenght: 4
+    lenght: 5
 
   - name: modes
     title: Modes
@@ -25,7 +25,7 @@ Sections:
     title: Eclairage
     text_color: white
     background_color: grey
-    lenght: 6
+    lenght: 7
 
   - name: enceintes
     title: Enceintes
@@ -37,12 +37,14 @@ Static_icons:
    - name: Maison
      section: liens
      type: redirection
+     index: 0
      background_image: maison.png
      link: http://maison
 
    - name: Son
      section: liens
      type: redirection
+     index: 0
      background_image: spotify_off.jpg
      background_color: black
      link: http://son
@@ -50,12 +52,14 @@ Static_icons:
    - name: Salle
      section: liens
      type: redirection
+     index: 0
      background_image: cinema.png
      background_color: black
      link: http://salle
 
    - name: Trappe
      section: liens
+     index: 0
      type: redirection
      background_image: trappe_1.png
      background_color: black
