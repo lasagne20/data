@@ -5,6 +5,98 @@ Interrupts:
         | change_spotify | principal | allumer, eteindre |
 
 HTML:
+
+    - name: spotify.image.track
+      type: button
+      background_image: spotify.current_track_image,quality=0
+      index: 0
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: next
+
+    - name: spotify.playlists.fete
+      type: button
+      background_image: spotify.playlist_image,id=5pNsoAWPD9CCIFGI0kfR3l,quality=0
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: start_fete
+
+    - name: spotify.playlists.calme
+      type: button
+      background_image: spotify.playlist_image,id=13PrUtWKkX0BA0w8Z99oyN,quality=0
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: start_calme
+
+    - name: spotify.playlists.pink
+      type: button
+      background_image: spotify.playlist_image,id=5oFmnDZXgvXAATloQv4hTK,quality=0
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: start_pink
+
+    - name: spotify.playlists.jazz
+      type: button
+      background_image: spotify.playlist_image,id=59UHJYb1MOIPd2lK2c1GtJ,quality=0
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: start_jazz
+
+    - name: spotify.playlists.ambiance
+      type: button
+      background_image: spotify.playlist_image,id=3v5PuH72xUEm1Tk8aGaLoe,quality=0
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: start_ambiance
+
+    - name: spotify.playlists.français
+      type: button
+      background_image: spotify.playlist_image,id=6JCAfaeYF6uBtram4HHedx,quality=0
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: start_français
+
+    - name: spotify.playlists.piano
+      type: button
+      background_image: spotify.playlist_image,id=0pd7s3NpaKJruMBQCOgHSk,quality=0
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: start_piano
+
+    - name: spotify.playlists.kpop
+      type: button
+      background_image: spotify.playlist_image,id=4Lx7nythRoYrovWQg6Txx6,quality=0
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: start_kpop
+
+    - name: spotify.playlists.raggae
+      type: button
+      background_image: spotify.playlist_image,id=3aZk5e0lmNuFiN2CUi9CST,quality=0
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: start_reggae
+
     - name: spotify.spotify.volume
       type: slider
       min_value: 0
@@ -17,7 +109,7 @@ HTML:
 
     - name: spotify.spotify.play
       type: button
-      background_image: menage.png
+      background_image: power_1.png
       inactive_color: grey
       active_color: black
       action:
@@ -36,8 +128,16 @@ Scenarios:
     - name: allumer
       marker: ON
       instructions: |
-          | name    | type    | delay | duration | args                  |
-          | spotify | spotify | 0     | 0        | start                 |
+          | name                  | type             | delay | duration | args    |
+          | spotify               | spotify          | 0     | 0        | start   |
+          | global.normal_1.matin | button_principal | 0     | 0        | morning |
+
+    - name: matin
+      marker: NONE
+      instructions: |
+          | name                        | type             | delay | duration | args |
+          | global.normal_1.start_piano | button_principal | 0     | 0        | True |
+          | spotify_volume              | variable         | 0     | 0        | 20   |
 
     - name: start
       marker: NONE
@@ -50,3 +150,64 @@ Scenarios:
       instructions: |
           | name      | type      | delay | duration | args        |
           | pi_maison | interrupt | 0     | 0        | power_amp,0 |
+
+    - name: next
+      marker: NONE
+      instructions: |
+          | name    | type    | delay | duration | args       |
+          | spotify | spotify | 0     | 0        | next_track |
+
+    - name: start_fete
+      marker: NONE
+      instructions: |
+          | name    | type    | delay | duration | args                                                                                        |
+          | spotify | spotify | 0     | 0        | start_playlist,https://open.spotify.com/playlist/7EJBg6osI0BZjqjXt62vh7?si=e84b79f80ab84209 |
+
+    - name: start_calme
+      marker: NONE
+      instructions: |
+          | name    | type    | delay | duration | args                                                                                        |
+          | spotify | spotify | 0     | 0        | start_playlist,https://open.spotify.com/playlist/13PrUtWKkX0BA0w8Z99oyN?si=71ca34c5e2534531 |
+          
+    - name: start_pink
+      marker: NONE
+      instructions: |
+          | name    | type    | delay | duration | args                                                                                        |
+          | spotify | spotify | 0     | 0        | start_playlist,https://open.spotify.com/playlist/5oFmnDZXgvXAATloQv4hTK?si=1204800ffe884e90 |
+ 
+    - name: start_jazz
+      marker: NONE
+      instructions: |
+          | name    | type    | delay | duration | args                                                                                        |
+          | spotify | spotify | 0     | 0        | start_playlist,https://open.spotify.com/playlist/59UHJYb1MOIPd2lK2c1GtJ?si=cb5b7cdd83a0449c |
+
+    - name: start_ambiance
+      marker: NONE
+      instructions: |
+          | name    | type    | delay | duration | args                                                                                        |
+          | spotify | spotify | 0     | 0        | start_playlist,https://open.spotify.com/playlist/3v5PuH72xUEm1Tk8aGaLoe?si=4cc3edb96b8f45bb|
+
+    - name: start_français
+      marker: NONE
+      instructions: |
+          | name    | type    | delay | duration | args                                                                                        |
+          | spotify | spotify | 0     | 0        | start_playlist,https://open.spotify.com/playlist/6JCAfaeYF6uBtram4HHedx?si=ca0d5839de4a4026|
+
+    - name: start_piano
+      marker: NONE
+      instructions: |
+          | name    | type    | delay | duration | args                                                                                        |
+          | spotify | spotify | 0     | 0        | start_playlist,https://open.spotify.com/playlist/0pd7s3NpaKJruMBQCOgHSk?si=dd546ba11a984ee1|
+
+    - name: start_kpop
+      marker: NONE
+      instructions: |
+          | name    | type    | delay | duration | args                                                                                        |
+          | spotify | spotify | 0     | 0        | start_playlist,https://open.spotify.com/playlist/4Lx7nythRoYrovWQg6Txx6?si=b8f1916221504f96|
+
+    - name: start_reggae
+      marker: NONE
+      instructions: |
+          | name    | type    | delay | duration | args                                                                                        |
+          | spotify | spotify | 0     | 0        | start_playlist,https://open.spotify.com/playlist/3aZk5e0lmNuFiN2CUi9CST?si=68834a53d6b24d62|
+

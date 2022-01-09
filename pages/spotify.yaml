@@ -20,6 +20,12 @@ Sections:
     background_color: grey
     lenght: 5
 
+  - name: playlists
+    title: Playlists
+    text_color: white
+    background_color: grey
+    lenght: 5
+
 
 
 Static_icons:
@@ -49,24 +55,6 @@ Static_icons:
      background_image: trappe_1.png
      background_color: black
      link: http://trappe
-
-   - name: track
-     section: image
-     type: redirection
-     background_image: spotify_track
-     link: http://son
-
-   - name: Spotify
-     section: spotify
-     type: redirection
-     background_image: spotify_off.jpg
-     background_color: black
-     link: https://open.spotify.com/socialsession/Xn8ANJ9rk4bHkZlRJ4Qvvu1nnSJa4nJnXFPHM3FOHKF4x4jJYp7QXnkIi8FDAVCKn6PMgr9ra3nL7EAgEsKvjn0BQEPYFLw7Yf8bt2XBuch?si=SzpMPTNXSNCfC96JzjsZSQ
-
-
-
-
-
 
 
 
