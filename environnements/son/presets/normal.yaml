@@ -1,0 +1,23 @@
+
+Interrupts:
+    buttons : |
+        | name                   | type      | scenarios         |
+        | inter_couloir_placard2 | principal | allumer, eteindre |
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name    | type    | delay | duration | args       |
+
+    - name: reveil
+      marker: ON
+      instructions: |
+          | name    | type    | delay      | duration | args                                                                                         |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name    | type    | delay | duration | args                                                                                        |
+
+

@@ -1,0 +1,34 @@
+
+Interrupts:
+    buttons : |
+        | name           | type      | scenarios         |
+        | inter_cuisine  | principal | allumer, eteindre |
+        | inter_couloir2 | principal | allumer, eteindre |
+
+
+
+Scenarios:
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name        | type  | delay | duration | args              |
+          | panneau_led | rgbw  | 0     | 5        | 30,color, 0xff |
+          | led_evier   | color | 0     | 5        | 100,0x00ff00      |
+
+    - name: deco
+      marker: DECO
+      instructions: |
+          | name        | type  | delay | duration | args              |
+          | panneau_led | rgbw  | 0     | 5        | 30,color2, 0x00 |
+          | led_evier   | color | 0     | 5        | 0,0x000000        |
+
+
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name        | type  | delay | duration | args             |
+          | panneau_led | rgbw  | 0     | 5        | 0,0x000000, 0x00 |
+          | led_evier   | color | 0     | 5        | 0,0x000000       |
+

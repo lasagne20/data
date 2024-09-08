@@ -1,0 +1,22 @@
+
+
+Modes:
+    - mode : reveil, jour
+      preset : normal
+
+
+Interrupts:
+    config : |
+        | name        | type | args |
+
+Variables:
+    config : |
+        | name        | value |
+
+
+Objects:
+    config : |
+        | name         | type | sub_type | relay/triak | addr |
+        | prise        | lamp | invert   | 18(gpio)    |      |
+        | prise_plante | lamp |          | 12(gpio)    |      |
+

@@ -1,0 +1,28 @@
+
+
+Modes:
+    - mode : reveil, jour, nuit
+      preset : normal
+
+    - mode : jour
+      preset : normal
+      marker: OFF
+
+    - mode : soirée
+      preset : soirée
+      marker: OFF
+
+Interrupts:
+    config : |
+        | name                   | type | args |
+
+Variables:
+    config : |
+        | name         | value |
+
+
+Objects:
+    config : |
+        | name     | type            | sub_type | relay/triak | addr    |
+        | led_tour | addressable_led |          | 1(gpio)     | 1.1.1.2 |
+

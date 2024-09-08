@@ -5,8 +5,24 @@ Config:
 
 
 Sections:
-  - name: lol
+  - name: modes
     lenght: 3
+
+  - name: alarm
+    lenght: 3
+
+  - name: lumières
+    lenght: 3
+
+  - name: dimmers
+    lenght: 4
+
+  - name: stores
+    lenght: 3
+
+  - name: son
+    lenght: 3
+
 
 
 

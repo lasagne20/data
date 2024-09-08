@@ -1,22 +1,28 @@
 
 
 Modes:
-    - mode : normal
-      preset : normal_1
+
+    - mode : jour
+      preset : jour
+
+    - mode : reveil
+      preset : reveil
+
+    - mode : coucher
+      preset : coucher
+      marker: ON
 
 Interrupts:
     config : |
-        | name    | type     | args |
-
-Variables:
-    config : |
-        | name        | value |
-        | color_index | 0     |
-        | color       | 0     |
-
+        | name         | type | args |
+        | inters_lit   | gpio | 26   |
+        | inter_porte1 | gpio | 27   |
+        | inter_porte2 | gpio | 22    |
 
 Objects:
     config : |
-        | name         | type | sub_type | relay/triak | addr          |
-        | led_sous_lit | led  | lednet   |             | 192.168.1.101 |
+        | name        | type      | sub_type | relay/triak | addr          |
+        | led_plafond | led       | lednet   | 15(gpio)    | 192.168.1.101 |
+        | led_lit     | led       | lednet   | 15(gpio)    | 192.168.1.102 |
+        | panneau_led | led_panel | dmx      | 16(gpio)    | 5             |
 

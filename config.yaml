@@ -1,8 +1,36 @@
 ME: appart
 
 MODES:
-    - name: normal
+    - name: jour
+      html:
+          - name: home.modes.jour
+            type: button
+            background_image: sun.png
+            active_color: grey
 
+    - name: reveil
+
+    - name: coucher
+
+    - name: soirée
+      html:
+          - name: home.modes.soirée
+            type: button
+            background_image: soirée_1.png
+            active_color: grey
+
+    - name: nuit
+DMX:
+    type: kingDMX
+    addr: /dev/ttyUSB_DEVICE1
+
+SOUNDS:
+  Spotify:
+    name: principal
+    pi_id: f3b86b13dbbc1f25f1ed8bc04e7a1e250f26a965
+    scenar_stop: son.normal.eteindre
+    analysis: true
+    volume_init: 0
 
 BOARDS:
     # ST_nucleos and port_extender boards
@@ -15,5 +43,4 @@ BOARDS:
           triak_boards :
               # index is the index when the board is called in connected objects config
               - index,nb_triak : 1,8 
-              - index,nb_triak : 2,8 
-              - index,nb_triak : 3,8 
+

@@ -1,0 +1,21 @@
+
+
+Modes:
+    - mode : reveil, jour, soirée
+      preset : normal
+
+
+Interrupts:
+    config : |
+        | name                   | type | args |
+        | inter_couloir_placard2 | gpio | 4    |
+
+Variables:
+    config : |
+        | name | value |
+
+
+Objects:
+    config : |
+        | name  | type     | sub_type | relay/triak | addr |
+

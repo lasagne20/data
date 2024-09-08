@@ -1,0 +1,44 @@
+
+Interrupts:
+    buttons : |
+        | name         | type      | scenarios         |
+        | inters_lit   | principal | allumer, eteindre |
+        | inter_porte1 | principal | allumer, eteindre |
+        | inter_porte2 | principal | change_mode |
+
+HTML:
+    - name: home.lumières.chambre
+      type: button
+      background_image: night.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
+
+Scenarios:
+
+    - name: change_mode
+      marker: NONE
+      instructions: |
+          | name    | type | delay | duration | args |
+          | jour | mode | 0     | 0        | True |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name        | type  | delay | duration | args            |
+          | led_plafond | color | 0     | 10       | 30,color        |
+          | led_lit     | color | 0     | 10       | 20,color2       |
+          | panneau_led | rgbw  | 0     | 10       | 10,color2, 0x10 |
+
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name        | type  | delay | duration | args             |
+          | led_plafond | color | 0     | 10       | 0,0x000000       |
+          | led_lit     | color | 0     | 10       | 0,0x000000       |
+          | panneau_led | rgbw  | 0     | 10       | 0,0x000000, 0x00 |
+

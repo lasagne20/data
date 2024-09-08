@@ -1,0 +1,23 @@
+
+Interrupts:
+    buttons : |
+        | name                   | type      | scenarios         |
+        | inter_couloir_1 | principal | allumer, eteindre|
+        | inter_entrée | principal | allumer, eteindre|
+
+
+Scenarios:
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name          | type  | delay | duration | args |
+          | blancs   | dimmer | 0     | 5       | 10 |
+          | couleurs   | dimmer | 0     | 5       | 0 |
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name          | type  | delay | duration | args  |
+          | blancs   | dimmer | 0     | 5       | 0  |
+          | couleurs   | dimmer | 0     | 5       | 0  |
+

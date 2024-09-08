@@ -1,25 +1,19 @@
 
 
 Modes:
-    - mode : normal
-      preset : normal_1
+
+    - mode : jour
+      preset : jour
 
 Interrupts:
     config : |
-        | name          | type | args |
-        | inter_cuisine | gpio | 6   |
-
-Variables:
-    config : |
-        | name        | value |
-        | color_index | 0     |
-        | color       | 0     |
-
+        | name                   | type | args |
+        | inter_cuisine          | gpio | 25   |
+        | inter_couloir2         | gpio | 19   |
 
 Objects:
     config : |
-        | name            | type     | sub_type | relay/triak | addr          |
-        | led_sous_banque | led      | lednet   |             | 192.168.1.100 |
-        | evier           | lamp     |          | 23(gpio)    |               |
-        | banque          | dimmable | buld_200 | 7(1)    |               |
+        | name        | type      | sub_type | relay/triak | addr              |
+        | panneau_led | led_panel | dmx      | 16(gpio)    | 1                 |
+        | led_evier   | led       | bledom   | 14(gpio)    | be:ff:40:00:f0:60 |
 

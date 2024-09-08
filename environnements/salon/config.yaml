@@ -1,22 +1,36 @@
 
 
 Modes:
-    - mode : normal
-      preset : normal_1
+    - mode : reveil, jour, nuit
+      preset : normal
+
+    - mode : jour
+      preset : normal
+      marker: ON
+
+    - mode : soirée
+      preset : soirée
+      marker: ON
 
 Interrupts:
     config : |
-        | name    | type     | args |
+        | name                   | type | args |
+        | inter_couloir_placard1 | gpio | 24   |
 
 Variables:
     config : |
-        | name        | value |
-        | color_index | 0     |
-        | color       | 0     |
+        | name         | value |
+        | dimmer1      | 100   |
+        | dimmer2      | 100   |
+        | dimmer3      | 100   |
+        | dimmer4      | 100   |
 
 
 Objects:
     config : |
-        | name   | type     | sub_type | relay/triak | addr |
-        | canapé | dimmable | buld_200 | 8(1)        |      |
+        | name     | type            | sub_type | relay/triak | addr    |
+        | projo1   | dimmable        | buld_200 | 1(1)        |         |
+        | projo2   | dimmable        | buld_200 | 2(1)        |         |
+        | projo3   | dimmable        | buld_200 | 3(1)        |         |
+        | projo4   | dimmable        | buld_200 | 4(1)        |         |
 

@@ -1,0 +1,30 @@
+
+Interrupts:
+    buttons : |
+        | name                   | type      | scenarios         |
+        | inter_couloir_placard2 | principal | allumer, eteindre |
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name    | type    | delay | duration | args       |
+          | spotify | spotify | 0     | 5        | volume, 0 |
+
+    - name: reveil
+      marker: ON
+      instructions: |
+          | name    | type    | delay      | duration | args                                                                                         |
+          | spotify | spotify | 0          | 0        | start_playlist, https://open.spotify.com/playlist/6tlO0uQKYiEvcbnMOlbxcz?si=0d04969111054b9b |
+          | spotify | spotify | 0          | 0        | start_playlist, https://open.spotify.com/playlist/6tlO0uQKYiEvcbnMOlbxcz?si=0d04969111054b9b |
+          | spotify | spotify | 10         | 60       | volume, 20                                                                                   |
+          | spotify | spotify | wait, 60*3 | 60       | volume, 10                                                                                   |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name    | type    | delay | duration | args                                                                                        |
+          | spotify | spotify | 0     | 0        | start_playlist,https://open.spotify.com/playlist/3v5PuH72xUEm1Tk8aGaLoe?si=395a3a19475843d3 |
+          | spotify | spotify | 0     | 5        | volume, 20                                                                                  |
+
+

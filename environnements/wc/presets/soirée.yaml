@@ -1,0 +1,26 @@
+
+Interrupts:
+    buttons : |
+        | name     | type      | scenarios         |
+        | inter_wc | principal | allumer, eteindre |
+
+
+
+Scenarios:
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name  | type   | delay | duration | args |
+          | projo | dimmer | 0     | 3        | 50   |
+          | time_on     | variable | 0     | 0        | time()     |
+
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name  | type   | delay | duration | args |
+          | projo | dimmer | 0     | 3        | 0    |
+          | time_off       | variable         | 0     | 0        | time()                    |
+          | vmc.jour.tempo_wc | button_principal | 0     | 0        | time_off - time_on > 2*60 |
+

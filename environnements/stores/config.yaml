@@ -1,0 +1,26 @@
+
+
+Modes:
+    - mode : reveil
+      preset : reveil
+
+    - mode: jour
+      preset: normal
+      marker: OFF
+
+    - mode : coucher
+      preset : coucher
+      marker: ON
+
+Interrupts:
+    config : |
+        | name           | type | args     |
+        | inter_plante1  | gpio | 7        |
+        | inter_plante2  | gpio | 8        |
+        | descendre_midi | cron | 13:00:00 |
+
+Objects:
+    config : |
+        | name   | type  | sub_type | relay/triak | addr     |
+        | stores | store | 24       | 21(gpio)    | 23(gpio) |
+

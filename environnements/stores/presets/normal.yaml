@@ -1,0 +1,39 @@
+
+Interrupts:
+    buttons : |
+        | name           | type      | scenarios        |
+        | inter_plante1  | principal | descente, monter |
+        | inter_plante2  | principal | stop             |
+        | descendre_midi | principal | descente         |
+
+HTML:
+    - name: home.stores.cuisine
+      type: button
+      background_image: escalier_1.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: descente, monter
+
+Scenarios:
+    - name: descente
+      marker: ON
+      instructions: |
+          | name   | type  | delay | duration | args |
+          | stores | store | 0     | 0        | 77 |
+
+    - name: stop
+      marker: NONE
+      instructions: |
+          | name   | type  | delay | duration | args |
+          | stores | store | 0     | 0        | -1 |
+
+    - name: monter
+      marker: OFF
+      instructions: |
+          | name  | type  | delay | duration | args  |
+          | stores | store | 0     | 0        | 0 |
+
+

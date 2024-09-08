@@ -1,0 +1,35 @@
+
+Interrupts:
+    buttons : |
+        | name         | type      | scenarios         |
+        | inter_entrée | principal | allumer, eteindre |
+        | inter_lavabo | principal | change_couleur    |
+
+
+
+Scenarios:
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name        | type     | delay | duration | args             |
+          | couleur     | variable | 0     | 0        | 0x000000         |
+          | white       | variable | 0     | 0        | 0xff             |
+          | panneau_led | rgbw     | wait  | 5        | 40,couleur, white |
+          | time_on     | variable | 0     | 0        | time()           |
+
+    - name: change_couleur
+      marker: NONE
+      instructions: |
+          | name    | type     | delay | duration | args                                                                                               |
+          | couleur | variable | 0     | 2        | randint(0, 0x7f) \| randint(0, 0x7f) << 8 \| randint(0, 0x7f) <<16  \| 0xff<<(8*randint(0,2)) \| 0 |
+          | white   | variable | 0     | 2        | randint(0, 0x3f)                                                                                   |
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name           | type             | delay | duration | args                      |
+          | panneau_led    | rgbw             | 0     | 5        | 0,0x000000, 0x00          |
+          | time_off       | variable         | 0     | 0        | time()                    |
+          | vmc.jour.tempo | button_principal | 0     | 0        | time_off - time_on > 3*60 |
+

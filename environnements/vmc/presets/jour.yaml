@@ -1,0 +1,50 @@
+
+Interrupts:
+    buttons : |
+        | name                   | type      | scenarios         |
+
+HTML:
+    - name: home.lumières.vmc
+      type: button
+      background_image: power.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
+
+
+
+
+Scenarios:
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name | type  | delay | duration | args |
+          | vmc  | power | 0     | 0        | True |
+
+    - name: tempo
+      marker: ON
+      instructions: |
+          | name              | type             | delay | duration | args |
+          | vmc               | power            | 0     | 0        | True |
+          | vmc.jour.eteindre | button_principal | 60*10 | 0        | True |
+
+    - name: tempo_wc
+      marker: ON
+      instructions: |
+          | name              | type             | delay | duration | args |
+          | vmc               | power            | 0     | 0        | True |
+          | vmc.jour.eteindre | button_principal | 60*5 | 0        | True |
+
+
+
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name | type  | delay | duration | args  |
+          | vmc  | power | 0     | 0        | False |
+

@@ -1,0 +1,19 @@
+
+Interrupts:
+    buttons : |
+        | name   | type      | scenarios |
+
+
+Scenarios:
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name          | type  | delay | duration | args |
+          | prise | power | 0     | 0        | True |
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name          | type  | delay | duration | args  |
+          | prise | power | 0     | 0        | True |
+

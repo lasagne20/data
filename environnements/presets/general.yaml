@@ -1,0 +1,47 @@
+
+Interrupts:
+    buttons : |
+        | name       | type      | scenarios |
+        | reveil     | principal | reveil    |
+
+HTML:
+    - name: home.alarm.reveil
+      type: button
+      background_image: cadenas_1.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: variable
+          variable: activate_alarm
+
+    - name: home.alarm.reveil_time
+      type: time
+      inactive_color: grey
+      active_color: black
+      action:
+          type: variable
+          variable: alarm_time
+
+Scenarios:
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name | type | delay | duration | args |
+
+    - name: reveil
+      marker: NONE
+      instructions: |
+          | name                        | type             | delay             | duration | args           |
+          | global.general.change_color | button_principal | 0                 | 0        | True           |
+          | reveil                      | mode             | 0                 | 0        | True           |
+          | son.normal.reveil           | button_principal | alarm_time-time() | 0        | activate_alarm |
+          | stores.reveil.monter        | button_principal | wait, 60          | 0        | activate_alarm |
+
+
+    - name: change_color
+      marker: NONE
+      instructions: |
+          | name        | type     | delay | duration | args                                                                                                  |
+          | color_index | variable | 0     | 0        | randint(0,2)                                                                                          |
+          | color       | variable | wait  | 0        | randint(0, 0x7f) \| randint(0, 0x7f) << 8 \| randint(0, 0x7f) <<16  \| 0xff<<(8*color_index) \| 0     |
+          | color2      | variable | wait  | 0        | randint(0, 0x7f) \| randint(0, 0x7f) << 8 \| randint(0, 0x7f) <<16  \| 0xff<<(8*(color_index+1)) \| 0 |

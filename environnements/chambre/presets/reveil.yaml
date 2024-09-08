@@ -1,0 +1,55 @@
+
+Interrupts:
+    buttons : |
+        | name         | type      | scenarios   |
+        | inters_lit   | choice    | change_mode |
+        | inter_porte1 | principal | change_mode |
+        | inter_porte2 | principal | change_mode |
+
+HTML:
+    - name: home.lumières.chambre
+      type: button
+      background_image: night.png
+      inactive_color: grey
+      active_color: black
+      action:
+          type: button
+          button: principal
+          scenarios: allumer, eteindre
+
+
+
+Scenarios:
+    - name: reveil
+      marker: ON
+      instructions: |
+          | name                       | type             | delay | duration | args          |
+          | led_lit                    | color            | 0     | 10       | 0,color2      |
+          | led_plafond                | color            | 0     | 10       | 30,color2     |
+          | panneau_led                | rgbw             | 0     | 15       | 5,color, 0x70 |
+          | chambre.reveil.change_mode | button_principal | 60*3  | 0        | True          |
+
+    - name: change_mode
+      marker: NONE
+      instructions: |
+          | name                 | type             | delay                  | duration | args                |
+          | stores.reveil.monter | button_principal | 0                      | 0        | not(activate_alarm) |
+          | jour                 | mode             | not(activate_alarm)*60 | 0        | True                |
+
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name        | type  | delay | duration | args              |
+          | led_lit     | color | 0     | 5        | 90,color          |
+          | led_plafond | color | 0     | 5        | 50,color2         |
+          | panneau_led | rgbw  | 0     | 5        | 30,color2  , 0x20 |
+
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name        | type  | delay | duration | args             |
+          | led_plafond | color | 0     | 10       | 0,0x000000       |
+          | led_lit     | color | 0     | 10       | 0,0x000000       |
+          | panneau_led | rgbw  | 0     | 10       | 0,0x000000, 0x00 |
+

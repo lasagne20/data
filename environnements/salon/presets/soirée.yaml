@@ -1,0 +1,37 @@
+
+Interrupts:
+    buttons : |
+        | name                   | type      | scenarios         |
+        | inter_couloir_placard1 | principal | allumer, eteindre |
+
+HTML:
+    - name: home.dimmers.1
+      type: slider
+      min_value: 0
+      max_value: 100
+      index: 1
+      lenght: 4
+      action:
+          type: variable
+          variable: dimmer1
+
+
+Scenarios:
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name     | type        | delay | duration | args               |
+          | projo1   | dimmer      | 0     | 10       | dimmer1            |
+          | projo2   | dimmer      | 0     | 10       | dimmer2            |
+          | projo3   | dimmer      | 0     | 10       | dimmer3            |
+          | projo4   | dimmer      | 0     | 10       | dimmer4            |
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name     | type        | delay | duration | args   |
+          | projo1   | dimmer      | 0     | 10       | 0      |
+          | projo2   | dimmer      | 0     | 10       | 0      |
+          | projo3   | dimmer      | 0     | 10       | 0      |
+          | projo4   | dimmer      | 0     | 10       | 0      |
+

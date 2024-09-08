@@ -1,0 +1,39 @@
+
+Interrupts:
+    buttons : |
+        | name                   | type      | scenarios         |
+        | inter_couloir_placard1 | principal | allumer, eteindre |
+
+
+Scenarios:
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name              | type             | delay | duration | args       |
+          | projo1            | dimmer           | 0     | 10       | 100        |
+          | projo2            | dimmer           | 0     | 10       | 100        |
+          | projo3            | dimmer           | 0     | 10       | 100        |
+          | projo4            | dimmer           | 0     | 10       | 100        |
+          | cuisine.jour.deco | button_secondary | 0     | 0        | True       |
+          | chambre.jour.deco | button_secondary | 0     | 0        | True       |
+
+
+    - name: cinema
+      marker: ON
+      instructions: |
+          | name              | type        | delay | duration | args |
+          | projo1            | dimmer      | 0     | 5       | 0  |
+          | projo2            | dimmer      | 0     | 5       | 70  |
+          | projo3            | dimmer      | 0     | 5       | 0  |
+          | projo4            | dimmer      | 0     | 5       | 0  |
+
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name   | type   | delay | duration | args |
+          | projo1 | dimmer | 0     | 10       | 0    |
+          | projo2 | dimmer | 0     | 10       | 0    |
+          | projo3 | dimmer | 0     | 10       | 0    |
+          | projo4 | dimmer | 0     | 10       | 0    |
+

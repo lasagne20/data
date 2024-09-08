@@ -1,0 +1,24 @@
+
+
+Modes:
+    - mode : reveil, jour
+      preset : normal
+
+    - mode : reveil, nuit
+      preset : nuit
+
+    - mode : soirée
+      preset : soirée
+
+Interrupts:
+    config : |
+        | name                   | type | args |
+        | inter_couloir_1        | gpio | 10   |
+        | inter_entrée           | gpio | 9    |
+
+Objects:
+    config : |
+        | name    | type     | sub_type | relay/triak | addr |
+        | blancs  | dimmable | buld_200 | 7(1)        |      |
+        | couleurs | dimmable | buld_63 | 8(1)        |      |
+

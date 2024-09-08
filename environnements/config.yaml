@@ -1,17 +1,25 @@
 
 
 Modes:
-    - mode : normal
-      preset : normal_1
+    - mode : reveil, jour
+      preset : general
+
+
+
 
 Interrupts:
     config : |
-        | name          | type | args |
-        | inter_general | gpio | 5   |
+        | name   | type | args     |
+        | reveil | cron | 05:30:00 |
 
 Variables:
     config : |
-        | name        | value |
+        | name           | value    | type |
+        | color_index    | 0        |      |
+        | color          | 8323327  |      |
+        | color2         | 15631086 |      |
+        | activate_alarm | 1        |      |
+        | alarm_time     | 07:30    | time |
 
 
 Objects:

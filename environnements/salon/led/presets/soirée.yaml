@@ -1,0 +1,18 @@
+
+Interrupts:
+    buttons : |
+        | name                   | type      | scenarios         |
+
+Scenarios:
+    - name: allumer
+      marker: ON
+      instructions: |
+          | name     | type        | delay | duration | args               |
+          | led_tour | addressable | 0     | 5        | 50,2, 10 |
+
+    - name: eteindre
+      marker: OFF
+      instructions: |
+          | name     | type        | delay | duration | args   |
+          | led_tour | addressable | 0     | 5        | 0,1, 0 |
+

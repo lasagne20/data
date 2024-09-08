@@ -1,0 +1,32 @@
+
+
+Modes:
+
+    - mode : soirée
+      preset : soirée
+
+    - mode : jour
+      preset : jour
+
+    - mode : nuit, coucher, reveil
+      preset : nuit
+
+
+
+Interrupts:
+    config : |
+        | name         | type | args |
+        | inter_wc | gpio | 17    |
+
+Variables:
+    config : |
+        | name         | value | type |
+        | time_on      | 00:00 | time |
+        | time_off     | 00:00 | time |
+
+
+Objects:
+    config : |
+        | name  | type     | sub_type | relay/triak | addr |
+        | projo | dimmable | buld_200 | 6(1)        |      |
+

@@ -1,0 +1,27 @@
+
+
+Modes:
+
+    - mode : jour
+      preset : jour
+
+Interrupts:
+    config : |
+        | name         | type | args |
+        | inter_entrée | gpio | 6    |
+        | inter_lavabo | gpio | 5    |
+
+Variables:
+    config : |
+        | name    | value | type |
+        | couleur | 0     |      |
+        | white | 0xff    |      |
+        | time_on | 00:00 | time |
+        | time_off | 00:00 | time |
+
+
+Objects:
+    config : |
+        | name        | type | sub_type | relay/triak | addr              |
+        | panneau_led | led_panel  | dmx      | 16(gpio)    | 9                 |
+
